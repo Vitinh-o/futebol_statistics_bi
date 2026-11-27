@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "estatisticas_de_futebol"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ed78bfdb-07fa-40bd-8a44-d273aea36f74"
+  }
+}
