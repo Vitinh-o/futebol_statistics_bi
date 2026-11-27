@@ -21,6 +21,7 @@ from extract import (  # noqa: E402
     ApiFootballClient,
     ApiFootballError,
     ExtractionConfig,
+    resolve_free_tier_season,
     run_pipeline,
     transform_clubs,
     transform_matches,
@@ -259,6 +260,74 @@ class TestApiFootballClientAndPipeline(unittest.TestCase):
                 self.assertTrue(path.exists(), f"Expected CSV {path} to exist")
 
             self.assertEqual(len(pd.read_csv(outputs["partidas"])), 2)
+
+    def test_resolve_free_tier_season_uses_two_year_offset(self) -> None:
+        self.assertEqual(resolve_free_tier_season(2026), 2024)
+        self.assertEqual(resolve_free_tier_season(2027), 2025)
+
+    def test_fetch_players_respects_free_tier_max_three_pages(self) -> None:
+        page_responses = []
+        for page_num in range(1, 5):
+            resp = MagicMock()
+            resp.status_code = 200
+            resp.headers = {}
+            resp.json.return_value = {
+                "paging": {"current": page_num, "total": 35},
+                "response": [{"player": {"id": page_num}}],
+            }
+            page_responses.append(resp)
+
+        with patch("extract.requests.Session.get", side_effect=page_responses) as mock_get:
+            with ApiFootballClient("test-key", min_interval_seconds=0.0) as client:
+                players = client.fetch_players(71, 2024)
+
+        self.assertEqual(mock_get.call_count, 3)
+        self.assertEqual([p["player"]["id"] for p in players], [1, 2, 3])
+
+    def test_fetch_players_by_teams_and_deduplicates_transferred_stats(self) -> None:
+        team_128_resp = MagicMock()
+        team_128_resp.status_code = 200
+        team_128_resp.headers = {}
+        team_128_resp.json.return_value = {
+            "paging": {"current": 1, "total": 1},
+            "response": [
+                {
+                    "player": {"id": 50, "name": "Atleta X"},
+                    "statistics": [
+                        {
+                            "team": {"id": 128},
+                            "league": {"id": 71},
+                            "games": {"appearences": 10, "minutes": 800, "position": "Attacker"},
+                            "goals": {"total": 4, "assists": 2},
+                        },
+                        {
+                            "team": {"id": 127},
+                            "league": {"id": 71},
+                            "games": {"appearences": 5, "minutes": 300, "position": "Attacker"},
+                            "goals": {"total": 1, "assists": 1},
+                        },
+                    ],
+                }
+            ],
+        }
+
+        team_127_resp = MagicMock()
+        team_127_resp.status_code = 200
+        team_127_resp.headers = {}
+        team_127_resp.json.return_value = team_128_resp.json.return_value
+
+        with patch(
+            "extract.requests.Session.get", side_effect=[team_128_resp, team_127_resp]
+        ) as mock_get:
+            with ApiFootballClient("test-key", min_interval_seconds=0.0) as client:
+                players_raw = client.fetch_players_by_teams(71, 2024, [127, 128])
+
+        self.assertEqual(mock_get.call_count, 2)
+        _, df_stats = transform_players_and_stats(players_raw, league_id=71)
+        # Must NOT double-count stats returned by both team queries
+        self.assertEqual(len(df_stats), 2)
+        self.assertEqual(int(df_stats.loc[df_stats["id_clube"] == 128, "gols"].item()), 4)
+        self.assertEqual(int(df_stats.loc[df_stats["id_clube"] == 127, "gols"].item()), 1)
 
 
 if __name__ == "__main__":

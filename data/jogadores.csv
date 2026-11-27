@@ -1,0 +1,1092 @@
+id_jogador,nome_jogador,nome_completo,idade,nacionalidade,posicao,foto_url
+30,S. Arias,Santiago Arias Naranjo,34,Colombia,Defensor,https://media.api-sports.io/football/players/30.png
+96,Jemerson,Jemerson de Jesus Nascimento,33,Brazil,Defensor,https://media.api-sports.io/football/players/96.png
+147,Philippe Coutinho,Philippe Coutinho Correia,33,Brazil,Meio-Campo,https://media.api-sports.io/football/players/147.png
+178,Lucas Moura,Lucas Rodrigues Moura da Silva,33,Brazil,Atacante,https://media.api-sports.io/football/players/178.png
+326,Allan,Allan Marques Loureiro,34,Brazil,Meio-Campo,https://media.api-sports.io/football/players/326.png
+350,Jonathan Cafú,Jonathan Renato Barbosa,34,Brazil,Atacante,https://media.api-sports.io/football/players/350.png
+374,João Pedro,João Pedro Maturano dos Santos,29,Brazil,Defensor,https://media.api-sports.io/football/players/374.png
+434,Mariano,Mariano Ferreira Filho,39,Brazil,Defensor,https://media.api-sports.io/football/players/434.png
+500,Rafinha,Márcio Rafael Ferreira de Souza,40,Brazil,Defensor,https://media.api-sports.io/football/players/500.png
+517,J. Rodríguez,James David Rodríguez Rubio,34,Colombia,Meio-Campo,https://media.api-sports.io/football/players/517.png
+655,Rafael,Rafael Pereira da Silva,34,Brazil,Defensor,https://media.api-sports.io/football/players/655.png
+667,M. Depay,Memphis Depay,31,Netherlands,Atacante,https://media.api-sports.io/football/players/667.png
+687,Maycon,Maycon de Andrade Barberan,28,Brazil,Meio-Campo,https://media.api-sports.io/football/players/687.png
+692,Alan Patrick,Alan Patrick Lourenço,34,Brazil,Meio-Campo,https://media.api-sports.io/football/players/692.png
+696,Marcos Antônio,Marcos Antônio Silva Santos,25,Brazil,Meio-Campo,https://media.api-sports.io/football/players/696.png
+743,Marcelo,Marcelo Vieira da Silva Júnior,36,Brazil,Defensor,https://media.api-sports.io/football/players/743.png
+865,Douglas Costa,Douglas Costa de Souza,35,Brazil,Meio-Campo,https://media.api-sports.io/football/players/865.png
+982,L. Alario,Lucas Nicolás Alario,33,Argentina,Atacante,https://media.api-sports.io/football/players/982.png
+987,Paulinho,Paulo Henrique Sampaio Filho,25,Brazil,Atacante,https://media.api-sports.io/football/players/987.png
+1054,Renan,Renan dos Santos,36,Brazil,Goleiro,https://media.api-sports.io/football/players/1054.png
+1057,Cicinho,Neuciano de Jesus Gusmão,37,Bulgaria,Defensor,https://media.api-sports.io/football/players/1057.png
+1069,Lucas Sasha,Lucas Pacheco Affini,35,Brazil,Meio-Campo,https://media.api-sports.io/football/players/1069.png
+1085,André Ramalho,André Ramalho Silva,33,Brazil,Defensor,https://media.api-sports.io/football/players/1085.png
+1260,Pablo,Pablo Nascimento Castro,34,Brazil,Defensor,https://media.api-sports.io/football/players/1260.png
+1262,Otávio,Otávio Henrique Passos Santos,31,Brazil,Meio-Campo,https://media.api-sports.io/football/players/1262.png
+1290,G. Varela,Guillermo Varela Olivera,32,Uruguay,Defensor,https://media.api-sports.io/football/players/1290.png
+1432,Y. Bolasie,Yannick Bolasie Yala,37,Congo DR,Forward,https://media.api-sports.io/football/players/1432.png
+1484,R. Battaglia,Rodrigo Andrés Battaglia,34,Argentina,Meio-Campo,https://media.api-sports.io/football/players/1484.png
+1634,C. Zapata,Cristián Eduardo Zapata Valencia,39,Colombia,Defensor,https://media.api-sports.io/football/players/1634.png
+1771,Ayrton Lucas,Ayrton Lucas Dantas de Medeiros,28,Brazil,Defensor,https://media.api-sports.io/football/players/1771.png
+1793,Luiz Adriano,Luiz Adriano de Souza da Silva,37,Brazil,Atacante,https://media.api-sports.io/football/players/1793.png
+1845,Bartolomeu Jacinto Quissanga,Bartolomeu Jacinto Quissanga,34,Angola,Defensor,https://media.api-sports.io/football/players/1845.png
+1909,Luiz Gustavo,Luiz Gustavo Dias,38,Brazil,Meio-Campo,https://media.api-sports.io/football/players/1909.png
+1912,D. Payet,Dimitri Payet,38,France,Meio-Campo,https://media.api-sports.io/football/players/1912.png
+1982,G. Medel,Gary Alexis Medel Soto,38,Chile,Defensor,https://media.api-sports.io/football/players/1982.png
+2038,Guilherme Arana,Guilherme Antonio Arana Lopes,28,Brazil,Defensor,https://media.api-sports.io/football/players/2038.png
+2044,G. Mercado,Gabriel Iván Mercado,38,Argentina,Defensor,https://media.api-sports.io/football/players/2044.png
+2083,Wanderson,Wanderson Maciel Sousa Campos,31,Brazil,Atacante,https://media.api-sports.io/football/players/2083.png
+2173,C. de Pena,Carlos María de Pena Bonino,33,Uruguay,Meio-Campo,https://media.api-sports.io/football/players/2173.png
+2410,Weverton,Weverton Pereira da Silva,38,Brazil,Goleiro,https://media.api-sports.io/football/players/2410.png
+2411,Fágner,Fágner Conserva Lemos,36,Brazil,Defensor,https://media.api-sports.io/football/players/2411.png
+2412,Felipe Anderson,Felipe Anderson Pereira Gomes,33,Brazil,Forward,https://media.api-sports.io/football/players/2412.png
+2424,M. Trauco,Miguel Ángel Trauco Saavedra,33,Peru,Defensor,https://media.api-sports.io/football/players/2424.png
+2440,N. Ferraresi,Nahuel Adolfo Ferraresi Hernández,27,Venezuela,Defensor,https://media.api-sports.io/football/players/2440.png
+2454,Y. Soteldo,Yeferson Julio Soteldo Martínez,28,Venezuela,Meio-Campo,https://media.api-sports.io/football/players/2454.png
+2458,Jan Hurtado,Jan Carlos Hurtado Anchico,25,Venezuela,Atacante,https://media.api-sports.io/football/players/2458.png
+2466,W. Kannemann,Walter Kannemann,34,Argentina,Defensor,https://media.api-sports.io/football/players/2466.png
+2470,R. Saravia,Renzo Saravia,33,Argentina,Defensor,https://media.api-sports.io/football/players/2470.png
+2477,M. Zaracho,Federico Matías Zaracho,27,Argentina,Meio-Campo,https://media.api-sports.io/football/players/2477.png
+2485,L. Orejuela,Luis Manuel Orejuela García,30,Colombia,Defensor,https://media.api-sports.io/football/players/2485.png
+2486,H. Palacios,Helibelton Palacios Zapata,32,Colombia,Defensor,https://media.api-sports.io/football/players/2486.png
+2497,R. Fernández,Roberto Júnior Fernández Torres,37,Paraguay,Goleiro,https://media.api-sports.io/football/players/2497.png
+2499,J. Alonso,Júnior Osmar Ignacio Alonso Mujica,32,Paraguay,Defensor,https://media.api-sports.io/football/players/2499.png
+2502,G. Gómez,Gustavo Raúl Gómez Portillo,32,Paraguay,Defensor,https://media.api-sports.io/football/players/2502.png
+2504,R. Rojas,Robert Samuel Rojas Chávez,29,Paraguay,Defensor,https://media.api-sports.io/football/players/2504.png
+2513,M. Rojas,Matías Nicolás Rojas Romero,30,Paraguay,Meio-Campo,https://media.api-sports.io/football/players/2513.png
+2515,Ó. Romero,Óscar David Romero Villamayor,33,Paraguay,Meio-Campo,https://media.api-sports.io/football/players/2515.png
+2521,Á. Romero,Ángel Rodrigo Romero Villamayor,33,Paraguay,Atacante,https://media.api-sports.io/football/players/2521.png
+2560,E. Pulgar,Erick Antonio Pulgar Farfán,32,Chile,Meio-Campo,https://media.api-sports.io/football/players/2560.png
+2563,J. Meneses,Jean David Meneses Villarroel,32,Chile,Meio-Campo,https://media.api-sports.io/football/players/2563.png
+2571,R. Arboleda,Robert Abel Arboleda Escobar,34,Ecuador,Defensor,https://media.api-sports.io/football/players/2571.png
+2581,J. Méndez,Jhegson Sebastián Méndez Carabalí,28,Ecuador,Meio-Campo,https://media.api-sports.io/football/players/2581.png
+2612,G. de Arrascaeta,Giorgian Daniel de Arrascaeta Benedetti,31,Uruguay,Meio-Campo,https://media.api-sports.io/football/players/2612.png
+2737,M. Braithwaite,Martin Christensen Braithwaite,34,Denmark,Atacante,https://media.api-sports.io/football/players/2737.png
+2845,J. Campbell,Joel Nathaniel Campbell Samuels,33,Costa Rica,Forward,https://media.api-sports.io/football/players/2845.png
+5794,R. Garro,Rodrigo Garro,27,Argentina,Meio-Campo,https://media.api-sports.io/football/players/5794.png
+5804,P. Vegetti,Pablo Ezequiel Vegetti Pfaffen,37,Argentina,Atacante,https://media.api-sports.io/football/players/5804.png
+5933,A. Barboza,Alexander Nahuel Barboza Ullúa,30,Argentina,Defensor,https://media.api-sports.io/football/players/5933.png
+5981,C. Pavón,Cristian David Pavón,29,Argentina,Atacante,https://media.api-sports.io/football/players/5981.png
+5995,N. de la Cruz,Diego Nicolás de la Cruz Arcosa,28,Uruguay,Meio-Campo,https://media.api-sports.io/football/players/5995.png
+6011,R. Borré,Rafael Santos Borré Maury,30,Colombia,Atacante,https://media.api-sports.io/football/players/6011.png
+6031,T. Cuello,Tomás Esteban Cuello,25,Argentina,Atacante,https://media.api-sports.io/football/players/6031.png
+6052,Á. Barreal,Álvaro Martín Barreal,25,Argentina,Meio-Campo,https://media.api-sports.io/football/players/6052.png
+6057,P. Galdames,Pablo Ignacio Galdames Millán,29,Chile,Meio-Campo,https://media.api-sports.io/football/players/6057.png
+6067,T. Almada,Thiago Ezequiel Almada,24,Argentina,Meio-Campo,https://media.api-sports.io/football/players/6067.png
+6078,E. Brítez,Emanuel Brítez,33,Argentina,Defensor,https://media.api-sports.io/football/players/6078.png
+6080,F. Bustos,Fabricio Tomás Bustos Sein,29,Argentina,Defensor,https://media.api-sports.io/football/players/6080.png
+6083,A. Franco,Alan Javier Franco,29,Argentina,Defensor,https://media.api-sports.io/football/players/6083.png
+6121,I. Machuca,Javier Imanol Machuca,25,Argentina,Atacante,https://media.api-sports.io/football/players/6121.png
+6228,L. Godoy,Leonardo Ezequiel Godoy,30,Argentina,Defensor,https://media.api-sports.io/football/players/6228.png
+6242,T. Pochettino,Tomás Pochettino,29,Argentina,Meio-Campo,https://media.api-sports.io/football/players/6242.png
+6268,L. Villalba,Lucas Hernán Villalba,31,Argentina,Defensor,https://media.api-sports.io/football/players/6268.png
+6298,T. Cardona,Tomás Cardona Bernaschina,30,Argentina,Defensor,https://media.api-sports.io/football/players/6298.png
+6326,J. Lucero,Juan Martín Lucero,34,Argentina,Atacante,https://media.api-sports.io/football/players/6326.png
+6347,A. Moreno,Aníbal Ismael Moreno,26,Argentina,Meio-Campo,https://media.api-sports.io/football/players/6347.png
+6379,G. Galoppo,Giuliano Galoppo,26,Argentina,Meio-Campo,https://media.api-sports.io/football/players/6379.png
+6546,F. Cristaldo,Franco Sebastián Cristaldo,29,Argentina,Meio-Campo,https://media.api-sports.io/football/players/6546.png
+6637,G. Escobar,Gonzalo Daniel Escobar,28,Argentina,Defensor,https://media.api-sports.io/football/players/6637.png
+6725,F. Vera,Fausto Mariano Vera,25,Argentina,Meio-Campo,https://media.api-sports.io/football/players/6725.png
+8661,Vitinho,Victor Alexander da Silva,26,Brazil,Defensor,https://media.api-sports.io/football/players/8661.png
+9208,Willian Oliveira,Willian Osmar de Oliveira Silva,32,Brazil,Meio-Campo,https://media.api-sports.io/football/players/9208.png
+9212,Higor Meritão,Higor Matheus Meritão,31,Brazil,Meio-Campo,https://media.api-sports.io/football/players/9212.png
+9218,Marlon Freitas,Marlon Rodrigues Freitas,30,Brazil,Meio-Campo,https://media.api-sports.io/football/players/9218.png
+9258,Caio Dantas,Caio Henrique da Silva Dantas,32,Brazil,Atacante,https://media.api-sports.io/football/players/9258.png
+9276,Felipe Vieira,Felipe Vieira Augusto,27,Brazil,Defensor,https://media.api-sports.io/football/players/9276.png
+9296,Diego Gonçalves,Diego Gonçalves,31,Brazil,Forward,https://media.api-sports.io/football/players/9296.png
+9303,Gustavo,Luiz Gustavo Almeida Pinto,32,Brazil,Goleiro,https://media.api-sports.io/football/players/9303.png
+9304,Mauricio Kozlinski,Mauricio Kozlinski,34,Brazil,Goleiro,https://media.api-sports.io/football/players/9304.png
+9308,Lucas Oliveira,Lucas da Cruz Oliveira,29,Brazil,Defensor,https://media.api-sports.io/football/players/9308.png
+9312,Jonathan,Jonathan Francisco Lemos,33,Brazil,Defensor,https://media.api-sports.io/football/players/9312.png
+9325,Jorginho,Jorge de Moura Xavier,34,Brazil,Meio-Campo,https://media.api-sports.io/football/players/9325.png
+9329,Pedro Raul,Pedro Raul Garay da Silva,29,Brazil,Atacante,https://media.api-sports.io/football/players/9329.png
+9340,Sabino,José Sabino Chagas Monteiro,29,Brazil,Defensor,https://media.api-sports.io/football/players/9340.png
+9347,Walisson Maia,Walisson Moreira Farias Maia,34,Brazil,Defensor,https://media.api-sports.io/football/players/9347.png
+9348,Romércio,Romércio Pereira da Conceição,28,Brazil,Defensor,https://media.api-sports.io/football/players/9348.png
+9366,Igor Jesus,Igor Jesus Maciel da Cruz,24,Brazil,Atacante,https://media.api-sports.io/football/players/9366.png
+9401,Fábio Gomes,Fábio Roberto Gomes Netto,29,Brazil,Forward,https://media.api-sports.io/football/players/9401.png
+9410,Alisson,Alisson Machado dos Santos,30,Brazil,Goleiro,https://media.api-sports.io/football/players/9410.png
+9445,Bruno Rodrigues,Bruno Rafael Rodrigues do Nascimento,29,Brazil,Forward,https://media.api-sports.io/football/players/9445.png
+9458,Léo Ortiz,Leonardo Rech Ortiz,29,Brazil,Defensor,https://media.api-sports.io/football/players/9458.png
+9460,Gabriel Baralhas,Gabriel Baralhas dos Santos,27,Brazil,Meio-Campo,https://media.api-sports.io/football/players/9460.png
+9461,Barreto,Gustavo Bonatto Barreto,30,Brazil,Meio-Campo,https://media.api-sports.io/football/players/9461.png
+9468,Bruno Tubarão,Bruno Nunes de Barros,30,Brazil,Atacante,https://media.api-sports.io/football/players/9468.png
+9484,Rodrigo,Rodrigo Fagundes de Freitas,38,Brazil,Defensor,https://media.api-sports.io/football/players/9484.png
+9510,Lucas Arcanjo,Lucas Willians Assis Arcanjo,27,Brazil,Goleiro,https://media.api-sports.io/football/players/9510.png
+9512,Ronaldo,Ronaldo de Oliveira Strada,29,Brazil,Goleiro,https://media.api-sports.io/football/players/9512.png
+9513,Caíque,Caíque Luiz Santos da Purificação,28,Brazil,Goleiro,https://media.api-sports.io/football/players/9513.png
+9533,Rodrigo Andrade,Jose Rodrigo Andrade Ramos,28,Brazil,Meio-Campo,https://media.api-sports.io/football/players/9533.png
+9537,Dudu Vieira,Carlos Eduardo de Souza Vieira,31,Brazil,Meio-Campo,https://media.api-sports.io/football/players/9537.png
+9549,Erick,Erick de Arruda Serafim,28,Brazil,Forward,https://media.api-sports.io/football/players/9549.png
+9566,Adryelson,Adryelson Shawann Lima Silva,27,Brazil,Defensor,https://media.api-sports.io/football/players/9566.png
+9577,Charles,Charles Rigon Matos,29,Brazil,Meio-Campo,https://media.api-sports.io/football/players/9577.png
+9620,Gustavo Silva,Gustavo Henric da Silva,28,Brazil,Atacante,https://media.api-sports.io/football/players/9620.png
+9656,Léo Gamalho,Leonardo Gamalho de Souza,39,Brazil,Atacante,https://media.api-sports.io/football/players/9656.png
+9661,Julimar,Julimar Silva Oliveira Júnior,24,Brazil,Atacante,https://media.api-sports.io/football/players/9661.png
+9663,Mateus Pasinato,Mateus Pasinato,33,Brazil,Goleiro,https://media.api-sports.io/football/players/9663.png
+9675,Guilherme Romão,Guilherme Kennedy Romão,28,Brazil,Defensor,https://media.api-sports.io/football/players/9675.png
+9692,Ivan,Ivan Quaresma da Silva,28,Brazil,Goleiro,https://media.api-sports.io/football/players/9692.png
+9709,Matheus Alexandre,Matheus Alexandre Anastácio de Souza,26,Brazil,Defensor,https://media.api-sports.io/football/players/9709.png
+9726,Renato Kayzer,Renato Kayzer de Souza,29,Brazil,Atacante,https://media.api-sports.io/football/players/9726.png
+9727,Matheus Vargas,Matheus de Vargas,29,Brazil,Meio-Campo,https://media.api-sports.io/football/players/9727.png
+9742,Matheus Bidu,Matheus Lima Beltrão Oliveira,26,Brazil,Defensor,https://media.api-sports.io/football/players/9742.png
+9849,Matheusinho,Matheus Leonardo Sales Cardoso,28,Brazil,Meio-Campo,https://media.api-sports.io/football/players/9849.png
+9854,Ademir,Ademir da Silva Santos Júnior,30,Brazil,Atacante,https://media.api-sports.io/football/players/9854.png
+9862,Cleiton,Cleiton Schwengber,28,Brazil,Goleiro,https://media.api-sports.io/football/players/9862.png
+9872,Igor Rabello,Igor Rabello da Costa,30,Brazil,Defensor,https://media.api-sports.io/football/players/9872.png
+9874,Guga,Cláudio Rodrigues Gomes,27,Brazil,Defensor,https://media.api-sports.io/football/players/9874.png
+9882,José Welison,José Welison da Silva,30,Brazil,Meio-Campo,https://media.api-sports.io/football/players/9882.png
+9884,Daniel Penha,Daniel dos Santos Penha,27,Brazil,Meio-Campo,https://media.api-sports.io/football/players/9884.png
+9890,Jair,Jair Rodrigues Júnior,31,Brazil,Meio-Campo,https://media.api-sports.io/football/players/9890.png
+9891,D. Terans,Miguel David Terans Pérez,31,Uruguay,Meio-Campo,https://media.api-sports.io/football/players/9891.png
+9893,Alerrandro,Alerrandro Barra Mansa Realino de Souza,25,Brazil,Atacante,https://media.api-sports.io/football/players/9893.png
+9896,Rafael Elias,Rafael Elias da Silva Bataglia,26,Brazil,Atacante,https://media.api-sports.io/football/players/9896.png
+9904,Matheus Teixeira,Matheus Henrique Teixeira,27,Brazil,Goleiro,https://media.api-sports.io/football/players/9904.png
+9905,Diogo Barbosa,Diogo Barbosa Mendanha,33,Brazil,Defensor,https://media.api-sports.io/football/players/9905.png
+9906,Luan Cândido,Luan Cândido de Almeida,24,Brazil,Defensor,https://media.api-sports.io/football/players/9906.png
+9907,Victor Luís,Victor Luís Chuab Zamblauskas,32,Brazil,Defensor,https://media.api-sports.io/football/players/9907.png
+9908,Antônio Carlos,Antônio Carlos Cunha Capocasali Júnior,32,Brazil,Defensor,https://media.api-sports.io/football/players/9908.png
+9909,Vitão,Vitor Eduardo da Silva Matos,25,Brazil,Defensor,https://media.api-sports.io/football/players/9909.png
+9910,De Lucca,Patrick de Lucca Chaves de Oliveira,25,Brazil,Meio-Campo,https://media.api-sports.io/football/players/9910.png
+9911,Lucas Esteves,Lucas Esteves Souza,25,Brazil,Defensor,https://media.api-sports.io/football/players/9911.png
+9913,Luan,Luan Garcia Teixeira,32,Brazil,Defensor,https://media.api-sports.io/football/players/9913.png
+9916,Marcos Rocha,Marcos Luis Rocha Aquino,37,Brazil,Defensor,https://media.api-sports.io/football/players/9916.png
+9917,Mayke,Mayke Rocha de Oliveira,33,Brazil,Defensor,https://media.api-sports.io/football/players/9917.png
+9920,Raphael Veiga,Raphael Cavalcante Veiga,30,Brazil,Meio-Campo,https://media.api-sports.io/football/players/9920.png
+9921,Bruno Henrique,Bruno Henrique Corsini,36,Brazil,Meio-Campo,https://media.api-sports.io/football/players/9921.png
+9923,Hyoran,Hyoran Kauê Dalmoro,32,Brazil,Meio-Campo,https://media.api-sports.io/football/players/9923.png
+9924,Thiago Santos,Thiago dos Santos,36,Brazil,Meio-Campo,https://media.api-sports.io/football/players/9924.png
+9925,Matheus Fernandes,Matheus Fernandes Siqueira,27,Brazil,Meio-Campo,https://media.api-sports.io/football/players/9925.png
+9926,Gustavo Scarpa,Gustavo Henrique Furtado Scarpa,31,Brazil,Meio-Campo,https://media.api-sports.io/football/players/9926.png
+9932,Zé Rafael,José Rafael Vivian,32,Brazil,Meio-Campo,https://media.api-sports.io/football/players/9932.png
+9934,Deyverson,Deyverson Brum Silva Acosta,35,Brazil,Forward,https://media.api-sports.io/football/players/9934.png
+9939,Dudu,Eduardo Pereira Rodrigues,33,Brazil,Atacante,https://media.api-sports.io/football/players/9939.png
+9945,Bruno Alves,Bruno Fabiano Alves,34,Brazil,Defensor,https://media.api-sports.io/football/players/9945.png
+9946,Reinaldo,Reinaldo Manoel da Silva,36,Brazil,Defensor,https://media.api-sports.io/football/players/9946.png
+9949,Igor Vinicius,Igor Vinicius de Souza,28,Brazil,Defensor,https://media.api-sports.io/football/players/9949.png
+9951,Léo,Leonardo Pinheiro da Conceição,29,Brazil,Defensor,https://media.api-sports.io/football/players/9951.png
+9952,Lucas Kal,Lucas Kal Schenfeld Prigioli,30,Brazil,Meio-Campo,https://media.api-sports.io/football/players/9952.png
+9954,Rodrigo Nestor,Rodrigo Nestor Bertalia,25,Brazil,Meio-Campo,https://media.api-sports.io/football/players/9954.png
+9957,Luan,Luan Vinicius da Silva Santos,26,Brazil,Meio-Campo,https://media.api-sports.io/football/players/9957.png
+9958,Tchê Tchê,Danilo das Neves Pinheiro,33,Brazil,Meio-Campo,https://media.api-sports.io/football/players/9958.png
+9964,Liziero,Igor Matheus Liziero Pereira,28,Brazil,Meio-Campo,https://media.api-sports.io/football/players/9964.png
+9967,Igor Gomes,Igor Silveira Gomes,26,Brazil,Meio-Campo,https://media.api-sports.io/football/players/9967.png
+9970,Nenê,Anderson Luis de Carvalho,44,Brazil,Meio-Campo,https://media.api-sports.io/football/players/9970.png
+9976,Pablo,Pablo Felipe Teixeira,33,Brazil,Atacante,https://media.api-sports.io/football/players/9976.png
+9978,Everson,Everson Felipe Marques Pires,35,Brazil,Goleiro,https://media.api-sports.io/football/players/9978.png
+9986,Luiz Felipe,Luiz Felipe do Nascimento dos Santos,32,Brazil,Defensor,https://media.api-sports.io/football/players/9986.png
+9989,Felipe Jonatan,Felipe Jonatan Rocha Andrade,27,Brazil,Defensor,https://media.api-sports.io/football/players/9989.png
+9993,Wagner Leonardo,Wagner Leonardo Calvelo de Souza,27,Brazil,Defensor,https://media.api-sports.io/football/players/9993.png
+9994,Jean Lucas,Jean Lucas de Souza Oliveira,27,Brazil,Meio-Campo,https://media.api-sports.io/football/players/9994.png
+9997,Jean Mota,Jean Mota Oliveira de Sousa,32,Brazil,Meio-Campo,https://media.api-sports.io/football/players/9997.png
+10004,Eduardo Sasha,Eduardo Colcenti Antunes,33,Brazil,Atacante,https://media.api-sports.io/football/players/10004.png
+10007,Yuri Alberto,Yuri Alberto Monteiro da Silva,24,Brazil,Atacante,https://media.api-sports.io/football/players/10007.png
+10008,Kaio Jorge,Kaio Jorge Pinto Ramos,23,Brazil,Atacante,https://media.api-sports.io/football/players/10008.png
+10017,Ignacio,Ignacio da Silva Oliveira,29,Brazil,Defensor,https://media.api-sports.io/football/players/10017.png
+10025,Shaylon,Shaylon Kallyson Cardozo,28,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10025.png
+10027,Eric Ramires,Eric dos Santos Rodrigues,25,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10027.png
+10031,Gregore,Gregore de Magalhães da Silva,31,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10031.png
+10039,Arthur Caíke,Arthur Caíke do Nascimento Cruz,33,Brazil,Atacante,https://media.api-sports.io/football/players/10039.png
+10041,Gilberto,Gilberto Oliveira Souza Júnior,36,Brazil,Forward,https://media.api-sports.io/football/players/10041.png
+10059,Kanu,Victor Hugo Soares dos Santos,28,Brazil,Defensor,https://media.api-sports.io/football/players/10059.png
+10067,Alex Santana,Alex Paulo Menezes Santana,30,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10067.png
+10073,Luiz Fernando,Luiz Fernando Moraes dos Santos,29,Brazil,Atacante,https://media.api-sports.io/football/players/10073.png
+10080,Fábio,Fábio Deivson Lopes Maciel,45,Brazil,Goleiro,https://media.api-sports.io/football/players/10080.png
+10081,Rafael,Rafael Pires Monteiro,36,Brazil,Goleiro,https://media.api-sports.io/football/players/10081.png
+10083,Murilo,Murilo Cerqueira Paim,28,Brazil,Defensor,https://media.api-sports.io/football/players/10083.png
+10085,Cacá,Carlos de Menezes Júnior,26,Brazil,Defensor,https://media.api-sports.io/football/players/10085.png
+10089,Fabrício Bruno,Fabrício Bruno Soares de Faria,29,Brazil,Defensor,https://media.api-sports.io/football/players/10089.png
+10091,Jádson,Jádson Alves dos Santos,32,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10091.png
+10096,Marquinhos Gabriel,Marcos Gabriel do Nascimento,35,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10096.png
+10100,L. Romero,Lucas Daniel Romero,31,Argentina,Meio-Campo,https://media.api-sports.io/football/players/10100.png
+10102,Lucas Silva,Lucas Silva Borges,32,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10102.png
+10105,David,David Correa da Fonseca,30,Brazil,Atacante,https://media.api-sports.io/football/players/10105.png
+10106,Pedro Rocha,Pedro Rocha Neves,31,Brazil,Atacante,https://media.api-sports.io/football/players/10106.png
+10111,Bento,Bento Matheus Krepski,26,Brazil,Goleiro,https://media.api-sports.io/football/players/10111.png
+10112,Santos,Aderbar Melo dos Santos Neto,35,Brazil,Goleiro,https://media.api-sports.io/football/players/10112.png
+10114,Zé Ivaldo,José Ivaldo Almeida Silva,28,Brazil,Defensor,https://media.api-sports.io/football/players/10114.png
+10117,Madson,Madson Ferreira dos Santos,33,Brazil,Defensor,https://media.api-sports.io/football/players/10117.png
+10120,Lucas Halter,Lucas Halter,25,Brazil,Defensor,https://media.api-sports.io/football/players/10120.png
+10121,Thiago Heleno,Thiago Heleno Henrique Ferreira,37,Brazil,Defensor,https://media.api-sports.io/football/players/10121.png
+10124,Léo Pereira,Leonardo Pereira,29,Brazil,Defensor,https://media.api-sports.io/football/players/10124.png
+10130,Erick,Erick Luis Conrado Carvalho,28,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10130.png
+10133,Nikão,Maycon Vinícius Ferreira da Cruz,33,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10133.png
+10138,Matheus Rossetto,Matheus Rossetto,29,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10138.png
+10143,Rony,Ronielson da Silva Barbosa,30,Brazil,Atacante,https://media.api-sports.io/football/players/10143.png
+10147,Vitinho,Vitor Hugo Naum dos Santos,26,Brazil,Atacante,https://media.api-sports.io/football/players/10147.png
+10156,Rodrigo Caio,Rodrigo Caio Coquette Russo,32,Brazil,Defensor,https://media.api-sports.io/football/players/10156.png
+10161,Matheuzinho,Matheus França Silva,25,Brazil,Defensor,https://media.api-sports.io/football/players/10161.png
+10163,Renê,Renê Rodrigues Martins,33,Brazil,Defensor,https://media.api-sports.io/football/players/10163.png
+10167,Ronaldo,Ronaldo da Silva Souza,29,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10167.png
+10168,Éverton Ribeiro,Éverton Augusto de Barros Ribeiro,36,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10168.png
+10170,Hugo Moura,Hugo Moura Arruda da Silva,27,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10170.png
+10180,Bruno Henrique,Bruno Henrique Pinto,35,Brazil,Atacante,https://media.api-sports.io/football/players/10180.png
+10186,João Ricardo,João Ricardo Riedi,37,Brazil,Goleiro,https://media.api-sports.io/football/players/10186.png
+10192,Bruno Pacheco,Bruno de Jesus Pacheco,34,Brazil,Defensor,https://media.api-sports.io/football/players/10192.png
+10196,Alan Ruschel,Alan Luciano Ruschel,36,Brazil,Defensor,https://media.api-sports.io/football/players/10196.png
+10203,Gustavo Campanharo,Gustavo Campanharo,32,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10203.png
+10222,Everaldo,Everaldo Stum,34,Brazil,Atacante,https://media.api-sports.io/football/players/10222.png
+10226,Walter,Walter Leandro Capeloza Artune,38,Brazil,Goleiro,https://media.api-sports.io/football/players/10226.png
+10229,Cássio,Cássio Ramos,38,Brazil,Goleiro,https://media.api-sports.io/football/players/10229.png
+10232,Marllon,Marllon Gonçalves Jerônimo Borges,33,Brazil,Defensor,https://media.api-sports.io/football/players/10232.png
+10234,Lucas Piton,Lucas Piton Crivellaro,25,Brazil,Defensor,https://media.api-sports.io/football/players/10234.png
+10235,Pedro Henrique,Pedro Henrique Ribeiro Gonçalves,30,Brazil,Defensor,https://media.api-sports.io/football/players/10235.png
+10239,Á. Araos,Ángelo Giovani Araos Llanos,28,Chile,Meio-Campo,https://media.api-sports.io/football/players/10239.png
+10241,Mateus Vital,Mateus da Silva Vital Assumpção,27,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10241.png
+10244,Pedrinho,Pedro Victor Delmino da Silva,28,Brazil,Forward,https://media.api-sports.io/football/players/10244.png
+10247,Gabriel,Gabriel Girotto Franco,33,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10247.png
+10249,Ramiro,Ramiro Moschen Benetti,32,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10249.png
+10256,André Luís,André Luís da Costa Alfredo,28,Brazil,Atacante,https://media.api-sports.io/football/players/10256.png
+10258,Clayson,Clayson Henrique da Silva Vieira,30,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10258.png
+10260,Janderson,Janderson Santos de Souza,26,Brazil,Atacante,https://media.api-sports.io/football/players/10260.png
+10261,Vágner Love,Vágner Silva de Souza,41,Brazil,Forward,https://media.api-sports.io/football/players/10261.png
+10267,Samuel Xavier,Samuel Xavier Brito,35,Brazil,Defensor,https://media.api-sports.io/football/players/10267.png
+10281,Raul,Raul Lô Gonçalves,29,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10281.png
+10298,Marcos Felipe,Marcos Felipe de Freitas Monteiro,29,Brazil,Goleiro,https://media.api-sports.io/football/players/10298.png
+10305,Gilberto,Gilberto Moraes Júnior,33,Brazil,Defensor,https://media.api-sports.io/football/players/10305.png
+10311,PH Ganso,Paulo Henrique Chagas de Lima,36,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10311.png
+10312,Caio Vinícius,Caio Vinícius da Conceição,26,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10312.png
+10314,Dodi,Douglas Moreira Fagundes,29,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10314.png
+10319,Allan,Allan Rodrigues de Souza,28,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10319.png
+10320,Daniel,Daniel Sampaio Simões,29,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10320.png
+10321,Pedro,Pedro Guilherme Abreu dos Santos,28,Brazil,Atacante,https://media.api-sports.io/football/players/10321.png
+10323,Luciano,Luciano da Rocha Neves,32,Brazil,Atacante,https://media.api-sports.io/football/players/10323.png
+10328,Y. González,Yony Alexander González Copete,32,Colombia,Forward,https://media.api-sports.io/football/players/10328.png
+10331,Everaldo,Everaldo Silva do Nascimento,31,Brazil,Atacante,https://media.api-sports.io/football/players/10331.png
+10340,Marcelo Hermes,Marcelo Hermes,31,Brazil,Defensor,https://media.api-sports.io/football/players/10340.png
+10348,Yago Felipe,Yago Felipe da Costa Rocha,30,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10348.png
+10349,Jefferson,Jefferson Junio Antônio da Silva,28,Brazil,Defensor,https://media.api-sports.io/football/players/10349.png
+10351,David Duarte,David de Duarte Macedo,30,Brazil,Defensor,https://media.api-sports.io/football/players/10351.png
+10364,Michael,Michael Richard Delgado de Oliveira,29,Brazil,Atacante,https://media.api-sports.io/football/players/10364.png
+10367,Vinícius Lopes,Vinícius Lopes da Silva,27,Brazil,Forward,https://media.api-sports.io/football/players/10367.png
+10370,Keiller,Keiller da Silva Nunes,29,Brazil,Goleiro,https://media.api-sports.io/football/players/10370.png
+10372,Marcelo Lomba,Marcelo Lomba do Nascimento,39,Brazil,Goleiro,https://media.api-sports.io/football/players/10372.png
+10373,Carlos Miguel,Carlos Miguel dos Santos Pereira,27,Brazil,Goleiro,https://media.api-sports.io/football/players/10373.png
+10374,Danilo Fernandes,Danilo Fernandes Batista,37,Brazil,Goleiro,https://media.api-sports.io/football/players/10374.png
+10375,Iago,Iago Amaral Borduchi,28,Brazil,Defensor,https://media.api-sports.io/football/players/10375.png
+10376,Zeca,José Carlos Cracco Neto,31,Brazil,Defensor,https://media.api-sports.io/football/players/10376.png
+10377,V. Cuesta,Víctor Leandro Cuesta,37,Argentina,Defensor,https://media.api-sports.io/football/players/10377.png
+10379,Bruno Fuchs,Bruno de Lara Fuchs,26,Brazil,Defensor,https://media.api-sports.io/football/players/10379.png
+10381,Dudu,Luiz Eduardo Marques dos Santos,28,Brazil,Defensor,https://media.api-sports.io/football/players/10381.png
+10387,Edenílson,Edenílson Andrade dos Santos,36,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10387.png
+10388,Patrick,Patrick Bezerra do Nascimento,33,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10388.png
+10396,Nonato,Gustavo Nonato Santana,27,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10396.png
+10408,Felipe Alves,Felipe Alves Raymundo,37,Brazil,Goleiro,https://media.api-sports.io/football/players/10408.png
+10413,Tinga,Guilherme de Jesus da Silva,32,Brazil,Defensor,https://media.api-sports.io/football/players/10413.png
+10432,Júnior Santos,José Antonio dos Santos Junior,31,Brazil,Atacante,https://media.api-sports.io/football/players/10432.png
+10434,Osvaldo,Osvaldo Lourenço Filho,39,Brazil,Forward,https://media.api-sports.io/football/players/10434.png
+10441,Fabrício,Fabrício Barros Santana,39,Brazil,Goleiro,https://media.api-sports.io/football/players/10441.png
+10444,Igo Gabriel,Igo Gabriel Santos Pereira,24,Brazil,Goleiro,https://media.api-sports.io/football/players/10444.png
+10481,Juninho Capixaba,Luis Antônio da Rocha Júnior,28,Brazil,Defensor,https://media.api-sports.io/football/players/10481.png
+10492,Thaciano,Thaciano Mickael da Silva,30,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10492.png
+10494,Matheus Henrique,Matheus Henrique de Souza,28,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10494.png
+10501,Alisson,Alisson Euler de Freitas Castro,32,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10501.png
+10502,Luan,Luan Guilherme de Jesús Vieira,31,Brazil,Atacante,https://media.api-sports.io/football/players/10502.png
+10503,Felipe Vizeu,Felipe dos Reis Pereira Vizeu do Carm,28,Brazil,Atacante,https://media.api-sports.io/football/players/10503.png
+10506,Marinho,Mário Sérgio Santos Costa,35,Brazil,Atacante,https://media.api-sports.io/football/players/10506.png
+10527,Caio Paulista,Caio Fernando de Oliveira,27,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10527.png
+10551,R. Cáceres,Raúl Alejandro Cáceres Bogado,34,Paraguay,Defensor,https://media.api-sports.io/football/players/10551.png
+10565,Lucas Mineiro,Lucas da Silva Izidoro,30,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10565.png
+10578,Rossi,Rosicley Pereira da Silva,32,Brazil,Atacante,https://media.api-sports.io/football/players/10578.png
+10581,Yago Pikachu,Glaybson Yago Souza Lisboa,33,Brazil,Meio-Campo,https://media.api-sports.io/football/players/10581.png
+11365,B. Kuscevic,Benjamín Kuscevic Jaramillo,29,Chile,Defensor,https://media.api-sports.io/football/players/11365.png
+11641,G. Freitas,Gonzalo Gastón Freitas Silva,34,Uruguay,Meio-Campo,https://media.api-sports.io/football/players/11641.png
+11756,A. Rossi,Agustín Daniel Rossi,30,Argentina,Goleiro,https://media.api-sports.io/football/players/11756.png
+12434,M. Moreno,Marcelo Martins Moreno,37,Bolivia,Atacante,https://media.api-sports.io/football/players/12434.png
+12666,Renato Augusto,Renato Soares de Oliveira Augusto,37,Brazil,Meio-Campo,https://media.api-sports.io/football/players/12666.png
+12705,Hulk,Givanildo Vieira de Souza,40,Brazil,Forward,https://media.api-sports.io/football/players/12705.png
+12719,Paulinho,José Paulo Bezzera Maciel Júnior,36,Brazil,Meio-Campo,https://media.api-sports.io/football/players/12719.png
+12795,Éder,Éder Citadin Martins,38,Italy,Atacante,https://media.api-sports.io/football/players/12795.png
+12797,Alex Teixeira,Alex Teixeira Santos,36,Brazil,Forward,https://media.api-sports.io/football/players/12797.png
+12825,Alan Kardec,Alan Kardec de Souza Pereira Júnior,37,Brazil,Forward,https://media.api-sports.io/football/players/12825.png
+13063,Rafa Silva,Rafael da Silva,33,Brazil,Atacante,https://media.api-sports.io/football/players/13063.png
+13292,Y. Candelo,Yerson Candelo Miranda,33,Colombia,Defensor,https://media.api-sports.io/football/players/13292.png
+13409,J. Dinenno,Juan Ignacio Dinenno de Cara,31,Argentina,Atacante,https://media.api-sports.io/football/players/13409.png
+13467,Y. Rodallega,Yeferson Andrés Rodallega Paz,25,Colombia,Defensor,https://media.api-sports.io/football/players/13467.png
+13523,G. Cano,Germán Ezequiel Cano Recalde,37,Argentina,Atacante,https://media.api-sports.io/football/players/13523.png
+13572,G. Fuentes,Gabriel Rafael Fuentes Gómez,28,Colombia,Defensor,https://media.api-sports.io/football/players/13572.png
+13708,J. Arias,Jhon Adolfo Arias Andrade,28,Colombia,Meio-Campo,https://media.api-sports.io/football/players/13708.png
+14390,Raul Gustavo,Raul Gustavo Pereira Bicalho,26,Brazil,Defensor,https://media.api-sports.io/football/players/14390.png
+15303,Léo Natel,Leonardo Natel Vieira,29,Brazil,Forward,https://media.api-sports.io/football/players/15303.png
+16265,L. Di Yorio,Lucas Gabriel Di Yorio,29,Argentina,Atacante,https://media.api-sports.io/football/players/16265.png
+16360,A. Franco,Alan Steven Franco Palma,27,Ecuador,Meio-Campo,https://media.api-sports.io/football/players/16360.png
+16372,L. Segovia,Luis Geovanny Segovia Vega,28,Ecuador,Defensor,https://media.api-sports.io/football/players/16372.png
+16637,E. Martínez,Leandro Emmanuel Martínez,31,Argentina,Meio-Campo,https://media.api-sports.io/football/players/16637.png
+16669,G. Mastriani,Gonzalo Mathías Mastriani Borges,32,Uruguay,Atacante,https://media.api-sports.io/football/players/16669.png
+16776,J. Cifuentes,José Adoni Cifuentes Charcopa,26,Ecuador,Meio-Campo,https://media.api-sports.io/football/players/16776.png
+16792,R. Carrillo,Ronie Edmundo Carrillo Morales,29,Ecuador,Forward,https://media.api-sports.io/football/players/16792.png
+16847,Keno,Marcos da Silva França,36,Brazil,Atacante,https://media.api-sports.io/football/players/16847.png
+18761,Bernard,Bernard Anício Caldeira Duarte,33,Brazil,Meio-Campo,https://media.api-sports.io/football/players/18761.png
+19076,J. Lewis,Jamal Piaras Lewis,27,Northern Ireland,Defensor,https://media.api-sports.io/football/players/19076.png
+19293,Tobias Figueiredo,Tobias Pereira Figueiredo,32,Portugal,Defensor,https://media.api-sports.io/football/players/19293.png
+21095,Lucas Evangelista,Lucas Evangelista Santana de Oliveir,31,Brazil,Meio-Campo,https://media.api-sports.io/football/players/21095.png
+22231,Thiago Maia,Thiago Maia Alencar,28,Brazil,Meio-Campo,https://media.api-sports.io/football/players/22231.png
+22238,Luiz Araújo,Luiz de Araújo Guimarães Neto,29,Brazil,Atacante,https://media.api-sports.io/football/players/22238.png
+25272,Cauly,Cauly Oliveira Souza,30,Brazil,Meio-Campo,https://media.api-sports.io/football/players/25272.png
+25387,Walace,Walace Souza Silva,30,Brazil,Meio-Campo,https://media.api-sports.io/football/players/25387.png
+25398,William,William de Asevedo Furtado,30,Brazil,Defensor,https://media.api-sports.io/football/players/25398.png
+30398,Vitor Hugo,Vitor Hugo Franchescoli de Souza,34,Brazil,Defensor,https://media.api-sports.io/football/players/30398.png
+30408,Gerson,Gerson Santos da Silva,28,Brazil,Meio-Campo,https://media.api-sports.io/football/players/30408.png
+30443,Rafael Cabral,Rafael Cabral Barbosa,35,Brazil,Goleiro,https://media.api-sports.io/football/players/30443.png
+30476,Lyanco,Lyanco Evangelista Silveira Neves Vojnović,28,Brazil,Defensor,https://media.api-sports.io/football/players/30476.png
+30524,M. Lemos,Paolo Mauricio Lemos Merladett,30,Uruguay,Defensor,https://media.api-sports.io/football/players/30524.png
+30529,Marlon,Marlon Santos da Silva Barbosa,30,Brazil,Defensor,https://media.api-sports.io/football/players/30529.png
+30763,Jandrei,Jandrei Chitolina Carniel,32,Brazil,Goleiro,https://media.api-sports.io/football/players/30763.png
+30925,Alan Empereur,Alan Pereira Empereur,31,Brazil,Defensor,https://media.api-sports.io/football/players/30925.png
+31384,Gabriel Vasconcelos,Gabriel Vasconcelos Ferreira,33,Brazil,Goleiro,https://media.api-sports.io/football/players/31384.png
+32948,Maguinho,Magno José da Silva,33,Brazil,Defensor,https://media.api-sports.io/football/players/32948.png
+35534,E. Vargas,Eduardo Jesús Vargas Rojas,36,Chile,Atacante,https://media.api-sports.io/football/players/35534.png
+35688,E. Castillo,Eryc Leonel Castillo Arroyo,30,Ecuador,Atacante,https://media.api-sports.io/football/players/35688.png
+36784,D. Palacios,Diego José Palacios Espinoza,26,Ecuador,Defensor,https://media.api-sports.io/football/players/36784.png
+41106,Ricardo Ryller,Ricardo Ryller Ribeiro Lino Silva,31,Brazil,Meio-Campo,https://media.api-sports.io/football/players/41106.png
+41147,Pedro Henrique,Pedro Henrique Pereira da Silva,33,Brazil,Defensor,https://media.api-sports.io/football/players/41147.png
+41169,Léo Jardim,Leonardo César Jardim,31,Brazil,Goleiro,https://media.api-sports.io/football/players/41169.png
+41183,Filipe Augusto,Filipe Augusto Carvalho Souza,32,Brazil,Meio-Campo,https://media.api-sports.io/football/players/41183.png
+41188,André Silva,André Oliveira Silva,29,Brazil,Forward,https://media.api-sports.io/football/players/41188.png
+41227,Muriel,Muriel Gustavo Becker,39,Brazil,Goleiro,https://media.api-sports.io/football/players/41227.png
+41299,Neris,Hueglo dos Santos Neris,34,Brazil,Defensor,https://media.api-sports.io/football/players/41299.png
+41311,Gustavo Sauer,Gustavo Affonso Sauerbeck,33,Brazil,Forward,https://media.api-sports.io/football/players/41311.png
+41344,Luquinhas,Lucas Lima Linhares,29,Brazil,Forward,https://media.api-sports.io/football/players/41344.png
+41362,Lucas Fernandes,Lucas Fernandes da Silva,28,Brazil,Meio-Campo,https://media.api-sports.io/football/players/41362.png
+41368,Tabata,Bruno Vinícius Souza Ramos,29,Brazil,Forward,https://media.api-sports.io/football/players/41368.png
+41495,Philipe Sampaio,Philipe Sampaio Azevedo,30,Brazil,Defensor,https://media.api-sports.io/football/players/41495.png
+41544,Eduardo Santos,Eduardo Gonzaga Mendes Santos,28,Brazil,Defensor,https://media.api-sports.io/football/players/41544.png
+41961,Danilo Boza,Danilo Boza Junior,27,Brazil,Defensor,https://media.api-sports.io/football/players/41961.png
+44305,Bruno Uvini,Bruno Uvini Bortolança,34,Brazil,Defensor,https://media.api-sports.io/football/players/44305.png
+44348,Eduardo,Carlos Eduardo de Oliveira Alves,36,Brazil,Meio-Campo,https://media.api-sports.io/football/players/44348.png
+44675,Iury Castilho,Iury Lirio Freitas de Castilho,30,Brazil,Forward,https://media.api-sports.io/football/players/44675.png
+47257,D. Suárez,Damián Nicolás Suárez Suárez,37,Uruguay,Defensor,https://media.api-sports.io/football/players/47257.png
+47356,Rodrigo Ely,Rodrigo Ely,32,Brazil,Defensor,https://media.api-sports.io/football/players/47356.png
+47368,J. Calleri,Jonathan Calleri,32,Argentina,Atacante,https://media.api-sports.io/football/players/47368.png
+47432,Hugo Mallo,Hugo Mallo Novegil,34,Spain,Defensor,https://media.api-sports.io/football/players/47432.png
+48637,M. Dominguez,Maxime Dominguez,30,Switzerland,Meio-Campo,https://media.api-sports.io/football/players/48637.png
+50081,David Braz,David Braz de Oliveira Filho,38,Brazil,Defensor,https://media.api-sports.io/football/players/50081.png
+50166,Titi,Cristian Chagas Tarouco,37,Brazil,Defensor,https://media.api-sports.io/football/players/50166.png
+50243,Allano,Allano Brendon de Souza Lima,31,Brazil,Forward,https://media.api-sports.io/football/players/50243.png
+50268,Igor Coronado,Igor Caique Coronado,33,Brazil,Meio-Campo,https://media.api-sports.io/football/players/50268.png
+50532,Lima,Vinícius Moreira de Lima,29,Brazil,Meio-Campo,https://media.api-sports.io/football/players/50532.png
+51214,J. Savarino,Jefferson David Savarino Quintero,29,Venezuela,Atacante,https://media.api-sports.io/football/players/51214.png
+51426,J. Rodríguez,José Luis Rodríguez Bebanz,28,Uruguay,Defensor,https://media.api-sports.io/football/players/51426.png
+51464,I. Laquintana,Ignacio Jesús Laquintana Marsico,26,Uruguay,Meio-Campo,https://media.api-sports.io/football/players/51464.png
+51466,J. Piquerez,Joaquín Piquerez Moreira,27,Uruguay,Defensor,https://media.api-sports.io/football/players/51466.png
+51545,N. Acevedo,Nicolás Brian Acevedo Tabárez,26,Uruguay,Meio-Campo,https://media.api-sports.io/football/players/51545.png
+51572,M. Viña,Matías Nicolás Viña Susperreguy,28,Uruguay,Defensor,https://media.api-sports.io/football/players/51572.png
+51574,F. Carballo,Felipe Ignacio Carballo Ares,29,Uruguay,Meio-Campo,https://media.api-sports.io/football/players/51574.png
+51603,A. Canobbio,Agustín Canobbio Graviz,27,Uruguay,Atacante,https://media.api-sports.io/football/players/51603.png
+51701,M. Araújo,Michel Daryl Araújo Villar,29,Uruguay,Meio-Campo,https://media.api-sports.io/football/players/51701.png
+51756,M. Arezo,Douglas Matías Arezo Martínez,23,Uruguay,Atacante,https://media.api-sports.io/football/players/51756.png
+53148,J. Martínez,José Andrés Martínez Torres,31,Venezuela,Meio-Campo,https://media.api-sports.io/football/players/53148.png
+53539,W. Ángel,Wilker José Ángel Romero,32,Venezuela,Defensor,https://media.api-sports.io/football/players/53539.png
+53678,A. Rogel,Agustín Maximiliano Rogel Paita,28,Uruguay,Defensor,https://media.api-sports.io/football/players/53678.png
+53966,Breno Lopes,Breno Henrique Vasconcelos Lopes,29,Brazil,Atacante,https://media.api-sports.io/football/players/53966.png
+53985,Patric Calmon,Itaro Patric Cardoso Calmon,31,Brazil,Defensor,https://media.api-sports.io/football/players/53985.png
+54093,Hugo,Hugo Ferreira de Farias,28,Brazil,Defensor,https://media.api-sports.io/football/players/54093.png
+54230,Reynaldo,Reynaldo César Moraes,29,Brazil,Defensor,https://media.api-sports.io/football/players/54230.png
+54235,Everton Galdino,Everton Galdino Moreira,28,Brazil,Atacante,https://media.api-sports.io/football/players/54235.png
+54238,Edson,Edson Guilherme Mendes dos Santos,28,Brazil,Atacante,https://media.api-sports.io/football/players/54238.png
+54692,Camutanga,Cleidson Andrade de Souza Silva,32,Brazil,Defensor,https://media.api-sports.io/football/players/54692.png
+54756,Filipe Machado,Luiz Filipe da Rosa Machado,29,Brazil,Meio-Campo,https://media.api-sports.io/football/players/54756.png
+54932,Ruan Luiz Santos da Costa,Ruan Luiz Santos da Costa,29,Brazil,Meio-Campo,https://media.api-sports.io/football/players/54932.png
+59863,Y. Quintero,Yani David Quintero Rivas,23,Colombia,Meio-Campo,https://media.api-sports.io/football/players/59863.png
+61159,Rafael Ratão,Rafael Rogério da Silva,30,Brazil,Atacante,https://media.api-sports.io/football/players/61159.png
+63964,F. Torres,Félix Eduardo Torres Caicedo,28,Ecuador,Defensor,https://media.api-sports.io/football/players/63964.png
+63968,Ó. Estupiñán,Óscar Eduardo Estupiñán Vallesilla,29,Colombia,Atacante,https://media.api-sports.io/football/players/63968.png
+63984,Thiaguinho,Thiago Beserra dos Santos,28,Brazil,Meio-Campo,https://media.api-sports.io/football/players/63984.png
+64172,L. Díaz,Lautaro Ariel Díaz,27,Argentina,Atacante,https://media.api-sports.io/football/players/64172.png
+64359,Matheus Davó,Matheus Alvarenga de Oliveira,26,Brazil,Atacante,https://media.api-sports.io/football/players/64359.png
+64363,Ronald,Ronald dos Santos Lopes,28,Brazil,Meio-Campo,https://media.api-sports.io/football/players/64363.png
+66899,Zé Marcos,José Marcos Alves Luís,27,Brazil,Defensor,https://media.api-sports.io/football/players/66899.png
+67204,Christian,Christian Roberto Alves Cardoso,25,Brazil,Meio-Campo,https://media.api-sports.io/football/players/67204.png
+67944,Ramon,Ramon Ramos Lima,24,Brazil,Defensor,https://media.api-sports.io/football/players/67944.png
+68113,J. Hurtado,José Andrés Hurtado Cheme,24,Ecuador,Defensor,https://media.api-sports.io/football/players/68113.png
+69142,M. Gamarra,Mateo Gamarra González,25,Paraguay,Defensor,https://media.api-sports.io/football/players/69142.png
+70297,Carlinhos,Carlos Moisés de Lima,28,Brazil,Atacante,https://media.api-sports.io/football/players/70297.png
+70299,Talles Magno,Talles Magno Bacelar Martins,23,Brazil,Atacante,https://media.api-sports.io/football/players/70299.png
+70314,Wesley,Wesley Ribeiro Silva,26,Brazil,Atacante,https://media.api-sports.io/football/players/70314.png
+70366,John,John Victor Maciel Furtado,29,Brazil,Goleiro,https://media.api-sports.io/football/players/70366.png
+70368,João Lucas,João Lucas de Almeida Carvalho,27,Brazil,Defensor,https://media.api-sports.io/football/players/70368.png
+70566,M. Villasanti,Mathías Adalberto Villasanti Rolón,28,Paraguay,Meio-Campo,https://media.api-sports.io/football/players/70566.png
+70670,I. Pitta,Isidro Miguel Pitta Saldívar,26,Paraguay,Atacante,https://media.api-sports.io/football/players/70670.png
+70849,K. Serna,Kevin Steven Serna Jaramillo,28,Colombia,Atacante,https://media.api-sports.io/football/players/70849.png
+77799,Jean Carlos,Jean Carlos Vicente,33,Brazil,Meio-Campo,https://media.api-sports.io/football/players/77799.png
+77843,Rodrigo Sam,Rodrigo Eduardo da Silva,30,Brazil,Defensor,https://media.api-sports.io/football/players/77843.png
+80166,Thiago Galhardo,Thiago Galhardo do Nascimento Rocha,36,Brazil,Atacante,https://media.api-sports.io/football/players/80166.png
+80171,Mateus Gonçalves,Mateus Gonçalves Martins,31,Brazil,Atacante,https://media.api-sports.io/football/players/80171.png
+80173,Anderson,Anderson Silva da Paixão,27,Brazil,Goleiro,https://media.api-sports.io/football/players/80173.png
+80187,Fernando Sobral,Fernando Pereira do Nascimento,31,Brazil,Meio-Campo,https://media.api-sports.io/football/players/80187.png
+80188,Raul,Raul Jonas Steffens,28,Brazil,Goleiro,https://media.api-sports.io/football/players/80188.png
+80273,Gabriel Taliari,Gabriel Pereira Taliari,28,Brazil,Atacante,https://media.api-sports.io/football/players/80273.png
+80330,Pedro Augusto,Pedro Augusto Borges da Costa,29,Brazil,Meio-Campo,https://media.api-sports.io/football/players/80330.png
+80476,Ulisses,Ulisses Wilson Jeronymo Rocha,26,Brazil,Defensor,https://media.api-sports.io/football/players/80476.png
+80484,Mayk,Mayksilvan da Silva Ferreira,26,Brazil,Defensor,https://media.api-sports.io/football/players/80484.png
+80523,Willean Lepo,Willean Bernardo Willemen,28,Brazil,Defensor,https://media.api-sports.io/football/players/80523.png
+80534,Caetano,João Victor Andrade Caetano,26,Brazil,Defensor,https://media.api-sports.io/football/players/80534.png
+80535,Rafael Bilu,Rafael Bilu Mudesto,26,Brazil,Atacante,https://media.api-sports.io/football/players/80535.png
+80539,Jadsom Silva,Jadsom Meemyas de Oliveira da Silva,24,Brazil,Meio-Campo,https://media.api-sports.io/football/players/80539.png
+80624,Fellipe Mateus,Fellipe Mateus de Sena Araujo,34,Brazil,Meio-Campo,https://media.api-sports.io/football/players/80624.png
+91745,Alemão,Alexandre Zurawski,27,Brazil,Atacante,https://media.api-sports.io/football/players/91745.png
+103121,J. Montes,Jacob Christian Montes,27,Nicaragua,Meio-Campo,https://media.api-sports.io/football/players/103121.png
+106485,Maurício,Maurício Magalhães Prado,24,Brazil,Meio-Campo,https://media.api-sports.io/football/players/106485.png
+106510,Ferreira,Aldemir dos Santos Ferreira,28,Brazil,Atacante,https://media.api-sports.io/football/players/106510.png
+109559,Serginho,Sérgio Antonio Da Luiz Junior,30,Brazil,Forward,https://media.api-sports.io/football/players/109559.png
+111324,Allyson,Allyson Aires dos Santos,35,Brazil,Defensor,https://media.api-sports.io/football/players/111324.png
+114436,Matheuzinho,Matheus Martins Fogaça de Paula,28,Brazil,Meio-Campo,https://media.api-sports.io/football/players/114436.png
+115525,João Victor,João Victor Carroll Santana,28,Brazil,Defensor,https://media.api-sports.io/football/players/115525.png
+123759,Hugo Souza,Hugo de Souza Nogueira,27,Brazil,Goleiro,https://media.api-sports.io/football/players/123759.png
+125677,Zé Gabriel,José Gabriel dos Santos Silva,26,Brazil,Meio-Campo,https://media.api-sports.io/football/players/125677.png
+126665,M. Lacava,Matías Rafael Lacava González,23,Venezuela,Forward,https://media.api-sports.io/football/players/126665.png
+126740,S. Longo,Santiago Andrés Longo,27,Argentina,Meio-Campo,https://media.api-sports.io/football/players/126740.png
+129772,João Neto,João Roberto Rota Neto,23,Brazil,Meio-Campo,https://media.api-sports.io/football/players/129772.png
+129902,A. Bernabéi,Alexandro Ezequiel Bernabéi,25,Argentina,Defensor,https://media.api-sports.io/football/players/129902.png
+133196,Rômulo,Rômulo Zanre Zwarg,25,Brazil,Meio-Campo,https://media.api-sports.io/football/players/133196.png
+133627,Breno,Breno Washington Rodrigues da Silva,25,Brazil,Meio-Campo,https://media.api-sports.io/football/players/133627.png
+133910,Paulo Henrique,Paulo Henrique de Oliveira Alves,29,Brazil,Defensor,https://media.api-sports.io/football/players/133910.png
+134001,Airton,Airton Moisés Santos Sousa,26,Brazil,Atacante,https://media.api-sports.io/football/players/134001.png
+135136,Claudinho,Claudio Coelho Salvático,25,Brazil,Defensor,https://media.api-sports.io/football/players/135136.png
+136097,E. Rodríguez,Emerson Rivaldo Rodríguez Valois,25,Colombia,Meio-Campo,https://media.api-sports.io/football/players/136097.png
+136124,Edu,Lucas Eduardo Ribeiro de Souza,25,Brazil,Defensor,https://media.api-sports.io/football/players/136124.png
+137606,Ewerthon,Ewerthon Diógenes Da Silva,25,Brazil,Defensor,https://media.api-sports.io/football/players/137606.png
+140507,Felipinho,Antônio Feliphe Costa Silva,24,Brazil,Defensor,https://media.api-sports.io/football/players/140507.png
+143363,Diego Costa,Diego Henrique Costa Barbosa,26,Brazil,Defensor,https://media.api-sports.io/football/players/143363.png
+143368,Bruno Gomes,Bruno Gomes da Silva Clevelário,24,Brazil,Meio-Campo,https://media.api-sports.io/football/players/143368.png
+143640,Kawan,Kawan Gabriel da Silva,23,Brazil,Meio-Campo,https://media.api-sports.io/football/players/143640.png
+145501,Derik Lacerda,Derik Gean Severino Lacerda,26,Brazil,Forward,https://media.api-sports.io/football/players/145501.png
+145539,Wesley Gasolina,Wesley David de Oliveira Andrade,26,Brazil,Defensor,https://media.api-sports.io/football/players/145539.png
+146018,Erick Farias,Erick Samuel Corrêa Farias,28,Brazil,Atacante,https://media.api-sports.io/football/players/146018.png
+152857,Ruan Tressoldi,Ruan Tressoldi Netto,26,Brazil,Defensor,https://media.api-sports.io/football/players/152857.png
+152858,Jhonata Robert,Jhonata Robert Alves da Silva,26,Brazil,Meio-Campo,https://media.api-sports.io/football/players/152858.png
+152931,B. Zapelli,Bruno Zapelli,23,Argentina,Meio-Campo,https://media.api-sports.io/football/players/152931.png
+153454,Moisés,Moisés Vieira da Veiga,29,Brazil,Atacante,https://media.api-sports.io/football/players/153454.png
+156942,Dudu,Eduardo Marcelo Rodrigues Nunes,26,Brazil,Meio-Campo,https://media.api-sports.io/football/players/156942.png
+157148,Pedro Bicalho,Pedro Henrique Rodrigues Bicalho,25,Brazil,Meio-Campo,https://media.api-sports.io/football/players/157148.png
+157150,Wellington Rato,Wellington Soares da Silva,33,Brazil,Meio-Campo,https://media.api-sports.io/football/players/157150.png
+157309,Sillas,Sillas da Silva Vital Gomes,30,Brazil,Meio-Campo,https://media.api-sports.io/football/players/157309.png
+157359,Rezende,Júlio César de Rezende Miranda,30,Brazil,Meio-Campo,https://media.api-sports.io/football/players/157359.png
+157361,Derek,Derek Freitas Ribeiro,28,Brazil,Atacante,https://media.api-sports.io/football/players/157361.png
+159653,Caíque,Caíque de Jesus Gonçalves,30,Brazil,Meio-Campo,https://media.api-sports.io/football/players/159653.png
+160176,Luis Oyama,Luis Felipe Oyama,28,Brazil,Meio-Campo,https://media.api-sports.io/football/players/160176.png
+160222,Peixoto,Daniel Nascimento Peixoto dos Santos,28,Brazil,Meio-Campo,https://media.api-sports.io/football/players/160222.png
+160226,Gustavo Apis Pascoal de Farias,Gustavo Apis Pascoal de Farias,25,Brazil,Atacante,https://media.api-sports.io/football/players/160226.png
+160255,Guilherme Castilho,Guilherme Castilho Carvalho,26,Brazil,Meio-Campo,https://media.api-sports.io/football/players/160255.png
+160436,Raniele,Raniele Almeida Melo,29,Brazil,Meio-Campo,https://media.api-sports.io/football/players/160436.png
+160546,Adriel,Adriel Vasconcelos Ramos,25,Brazil,Goleiro,https://media.api-sports.io/football/players/160546.png
+160594,Railan,Railan Reis Ferreira,25,Brazil,Meio-Campo,https://media.api-sports.io/football/players/160594.png
+161925,Igor Gomes,Igor Gomes Silva,24,Brazil,Defensor,https://media.api-sports.io/football/players/161925.png
+180236,Caio Alexandre,Caio Alexandre Souza e Silva,26,Brazil,Meio-Campo,https://media.api-sports.io/football/players/180236.png
+180386,M. Segovia,Matías Emanuel Segovia Torales,22,Paraguay,Atacante,https://media.api-sports.io/football/players/180386.png
+180916,Juan,Juan Santos da Silva,23,Brazil,Forward,https://media.api-sports.io/football/players/180916.png
+180919,Welington,Welington Damascena Santos,24,Brazil,Defensor,https://media.api-sports.io/football/players/180919.png
+180921,Patryck,Patryck Lanza dos Reis,22,Brazil,Defensor,https://media.api-sports.io/football/players/180921.png
+182015,Fernando,Fernando Augusto Pereira Bueno Júnior,26,Brazil,Defensor,https://media.api-sports.io/football/players/182015.png
+191872,Carlos Alberto,Carlos Alberto Gomes da Silva Filho,23,Brazil,Atacante,https://media.api-sports.io/football/players/191872.png
+195093,Alexandre Jesus,Alexandre de Jesus Jeruzalem Júnior,24,Brazil,Atacante,https://media.api-sports.io/football/players/195093.png
+195104,R. Rios,Richard Ríos Montoya,26,Colombia,Meio-Campo,https://media.api-sports.io/football/players/195104.png
+195107,D. Bobadilla,Damián Josué Bobadilla Benítez,24,Paraguay,Meio-Campo,https://media.api-sports.io/football/players/195107.png
+195109,Patrick de Paula,Patrick de Paula Carreiro,26,Brazil,Meio-Campo,https://media.api-sports.io/football/players/195109.png
+195111,Gabriel Menino,Gabriel Vinicius Menino,25,Brazil,Meio-Campo,https://media.api-sports.io/football/players/195111.png
+195118,Kleiton,Kleiton Pego Duarte,26,Brazil,Atacante,https://media.api-sports.io/football/players/195118.png
+195282,Gabriel Inocêncio,Gabriel de Souza Inocencio,31,Brazil,Defensor,https://media.api-sports.io/football/players/195282.png
+195499,Matheus Donelli,Matheus Planelles Donelli,23,Brazil,Goleiro,https://media.api-sports.io/football/players/195499.png
+195613,Thayllon,Thayllon Lopes Medeiros,24,Brazil,Atacante,https://media.api-sports.io/football/players/195613.png
+195809,L. Arriagada,Luciano Daniel Arriagada Garcia,23,Chile,Atacante,https://media.api-sports.io/football/players/195809.png
+195975,Jhonatan,Jhonatan Paulo da Silva,26,Brazil,Defensor,https://media.api-sports.io/football/players/195975.png
+195976,Guilherme Lopes,Guilherme Lopes de Almeida,23,Brazil,Defensor,https://media.api-sports.io/football/players/195976.png
+195993,C. Alcaraz,Carlos Jonas Alcaraz Duran,23,Argentina,Meio-Campo,https://media.api-sports.io/football/players/195993.png
+196159,Jajá,Jair Diego Alves de Brito,25,Brazil,Forward,https://media.api-sports.io/football/players/196159.png
+196310,Matheus Cadorini,Matheus Alfredo Cadorini da Silva,23,Brazil,Atacante,https://media.api-sports.io/football/players/196310.png
+196596,Kelvi,Kelvi Chiesa Gomes,23,Brazil,Meio-Campo,https://media.api-sports.io/football/players/196596.png
+196887,Adriano Martins,Adriano Martins da Fonseca,28,Brazil,Defensor,https://media.api-sports.io/football/players/196887.png
+197017,Matheus Mendes,Matheus Mendes Werneck de Oliveira,27,Brazil,Goleiro,https://media.api-sports.io/football/players/197017.png
+197023,Wallace,Wallace Madeira Almeida,25,Brazil,Meio-Campo,https://media.api-sports.io/football/players/197023.png
+197031,Fintelman,Alexandre Fintelman de Mello Ribeiro da,24,Brazil,Goleiro,https://media.api-sports.io/football/players/197031.png
+197050,Mateus Claus,Mateus Eduardo Claus,30,Brazil,Goleiro,https://media.api-sports.io/football/players/197050.png
+197073,Eduardo Melo,Eduardo de Queiroz Melo,24,Brazil,Atacante,https://media.api-sports.io/football/players/197073.png
+197074,João Carlos,João Carlos Barros Lopes,24,Brazil,Atacante,https://media.api-sports.io/football/players/197074.png
+197317,Hugo,Hugo Gonçalves Ferreira Neto,24,Brazil,Defensor,https://media.api-sports.io/football/players/197317.png
+197356,Yuri Sena,Yuri Sena dos Reis Batista,24,Brazil,Goleiro,https://media.api-sports.io/football/players/197356.png
+197383,Luciano Juba,Luciano Batista da Silva Júnior,26,Brazil,Defensor,https://media.api-sports.io/football/players/197383.png
+197513,T. Borbas,Thiago Nicolás Borbas Silva,23,Uruguay,Atacante,https://media.api-sports.io/football/players/197513.png
+197533,Praxedes,Bruno Conceição Praxedes,23,Brazil,Meio-Campo,https://media.api-sports.io/football/players/197533.png
+197814,Bruninho,Bruno Gonçalves de Jesus,22,Brazil,Atacante,https://media.api-sports.io/football/players/197814.png
+198321,Lucas Cardoso,Lucas Cardoso Moreira,25,Brazil,Meio-Campo,https://media.api-sports.io/football/players/198321.png
+198327,Halls,Hedhe Halls Rocha da Silva,26,Brazil,Goleiro,https://media.api-sports.io/football/players/198327.png
+199072,R. Haller,Rafael Germán Haller Piloni,25,Uruguay,Defensor,https://media.api-sports.io/football/players/199072.png
+199324,Gabriel Barros,Gabriel de Sousa Barros,24,Brazil,Atacante,https://media.api-sports.io/football/players/199324.png
+200282,Maycon Cleiton,Maycon Cleiton de Paula Azevedo,27,Brazil,Goleiro,https://media.api-sports.io/football/players/200282.png
+201908,A. Aravena,Alexander Ernesto Aravena Guzmán,23,Chile,Atacante,https://media.api-sports.io/football/players/201908.png
+216335,Emerson Urso,Emerson Lima Freitas,24,Brazil,Atacante,https://media.api-sports.io/football/players/216335.png
+237071,Pedro Lucas,Pedro Lucas Tápias Obermüller,23,Brazil,Meio-Campo,https://media.api-sports.io/football/players/237071.png
+237076,Diego Rosa,Diego Gabriel Silva Rosa,23,Brazil,Meio-Campo,https://media.api-sports.io/football/players/237076.png
+237089,J. Sforza,Juan Sebastián Sforza,23,Argentina,Meio-Campo,https://media.api-sports.io/football/players/237089.png
+237101,Gustavo Garcia,Gustavo Garcia dos Santos,24,Brazil,Defensor,https://media.api-sports.io/football/players/237101.png
+237102,Matheus Araújo,Matheus de Araújo Andrade,23,Brazil,Meio-Campo,https://media.api-sports.io/football/players/237102.png
+237103,Lázaro,Lázaro Vinícius Marques,23,Brazil,Atacante,https://media.api-sports.io/football/players/237103.png
+237160,S. Ocampos,Santiago Ocampos Ibarra,23,Paraguay,Defensor,https://media.api-sports.io/football/players/237160.png
+237179,F. Peralta,Fabrizio José Peralta Ramírez,23,Paraguay,Meio-Campo,https://media.api-sports.io/football/players/237179.png
+237194,Daniel Cabral,Daniel Cabral de Oliveira,24,Brazil,Meio-Campo,https://media.api-sports.io/football/players/237194.png
+237206,K. Lomónaco,Kevin Joel Lomónaco,23,Argentina,Defensor,https://media.api-sports.io/football/players/237206.png
+237666,David da Hora,David da Hora da Conceição,25,Brazil,Atacante,https://media.api-sports.io/football/players/237666.png
+237674,Mandaca,Luiz Gustavo da Silva Machado Duarte,24,Brazil,Meio-Campo,https://media.api-sports.io/football/players/237674.png
+237847,André Henrique,André Henrique da Silva Martins,24,Brazil,Atacante,https://media.api-sports.io/football/players/237847.png
+237906,Guilherme Madruga,Guilherme Miranda Madruga Gomes,25,Brazil,Meio-Campo,https://media.api-sports.io/football/players/237906.png
+238357,Kayque,Kayque Luiz Pereira,25,Brazil,Meio-Campo,https://media.api-sports.io/football/players/238357.png
+238386,Lucas Mezenga,Lucas de Souza Mombra Rosa,24,Brazil,Defensor,https://media.api-sports.io/football/players/238386.png
+238391,Jeffinho,Jefferson Ruan Pereira dos Santos,26,Brazil,Atacante,https://media.api-sports.io/football/players/238391.png
+265784,André,André Trindade da Costa Neto,24,Brazil,Meio-Campo,https://media.api-sports.io/football/players/265784.png
+265785,Luiz Henrique,Luiz Henrique André Rosa da Silva,24,Brazil,Atacante,https://media.api-sports.io/football/players/265785.png
+266019,Diegão,Diego Damasceno dos Santos,22,Brazil,Defensor,https://media.api-sports.io/football/players/266019.png
+266250,Carlos Biro,Carlos Eduardo Santos,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/266250.png
+266267,Hércules,Hércules Pereira do Nascimento,25,Brazil,Meio-Campo,https://media.api-sports.io/football/players/266267.png
+266552,Stênio,Stênio Zanetti Toledo,22,Brazil,Meio-Campo,https://media.api-sports.io/football/players/266552.png
+266658,Calebe,Calebe Gonçalves Ferreira da Silva,25,Brazil,Meio-Campo,https://media.api-sports.io/football/players/266658.png
+266719,Rildo,Rildo Gonçalves de Amorim Filho,26,Brazil,Meio-Campo,https://media.api-sports.io/football/players/266719.png
+266856,Fabrício,Fabrício Oliveira de Souza,25,Brazil,Goleiro,https://media.api-sports.io/football/players/266856.png
+267770,Roni,Roni Medeiros de Moura,27,Brazil,Meio-Campo,https://media.api-sports.io/football/players/267770.png
+267862,Ruan Oliveira,Ruan de Oliveira Ferreira,25,Brazil,Meio-Campo,https://media.api-sports.io/football/players/267862.png
+269374,D. Hernández,Diego Manuel Hernández González,25,Uruguay,Atacante,https://media.api-sports.io/football/players/269374.png
+269441,Matheus Nascimento,Matheus Nascimento de Paula,21,Brazil,Atacante,https://media.api-sports.io/football/players/269441.png
+270811,M. El Arouch,Mohamed El Arouch,21,France,Meio-Campo,https://media.api-sports.io/football/players/270811.png
+276452,Denilson,Denilson Alves Borges,24,Brazil,Meio-Campo,https://media.api-sports.io/football/players/276452.png
+277169,Newton,Newton Araújo da Costa Júnior,25,Brazil,Meio-Campo,https://media.api-sports.io/football/players/277169.png
+277771,M. Monsalve,Miguel Ángel Monsalve González,21,Colombia,Meio-Campo,https://media.api-sports.io/football/players/277771.png
+278331,Mateus Oliveira,Mateus Oliveira Mendes,24,Brazil,Goleiro,https://media.api-sports.io/football/players/278331.png
+278337,Marcelinho,Marcelo José de Lima Filho,23,Brazil,Atacante,https://media.api-sports.io/football/players/278337.png
+278346,Emerson Júnior,Emerson Fabiano Kerber Júnior,25,Brazil,Goleiro,https://media.api-sports.io/football/players/278346.png
+279785,R. Benitez,Bernardo Romeo Benítez Fariña,23,Paraguay,Meio-Campo,https://media.api-sports.io/football/players/279785.png
+279800,Vanderlan,Vanderlan Barbosa da Silva,23,Brazil,Defensor,https://media.api-sports.io/football/players/279800.png
+279802,Pedro Lima,Pedro Lima Barros,23,Brazil,Meio-Campo,https://media.api-sports.io/football/players/279802.png
+279803,Robinho,Luiz Guilherme Lucio e Freitas,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/279803.png
+279805,Fabinho,Fábio Silva de Freitas,23,Brazil,Meio-Campo,https://media.api-sports.io/football/players/279805.png
+279811,Lucas Barbosa,Lucas Henrique Barbosa,24,Brazil,Meio-Campo,https://media.api-sports.io/football/players/279811.png
+279821,Fernando Henrique,Fernando Henrique do Nascimento Pereira,24,Brazil,Meio-Campo,https://media.api-sports.io/football/players/279821.png
+280245,Martinelli,Matheus Martinelli Lima,24,Brazil,Meio-Campo,https://media.api-sports.io/football/players/280245.png
+280739,Mateus Cocão,Mateus Carvalho dos Santos,23,Brazil,Meio-Campo,https://media.api-sports.io/football/players/280739.png
+281981,Iarley Barros,Iarley Gilberto de Barros Leal,22,Brazil,Atacante,https://media.api-sports.io/football/players/281981.png
+283696,Vitor Meer,Vitor Alves Meer,21,Brazil,Defensor,https://media.api-sports.io/football/players/283696.png
+283701,Daniel,Daniel da Silva,21,Brazil,Atacante,https://media.api-sports.io/football/players/283701.png
+283837,Caio Roque,Caio Alves Roque Gomes,23,Brazil,Defensor,https://media.api-sports.io/football/players/283837.png
+286927,Magrão,Audenirton Soares da Silva,26,Brazil,Goleiro,https://media.api-sports.io/football/players/286927.png
+286962,Lucas Freitas,Lucas de Freitas Molarinho Chagas,24,Brazil,Defensor,https://media.api-sports.io/football/players/286962.png
+288230,Zé Vitor,José Vitor Silva Neves,25,Brazil,Meio-Campo,https://media.api-sports.io/football/players/288230.png
+288287,Ryan,Ryan Carlos Santos de Sousa,24,Brazil,Defensor,https://media.api-sports.io/football/players/288287.png
+288704,L. Esquivel,Lucas Ángel Esquivel,24,Argentina,Defensor,https://media.api-sports.io/football/players/288704.png
+288720,B. Aguirre,Braian Nahuel Aguirre,25,Argentina,Defensor,https://media.api-sports.io/football/players/288720.png
+288730,L. Besozzi,Lucas Agustín Besozzi,22,Argentina,Atacante,https://media.api-sports.io/football/players/288730.png
+288763,A. Cruz,Alejo Cruz Techera,25,Uruguay,Atacante,https://media.api-sports.io/football/players/288763.png
+290868,Romulo,Romulo Azevedo Simão,24,Brazil,Meio-Campo,https://media.api-sports.io/football/players/290868.png
+291912,Eliel Felisbino Costa,Eliel Felisbino Costa,22,Brazil,Meio-Campo,https://media.api-sports.io/football/players/291912.png
+292330,Kaue,Kaue Canela Arroula,21,Brazil,Atacante,https://media.api-sports.io/football/players/292330.png
+293555,Pedro Rangel,Pedro Felipe de Faria Rangel,25,Brazil,Goleiro,https://media.api-sports.io/football/players/293555.png
+294033,L. Giménez,Luciano Giménez Alanda,25,Argentina,Atacante,https://media.api-sports.io/football/players/294033.png
+294593,Rubens,Rubens Antonio Dias,24,Brazil,Defensor,https://media.api-sports.io/football/players/294593.png
+294594,Caio Henrique,Caio Henrique Ribas Dias de Araújo,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/294594.png
+294907,Caetano,Gabriel Caetano Godoy de Andrade,23,Brazil,Meio-Campo,https://media.api-sports.io/football/players/294907.png
+295513,J. López,José Manuel Alberto López,25,Argentina,Atacante,https://media.api-sports.io/football/players/295513.png
+297522,John Kennedy,John Kennedy Batista de Souza,23,Brazil,Atacante,https://media.api-sports.io/football/players/297522.png
+297687,M. Ponte,Mateo Ponte Costa,22,Uruguay,Defensor,https://media.api-sports.io/football/players/297687.png
+297749,L. Rodríguez,Luciano Rodríguez Rosales,22,Uruguay,Atacante,https://media.api-sports.io/football/players/297749.png
+297893,Alix,Alix Vinicius de Souza Sampaio,26,Brazil,Defensor,https://media.api-sports.io/football/players/297893.png
+299089,Léo Naldi,Leonardo Naldi de Matos,24,Brazil,Meio-Campo,https://media.api-sports.io/football/players/299089.png
+301265,Adriano Silveira Borges Filho,Adriano Silveira Borges Filho,21,Brazil,Atacante,https://media.api-sports.io/football/players/301265.png
+301354,Samuel Granada,Samuel Salustiano de Jesus Silva,25,Brazil,Forward,https://media.api-sports.io/football/players/301354.png
+303136,J. Lucumí,Jan Franc Lucumí González,21,Colombia,Atacante,https://media.api-sports.io/football/players/303136.png
+304824,Rikelme,Rikelme Hernandes Amorim Rocha,22,Brazil,Meio-Campo,https://media.api-sports.io/football/players/304824.png
+304867,Gustavo Martins,Gustavo Martins de Souza Santos,23,Brazil,Defensor,https://media.api-sports.io/football/players/304867.png
+305029,Léo Gonçalves,Leonardo Gonçalves dos Santos,23,Brazil,Meio-Campo,https://media.api-sports.io/football/players/305029.png
+305042,Victor Gabriel,Victor Gabriel da Conceição Ribeiro,21,Brazil,Defensor,https://media.api-sports.io/football/players/305042.png
+305742,Weverton,Weverton Silva de Andrade,22,Brazil,Defensor,https://media.api-sports.io/football/players/305742.png
+305811,Marcos Pedro,Marcos Pedro Braga Maciel,24,Brazil,Defensor,https://media.api-sports.io/football/players/305811.png
+305817,Biel,Gabriel Teixeira Aragão,25,Brazil,Forward,https://media.api-sports.io/football/players/305817.png
+305818,João Neto,João Batista da Cruz Santos Neto,22,Brazil,Atacante,https://media.api-sports.io/football/players/305818.png
+305821,Matheus Martins,Matheus Martins Silva dos Santos,22,Brazil,Atacante,https://media.api-sports.io/football/players/305821.png
+305829,Rodrigo,Rodrigo Alves de Holanda Santos,23,Brazil,Meio-Campo,https://media.api-sports.io/football/players/305829.png
+305931,Sorriso,Marcos Vinicios Lopes Moura,25,Brazil,Forward,https://media.api-sports.io/football/players/305931.png
+306178,Leo Aragão,Leonardo de Aragão Carvalho,23,Brazil,Goleiro,https://media.api-sports.io/football/players/306178.png
+306181,Everton,Everton Tiago Barella de Souza Messias,23,Brazil,Atacante,https://media.api-sports.io/football/players/306181.png
+306210,Matheus Cunha,Matheus Cunha Queiroz,24,Brazil,Goleiro,https://media.api-sports.io/football/players/306210.png
+306211,Bruno Souza,Bruno Guimarães de Souza,23,Brazil,Goleiro,https://media.api-sports.io/football/players/306211.png
+306213,Max,Max Alves da Silva,24,Brazil,Meio-Campo,https://media.api-sports.io/football/players/306213.png
+306261,Adson,Adson Ferreira Soares,25,Brazil,Meio-Campo,https://media.api-sports.io/football/players/306261.png
+306552,Anthoni,Anthoni Spier Souza,23,Brazil,Goleiro,https://media.api-sports.io/football/players/306552.png
+306580,Arthur,Arthur Wenderrosky Sanches,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/306580.png
+306581,Felipe Andrade,Felipe de Andrade Vieira,23,Brazil,Defensor,https://media.api-sports.io/football/players/306581.png
+306582,Gustavo Ramalho,Gustavo Ramalho Bremer Pinto,23,Brazil,Goleiro,https://media.api-sports.io/football/players/306582.png
+306706,A. Giay,Agustín Giay,21,Argentina,Defensor,https://media.api-sports.io/football/players/306706.png
+306726,B. Palacios,Brahian Palacios Alzate,23,Colombia,Atacante,https://media.api-sports.io/football/players/306726.png
+306800,Jhon Jhon,Jhonatan dos Santos Rosa,23,Brazil,Meio-Campo,https://media.api-sports.io/football/players/306800.png
+306853,Biro,Guilherme Sucigan Mafra Cunha,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/306853.png
+306865,Davi,Davi Alves Soares,22,Brazil,Defensor,https://media.api-sports.io/football/players/306865.png
+306868,Lucas Wingert,Lucas Leandro Wingert,26,Brazil,Goleiro,https://media.api-sports.io/football/players/306868.png
+308275,Ricardo Cerqueira,José Ricardo Batista Cerqueira,23,Brazil,Defensor,https://media.api-sports.io/football/players/308275.png
+309634,Gabriel Grando,Gabriel Hamester Grando,25,Brazil,Goleiro,https://media.api-sports.io/football/players/309634.png
+309792,Kaiki,Kaiki Bruno da Silva,22,Brazil,Defensor,https://media.api-sports.io/football/players/309792.png
+311070,E. Mancuso,Eros Nazareno Mancuso,26,Argentina,Defensor,https://media.api-sports.io/football/players/311070.png
+311158,Werton,Werton de Almeida Rêgo,22,Brazil,Atacante,https://media.api-sports.io/football/players/311158.png
+311275,Gabriel Delfim,Gabriel Delfim Ferreira,23,Brazil,Goleiro,https://media.api-sports.io/football/players/311275.png
+311287,Vinícius Kauê,Vinícius Kauê Ribeiro Ferreira,22,Brazil,Defensor,https://media.api-sports.io/football/players/311287.png
+311289,Renan Viana,Renan Rodrigues Fonseca Viana,22,Brazil,Atacante,https://media.api-sports.io/football/players/311289.png
+311399,Jefferson Maciel,Jefferson Maciel Bento,22,Brazil,Defensor,https://media.api-sports.io/football/players/311399.png
+311445,Felipe Scheibig,Felipe Mateus Scheibig,25,Brazil,Goleiro,https://media.api-sports.io/football/players/311445.png
+311446,Thauan Lara,Thauan Lara dos Santos,22,Brazil,Defensor,https://media.api-sports.io/football/players/311446.png
+311517,Young,Young Navarro Moraes,23,Brazil,Goleiro,https://media.api-sports.io/football/players/311517.png
+311518,Nathan,Nathan Gabriel de Souza Mendes,23,Brazil,Defensor,https://media.api-sports.io/football/players/311518.png
+311785,K. Andrade,Kervin Mario Andrade Navarro,20,Venezuela,Atacante,https://media.api-sports.io/football/players/311785.png
+311795,B. Barcia,Mateo Baltasar Barcia Fernández,24,Uruguay,Meio-Campo,https://media.api-sports.io/football/players/311795.png
+312311,Michel,Michel Augusto Modesto Rafael dos Santos,23,Brazil,Defensor,https://media.api-sports.io/football/players/312311.png
+312615,Giovane,Giovane Santana do Nascimento,22,Brazil,Atacante,https://media.api-sports.io/football/players/312615.png
+313067,Ataíde,Leonardo Ataíde de Oliveira Siqueira,21,Brazil,Defensor,https://media.api-sports.io/football/players/313067.png
+313732,Pablo Maia,Pablo Gonçalves Maia Fortunato,23,Brazil,Meio-Campo,https://media.api-sports.io/football/players/313732.png
+316519,F. Bernal,Facundo Bernal Cruz,22,Uruguay,Meio-Campo,https://media.api-sports.io/football/players/316519.png
+317049,Zé Hugo,José Hugo Sousa dos Santos,26,Brazil,Atacante,https://media.api-sports.io/football/players/317049.png
+317636,Natã,Natã Felipe de Amorim Santos,24,Brazil,Defensor,https://media.api-sports.io/football/players/317636.png
+318170,Werik Popó,Werik Silva Pinto,24,Brazil,Atacante,https://media.api-sports.io/football/players/318170.png
+321432,Du Queiroz,Eduardo Santos Queiroz,25,Brazil,Meio-Campo,https://media.api-sports.io/football/players/321432.png
+321646,Mycael,Mycael Pontes Moreira,21,Brazil,Goleiro,https://media.api-sports.io/football/players/321646.png
+321647,Jader,Jader Barbosa da Silva Gentil,22,Brazil,Meio-Campo,https://media.api-sports.io/football/players/321647.png
+322069,Victor Hugo,Victor Hugo da Silva Costa,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/322069.png
+322327,Lucas Belezi,Lucas Belezi Barbosa,22,Brazil,Defensor,https://media.api-sports.io/football/players/322327.png
+326102,Rômulo,Rômulo José Cardoso da Cruz,23,Brazil,Forward,https://media.api-sports.io/football/players/326102.png
+326746,Kauã Moura,Kauã Moura Cintra,21,Brazil,Defensor,https://media.api-sports.io/football/players/326746.png
+327635,Douglas Mendes,Douglas Mendes Moreira,21,Brazil,Defensor,https://media.api-sports.io/football/players/327635.png
+332654,Evertton Araújo,Evertton Gustavo Fernandes Araújo,22,Brazil,Meio-Campo,https://media.api-sports.io/football/players/332654.png
+333288,Renan,Renan Carrasco Veltri,21,Brazil,Defensor,https://media.api-sports.io/football/players/333288.png
+334620,Juan Pablo,Juan Pablo Vilela Tavares,23,Brazil,Defensor,https://media.api-sports.io/football/players/334620.png
+340067,Cleiton,Cleiton Santana dos Santos,22,Brazil,Defensor,https://media.api-sports.io/football/players/340067.png
+342492,Gustavo,Gustavo Santos Assunção,22,Brazil,Meio-Campo,https://media.api-sports.io/football/players/342492.png
+348896,Kaiky Naves,Kaiky Marques Naves,24,Brazil,Defensor,https://media.api-sports.io/football/players/348896.png
+348897,Kaique,Kaique Pereira Azarias,23,Brazil,Goleiro,https://media.api-sports.io/football/players/348897.png
+349001,Wesley,Wesley Vinícius França Lima,22,Brazil,Defensor,https://media.api-sports.io/football/players/349001.png
+349327,Daniel,Daniel Alves de Lima,21,Brazil,Atacante,https://media.api-sports.io/football/players/349327.png
+350153,Lelê,Leanderson da Silva Genésio,28,Brazil,Atacante,https://media.api-sports.io/football/players/350153.png
+350419,Hiago Accinelli da Roza,Hiago Accinelli da Roza,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/350419.png
+350425,Lucas Mila,Lucas Eduardo Muller,22,Brazil,Meio-Campo,https://media.api-sports.io/football/players/350425.png
+350808,Marcos Victor,Marcos Victor Ferreira da Silva,24,Brazil,Defensor,https://media.api-sports.io/football/players/350808.png
+350828,Yan Souto,Yan da Cruz Souto,24,Brazil,Defensor,https://media.api-sports.io/football/players/350828.png
+350927,Henry Mosquera,Henry David Mosquera Sánchez,24,Colombia,Atacante,https://media.api-sports.io/football/players/350927.png
+351485,Daniel,Daniel Sergio Martins,23,Brazil,Meio-Campo,https://media.api-sports.io/football/players/351485.png
+351487,Marcos Paulo,Marcos Paulo Lima Batista Silva,22,Brazil,Defensor,https://media.api-sports.io/football/players/351487.png
+351890,Jardiel Maciel Libertino da Silva,Jardiel Maciel Libertino da Silva,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/351890.png
+352372,Matheus Gonçalves,Matheus Gonçalves Martins,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/352372.png
+352374,Petterson,Petterson Novaes Reis,22,Brazil,Forward,https://media.api-sports.io/football/players/352374.png
+352387,Zé Vitor,José Vitor Geminiano Cavalieri,23,Brazil,Defensor,https://media.api-sports.io/football/players/352387.png
+352816,Pedro Henrique Pio,Pedro Henrique Pio,21,Brazil,Atacante,https://media.api-sports.io/football/players/352816.png
+352819,Roque Júnior,Roque Santos de Jesus Júnior,23,Brazil,Defensor,https://media.api-sports.io/football/players/352819.png
+352994,João Moreira,João Moreira Souza,21,Portugal,Defensor,https://media.api-sports.io/football/players/352994.png
+353028,Raí,Raí da Silva Pessanha,23,Brazil,Meio-Campo,https://media.api-sports.io/football/players/353028.png
+353034,Cuiabano,Luis Eduardo Soares da Silva,22,Brazil,Defensor,https://media.api-sports.io/football/players/353034.png
+353394,Janderson,Janderson de Carvalho Costa,26,Brazil,Forward,https://media.api-sports.io/football/players/353394.png
+353455,Tarcísio Muniz,Tarcísio Lopes Dionizio Muniz,22,Brazil,Meio-Campo,https://media.api-sports.io/football/players/353455.png
+353686,Thiago,Thiago Medeiros de Carvalho,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/353686.png
+353728,Gabriel Xavier,Gabriel Lheman Xavier,24,Brazil,Defensor,https://media.api-sports.io/football/players/353728.png
+353926,Daniel Júnior,Daniel de Melo Araujo Júnior,24,Brazil,Meio-Campo,https://media.api-sports.io/football/players/353926.png
+353953,Edney Henrique Santos da Silva,Edney Henrique Santos da Silva,21,Brazil,Defensor,https://media.api-sports.io/football/players/353953.png
+354012,Lucca,Lucca Holanda Sampaio Tavares,22,Brazil,Atacante,https://media.api-sports.io/football/players/354012.png
+354073,André Dhominique Queiroz Santiago da Silva,André Dhominique Queiroz Santiago da Silva,22,Brazil,Defensor,https://media.api-sports.io/football/players/354073.png
+354077,E. Rodríguez,Emiliano Rodríguez Rosales,22,Uruguay,Atacante,https://media.api-sports.io/football/players/354077.png
+356533,Jhonny,Jhonny Cardinoti Pedro,23,Brazil,Defensor,https://media.api-sports.io/football/players/356533.png
+357499,Kauã Moroso,Kauã Inácio Moroso,21,Brazil,Goleiro,https://media.api-sports.io/football/players/357499.png
+357501,Guilherme Silva,Guilherme Silva,23,Brazil,Defensor,https://media.api-sports.io/football/players/357501.png
+357888,Gabriel,Gabriel Knesowitsch,22,Brazil,Defensor,https://media.api-sports.io/football/players/357888.png
+358501,Victor Hugo,Victor Hugo de Faria Mota,22,Brazil,Meio-Campo,https://media.api-sports.io/football/players/358501.png
+358570,Igor Ribeiro,Igor Ribeiro Costa,24,Brazil,Defensor,https://media.api-sports.io/football/players/358570.png
+359372,Robert Renan,Robert Renan Alves Barbosa,22,Brazil,Defensor,https://media.api-sports.io/football/players/359372.png
+359526,Kawan,Kawan Thomaz Reis de Moraes,22,Brazil,Defensor,https://media.api-sports.io/football/players/359526.png
+359600,Jhosefer Raphael Januario,Jhosefer Raphael Januario,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/359600.png
+360304,Marcão,Marcos Vinicius Carvalho dos Reis,24,Brazil,Defensor,https://media.api-sports.io/football/players/360304.png
+360306,Otávio Eleodoro Rezende Costa,Otávio Eleodoro Rezende Costa,20,Brazil,Goleiro,https://media.api-sports.io/football/players/360306.png
+361665,Léo Mana,Leonardo Mana Hernandes,21,Brazil,Defensor,https://media.api-sports.io/football/players/361665.png
+362716,Derik,Leonardo Derik Dias Gonçalves,20,Brazil,Defensor,https://media.api-sports.io/football/players/362716.png
+362718,Lucca,Lucca Prior Pimenta,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/362718.png
+362886,Zé Welinton,José Welinton Campos Menezes,21,Brazil,Defensor,https://media.api-sports.io/football/players/362886.png
+363133,Fernando José Vera García,Fernando José Vera García,20,Paraguay,Defensor,https://media.api-sports.io/football/players/363133.png
+363315,Serafim,Vinicius Lima Serafim,21,Brazil,Defensor,https://media.api-sports.io/football/players/363315.png
+363316,Jota,João Victor Broad Moreira Guimaraes,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/363316.png
+363319,Nathan Camargo,Nathan Camargo dos Santos,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/363319.png
+363323,Alexsander,Alexsander Cristhian Gomes da Costa,22,Brazil,Meio-Campo,https://media.api-sports.io/football/players/363323.png
+363689,Rodriguinho,Rodrigo Huendra Almeida Mendonça,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/363689.png
+363692,Pedrinho,Pedro Henrique de Assis,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/363692.png
+363693,Breno,Breno de Souza Bidon,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/363693.png
+363697,Gabriel Átila,Gabriel Átila Cardoso da Silva,22,Brazil,Goleiro,https://media.api-sports.io/football/players/363697.png
+363698,Cadu,Carlos Eduardo Amaral Pereira de Castro,21,Brazil,Atacante,https://media.api-sports.io/football/players/363698.png
+363705,Samuel Estevam,Samuel Estevam Brunhara,19,Brazil,Defensor,https://media.api-sports.io/football/players/363705.png
+363707,Guilherme,Guilherme Moura da Fonseca,20,Brazil,Defensor,https://media.api-sports.io/football/players/363707.png
+364709,Luiz Felipe Mathias Silva,Luiz Felipe Mathias Silva,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/364709.png
+365287,Wesley Gassova,Wesley Gassova Ribeiro Teixeira,20,Brazil,Atacante,https://media.api-sports.io/football/players/365287.png
+365642,Caio Vinicius,Caio Vinicius Garcia Guilhen,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/365642.png
+366780,Iago,Iago Teodoro da Silva Nogueira,20,Brazil,Defensor,https://media.api-sports.io/football/players/366780.png
+367957,Vitão,Victor Matheus dos Santos Gonçalves,25,Brazil,Defensor,https://media.api-sports.io/football/players/367957.png
+368851,Pedrão,Pedro Henrique Franklim da Silva,21,Brazil,Defensor,https://media.api-sports.io/football/players/368851.png
+369890,Léo Jacó,Leonardo Gomes da Silva Jacó,21,Brazil,Forward,https://media.api-sports.io/football/players/369890.png
+370926,Weliton,Weliton Santos do Amaral,20,Brazil,Atacante,https://media.api-sports.io/football/players/370926.png
+371579,Eliédson,Eliédson Pereira de Souza,22,Brazil,Meio-Campo,https://media.api-sports.io/football/players/371579.png
+372083,Dyogo,Francisco Dyogo Bento Alves,21,Brazil,Goleiro,https://media.api-sports.io/football/players/372083.png
+372084,Jean Carlos,Jean Carlos da Silva Lima,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/372084.png
+372605,Luis Fernando Santos Oliveira,Luis Fernando Santos Oliveira,21,Brazil,Forward,https://media.api-sports.io/football/players/372605.png
+372607,Rai,Rai Natalino da Silva Ramos,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/372607.png
+373765,K. Flórez,Kelvin Javier Flórez Mosquera,21,Colombia,Meio-Campo,https://media.api-sports.io/football/players/373765.png
+374922,Eliel,Eliel Chrystian Pereira Silva,22,Brazil,Atacante,https://media.api-sports.io/football/players/374922.png
+377122,Endrick,Endrick Felipe Moreira de Sousa,19,Brazil,Atacante,https://media.api-sports.io/football/players/377122.png
+380269,Victor Hugo,Victor Hugo Ramos de Souza,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/380269.png
+383789,João Vitor,João Vitor Tavares da Mota,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/383789.png
+384396,Pará,Luis Felipe Rabelo Costa,23,Brazil,Meio-Campo,https://media.api-sports.io/football/players/384396.png
+384398,Ruan,Ruan Pereira Duarte,20,Brazil,Forward,https://media.api-sports.io/football/players/384398.png
+385416,João Pedro,João Pedro da Cruz Oliveira,22,Brazil,Atacante,https://media.api-sports.io/football/players/385416.png
+386993,Jackson Henrique Marcelino Crispim,Jackson Henrique Marcelino Crispim,22,Brazil,Defensor,https://media.api-sports.io/football/players/386993.png
+392104,Arthur Sousa,Arthur Sousa Araújo,22,Brazil,Atacante,https://media.api-sports.io/football/players/392104.png
+392736,Ruan Matheus Rodrigues Santos,Ruan Matheus Rodrigues Santos,22,Brazil,Defensor,https://media.api-sports.io/football/players/392736.png
+393064,Matheus Xavier de Freitas Franco,Matheus Xavier de Freitas Franco,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/393064.png
+394384,Erick Marcus,Erick Marcus dos Santos Oliveira do Carmo,21,Brazil,Atacante,https://media.api-sports.io/football/players/394384.png
+395210,Dija,Diego Kauan Silva Santos,22,Brazil,Defensor,https://media.api-sports.io/football/players/395210.png
+396358,Kauan,Kauan Rodrigues da Silva,20,Brazil,Atacante,https://media.api-sports.io/football/players/396358.png
+396419,Gabryel Freitas,Gabryel Vinicius Araújo Freitas,23,Brazil,Atacante,https://media.api-sports.io/football/players/396419.png
+399512,Eli Silvano Kovalik Júnior,Eli Silvano Kovalik Júnior,21,Brazil,Atacante,https://media.api-sports.io/football/players/399512.png
+401470,Cauã da Rocha,Cauã Pereira da Rocha,21,Brazil,Defensor,https://media.api-sports.io/football/players/401470.png
+402109,João Vitor Cardoso de Souza,João Vitor Cardoso de Souza,23,Brazil,Defensor,https://media.api-sports.io/football/players/402109.png
+402361,T. Montefiori,Carlos Thomas Gómez Montefiori,22,Argentina,Atacante,https://media.api-sports.io/football/players/402361.png
+402879,Niltinho,Nilton Amador de Oliveira Filho,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/402879.png
+403033,Dorival,Dorival Silva de Oliveira,21,Brazil,Defensor,https://media.api-sports.io/football/players/403033.png
+403120,Rickelme,Rickelme Lopes de Sousa,24,Brazil,Meio-Campo,https://media.api-sports.io/football/players/403120.png
+403299,Daniel Sales,Daniel dos Santos Sales,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/403299.png
+403300,Lorran,Lorran Lucas Pereira de Sousa,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/403300.png
+403306,Paulinho,Paulo Ricardo de Souza Babilônia,20,Brazil,Defensor,https://media.api-sports.io/football/players/403306.png
+403307,Julião,Matheus Gabriel Julião Damasceno,22,Brazil,Defensor,https://media.api-sports.io/football/players/403307.png
+403670,Bernardo Valim,Bernardo da Silva Rocha Valim,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/403670.png
+403671,Kauê,Kauê Rodrigues Pessanha,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/403671.png
+403892,Caio Barone,Caio Albado Barone,19,Brazil,Goleiro,https://media.api-sports.io/football/players/403892.png
+403910,Fabrício Dias,Fabrício Dias Afonso,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/403910.png
+403950,Talisson,Talisson de Almeida,23,Brazil,Atacante,https://media.api-sports.io/football/players/403950.png
+403951,Gustavinho,Gustavo Ribeiro Neves,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/403951.png
+403953,Ryan Gustavo,Ryan Gustavo de Lima,22,Brazil,Meio-Campo,https://media.api-sports.io/football/players/403953.png
+404137,Tenório,Jailson Tenório de Souza,24,Brazil,Defensor,https://media.api-sports.io/football/players/404137.png
+404143,Lyncon,Lyncon Correa Gonçalves,20,Brazil,Defensor,https://media.api-sports.io/football/players/404143.png
+404147,Lucas Eduardo,Lucas Eduardo de Souza Oliveira,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/404147.png
+404148,Marlon Santos,Marlon dos Santos Pinto,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/404148.png
+404401,João Vitor,João Vitor Balbino Cordeiro,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/404401.png
+404404,Pablo,Pablo Santos de Alcantara,22,Brazil,Meio-Campo,https://media.api-sports.io/football/players/404404.png
+404456,Thiago Mina,Thiago Henrique de Jesus,23,Brazil,Defensor,https://media.api-sports.io/football/players/404456.png
+404536,Isaac,Isaac Rodrigues de Lima,21,Brazil,Atacante,https://media.api-sports.io/football/players/404536.png
+404539,Kayky Almeida,Kayky Henrique Almeida Brandão da Silva,20,Brazil,Defensor,https://media.api-sports.io/football/players/404539.png
+404574,Luis Guilherme,Luis Guilherme Lira dos Santos,20,Brazil,Forward,https://media.api-sports.io/football/players/404574.png
+404575,Ronald,Ronald Cardoso Falkoski,22,Brazil,Meio-Campo,https://media.api-sports.io/football/players/404575.png
+404752,GB,Gabriel Souza da Silva,20,Brazil,Atacante,https://media.api-sports.io/football/players/404752.png
+404756,Roger,Roger Felippo Floriano Espindola,21,Brazil,Defensor,https://media.api-sports.io/football/players/404756.png
+404798,Kauan Martins,Kauan Martins Chagas,22,Brazil,Defensor,https://media.api-sports.io/football/players/404798.png
+405028,Agner,Agner Moura Izigethy de Souza,20,Brazil,Atacante,https://media.api-sports.io/football/players/405028.png
+405061,Chumbinho,Willian da Silva Santos,22,Brazil,Meio-Campo,https://media.api-sports.io/football/players/405061.png
+405160,Wallace,Wallace Yan de Souza Barreto,20,Brazil,Atacante,https://media.api-sports.io/football/players/405160.png
+405222,Matheus Belém,Matheus José Belém de Souza,22,Brazil,Defensor,https://media.api-sports.io/football/players/405222.png
+405239,Alexsandro Amorim,Alexsandro Amorim de Freitas Filho,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/405239.png
+405273,Charlys,Charlys Matheus Lima Pontes,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/405273.png
+405353,Japa,João Wellington Gadelha Melo de Oliveira,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/405353.png
+405949,João Vigolo,João Vitor Vigolo Gomes,19,Brazil,Defensor,https://media.api-sports.io/football/players/405949.png
+406014,Gustavo Daniel,Gustavo Daniel da Silva Gonçalves,20,Brazil,Defensor,https://media.api-sports.io/football/players/406014.png
+406223,L. Rodríguez,Leandro Josué Rodríguez Santaella,20,Venezuela,Atacante,https://media.api-sports.io/football/players/406223.png
+406431,M. Zuleta,Mateo Zuleta García,23,Colombia,Meio-Campo,https://media.api-sports.io/football/players/406431.png
+406569,Abner,Abner Salles da Silva,21,Brazil,Defensor,https://media.api-sports.io/football/players/406569.png
+406617,Zé Henrique,José Henrique Venâncio Camargo,21,Brazil,Goleiro,https://media.api-sports.io/football/players/406617.png
+406814,Vitor Reis,Vitor Gabriel Reis Guimarães,19,Brazil,Defensor,https://media.api-sports.io/football/players/406814.png
+406875,Cássio,Cássio de Amorim de Deus,21,Brazil,Atacante,https://media.api-sports.io/football/players/406875.png
+407262,Tiago,Tiago Souza de Jesús Carvalho,20,Brazil,Atacante,https://media.api-sports.io/football/players/407262.png
+407264,Vitinho,Pedro Victor da Silva Santos,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/407264.png
+407265,Sidney,Sidney de Carvalho Duarte,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/407265.png
+407267,Hygor,Hygor Peçanha de Moraes,21,Brazil,Defensor,https://media.api-sports.io/football/players/407267.png
+407268,Marcello,Marcello Gesteira de Souza,22,Brazil,Defensor,https://media.api-sports.io/football/players/407268.png
+407806,Rayan,Rayan Vitor Simplício Rocha,19,Brazil,Atacante,https://media.api-sports.io/football/players/407806.png
+407957,Daniel Rogério,Daniel Rogério de Oliveira,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/407957.png
+407958,Rayan,Rayan Lucas Marques de Souza,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/407958.png
+408347,Rubens,Rubens Tadeu Hartmann Ricoldi,22,Brazil,Meio-Campo,https://media.api-sports.io/football/players/408347.png
+408348,Zinho,Luis Henrique Hoffmann,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/408348.png
+408444,Eduardo Vinícius,Eduardo Vinícius Rodrigues dos Santos,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/408444.png
+408607,Jadson,Jadson Alves de Lima,20,Brazil,Defensor,https://media.api-sports.io/football/players/408607.png
+408612,Gustavo,Gustavo da Silva Nobre,20,Brazil,Defensor,https://media.api-sports.io/football/players/408612.png
+408613,Geilson,Geilson de Souza Alves,21,Brazil,Defensor,https://media.api-sports.io/football/players/408613.png
+408615,Michel,Michel Cavalcante Fonseca da Silva,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/408615.png
+408618,Landerson,Landerson Costa Araújo,19,Brazil,Forward,https://media.api-sports.io/football/players/408618.png
+408620,João Marcos,João Marcos Garcia da Costa,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/408620.png
+409289,Roger,Roger Gabriel Farias de Jesus,18,Brazil,Meio-Campo,https://media.api-sports.io/football/players/409289.png
+411433,Zé Guilherme,José Guilherme de Lima Costa,20,Brazil,Defensor,https://media.api-sports.io/football/players/411433.png
+412775,Fábio,Fábio Soares dos Santos,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/412775.png
+412776,Ainoã,Ainoã Ricardo Silva Oliveira,20,Brazil,Defensor,https://media.api-sports.io/football/players/412776.png
+412780,Riquelme,Riquelme de Carvalho Conceição,19,Brazil,Defensor,https://media.api-sports.io/football/players/412780.png
+414281,Isaac,Isaac Aguiar Tomich,22,Brazil,Forward,https://media.api-sports.io/football/players/414281.png
+414351,Matheus Gomes,Matheus Gomes,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/414351.png
+414353,Luiz Gustavo,Luiz Gustavo Lemos Carvalho,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/414353.png
+414354,Da Mata,João Pedro do Nascimento da Mata,19,Brazil,Defensor,https://media.api-sports.io/football/players/414354.png
+414356,Matheus Reis,Matheus dos Reis Francisco,18,Brazil,Atacante,https://media.api-sports.io/football/players/414356.png
+414357,Riquelme Fillipi,Riquelme Fillipi Marinho de Souza,19,Brazil,Atacante,https://media.api-sports.io/football/players/414357.png
+414358,Kauã Elias,Kauã Elias Nogueira,19,Brazil,Atacante,https://media.api-sports.io/football/players/414358.png
+414359,Vitor Nunes,Vitor de Oliveira Nunes dos Reis,19,Brazil,Defensor,https://media.api-sports.io/football/players/414359.png
+414393,Rhuan Gabriel,Rhuan Gabriel Rodrigues de Souza Silva,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/414393.png
+414395,Ricardo Mathias,Ricardo Mathias da Silva,19,Brazil,Atacante,https://media.api-sports.io/football/players/414395.png
+414399,Dudu,Eduardo Kogitzki Anastacio,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/414399.png
+414449,Phillipe Oliveira,Phillipe Oliveira,19,Brazil,Goleiro,https://media.api-sports.io/football/players/414449.png
+414450,João Dalla Corte,João Paulo Dalla Corte,19,Brazil,Defensor,https://media.api-sports.io/football/players/414450.png
+414456,Isac,Isac Silvestre da Silva,19,Brazil,Defensor,https://media.api-sports.io/football/players/414456.png
+414660,Chiqueti,Felipe Chiqueti Bandeira,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/414660.png
+414661,João Cruz,João Victor Machado Cruz,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/414661.png
+415046,Kauan,Kauan Jesus Santos Oliveira,22,Brazil,Goleiro,https://media.api-sports.io/football/players/415046.png
+415048,Evertow,Evertow Vaz Pereira da Silva,18,Brazil,Defensor,https://media.api-sports.io/football/players/415048.png
+415049,Gabriel Carvalho,Gabriel Carvalho Teixeira,18,Brazil,Atacante,https://media.api-sports.io/football/players/415049.png
+415051,Gustavo Prado,Gustavo Prado Alves,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/415051.png
+415053,Anderson Santos,Anderson Santos Dias Gomes,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/415053.png
+415054,Wendel,Wendel Alves Gonçalves,19,Brazil,Atacante,https://media.api-sports.io/football/players/415054.png
+415057,Jhonatan Kauan,Jhonatan Kauan Eleoterio Diogo,21,Brazil,Atacante,https://media.api-sports.io/football/players/415057.png
+415066,Gilberto,Gilberto Júnior Leite dos Santos,20,Brazil,Defensor,https://media.api-sports.io/football/players/415066.png
+415067,David Kauã,David Kauã Ramos,20,Brazil,Defensor,https://media.api-sports.io/football/players/415067.png
+415068,Benedetti,Luis Gustavo Roncholeta Benedetti,19,Brazil,Defensor,https://media.api-sports.io/football/players/415068.png
+415069,Patrick Silva,Patrick Roberto da Silva Campos,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/415069.png
+415070,Léo Azevedo,Leonardo de Azevedo Silva,22,Brazil,Meio-Campo,https://media.api-sports.io/football/players/415070.png
+415071,Thalys,Thalys Henrique Gomes de Araújo,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/415071.png
+415075,João Henrique,João Henrique Mendes da Silva,19,Brazil,Defensor,https://media.api-sports.io/football/players/415075.png
+415076,Rafael Monteiro,Rafael Monteiro Reis,21,Brazil,Defensor,https://media.api-sports.io/football/players/415076.png
+415077,Erick,Erick Nunes Barbosa dos Santos,21,Brazil,Defensor,https://media.api-sports.io/football/players/415077.png
+415079,Gustavo Dohmann,Gustavo Abreu Dohmann,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/415079.png
+415080,Thiago Henrique,Thiago Henrique Gonçalves Silva,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/415080.png
+415082,Cadu,Carlos Eduardo Coutinho de Góes,20,Brazil,Goleiro,https://media.api-sports.io/football/players/415082.png
+415084,Felipe Longo,Felipe Longo Fernandes da Silva,20,Brazil,Goleiro,https://media.api-sports.io/football/players/415084.png
+415085,João Pedro,João Pedro de Sousa Rodrigues,22,Brazil,Defensor,https://media.api-sports.io/football/players/415085.png
+415086,Renato Santos,Renato Santos da Cruz,21,Brazil,Defensor,https://media.api-sports.io/football/players/415086.png
+415090,Kayke,Kayke Ferrari Guimarães,21,Brazil,Atacante,https://media.api-sports.io/football/players/415090.png
+415111,Matheus Soares,Matheus Soares Rocha,20,Brazil,Goleiro,https://media.api-sports.io/football/players/415111.png
+415113,Renan,Renan Cunha Macêdo Santana,21,Brazil,Defensor,https://media.api-sports.io/football/players/415113.png
+415115,Caio Maia,Caio da Silva Maia,20,Brazil,Atacante,https://media.api-sports.io/football/players/415115.png
+415116,Alisson Santana,Alisson Santana Lopes da Fonseca,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/415116.png
+415147,Felipe Negrucci,Felipe Negrucci Berdague,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/415147.png
+415149,Kaiky,Kaiky Carvalho dos Santos,21,Brazil,Atacante,https://media.api-sports.io/football/players/415149.png
+415150,I. Ly,Iba Ly,22,Senegal,Defensor,https://media.api-sports.io/football/players/415150.png
+415152,K. Owusu,King Faisal Owusu,20,Ghana,Atacante,https://media.api-sports.io/football/players/415152.png
+415629,Rafael Genuino,Rafael Genuino Lobato,20,Brazil,Forward,https://media.api-sports.io/football/players/415629.png
+415630,Sapata,Vitor Hugo Morais de Oliveira,22,Brazil,Atacante,https://media.api-sports.io/football/players/415630.png
+415631,Fabiano,Fabiano Rodrigues Pereira,19,Brazil,Atacante,https://media.api-sports.io/football/players/415631.png
+416112,Paulo Vitor,Paulo Vitor Monteiro,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/416112.png
+418842,Nolasco,Daniel Camargo Nolasco,21,Brazil,Defensor,https://media.api-sports.io/football/players/418842.png
+418845,Leandro Mathias,Leandro Mathias Silva Bueno,21,Brazil,Goleiro,https://media.api-sports.io/football/players/418845.png
+419178,Lucas Barreto,Lucas Fonseca Gomes Barreto,23,Brazil,Goleiro,https://media.api-sports.io/football/players/419178.png
+419856,Gustavo Henrique,Gustavo Henrique da Silva,20,Brazil,Defensor,https://media.api-sports.io/football/players/419856.png
+419936,Nathan Fernandes,Nathan Ribeiro Fernandes,20,Brazil,Atacante,https://media.api-sports.io/football/players/419936.png
+420687,Lian,Lian dos Santos da Silva,20,Brazil,Atacante,https://media.api-sports.io/football/players/420687.png
+422150,Jonathan,Jonathan de Jesus Alves,21,Brazil,Defensor,https://media.api-sports.io/football/players/422150.png
+422250,Max,Maxsuel Alexandre Alves Soares,21,Brazil,Atacante,https://media.api-sports.io/football/players/422250.png
+422433,Silva,Diogo Antonio Rodrigues da Silva,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/422433.png
+422675,João Victor,João Victor Nascimento de Oliveira,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/422675.png
+422763,Wesley,Wesley da Costa Silva,21,Brazil,Defensor,https://media.api-sports.io/football/players/422763.png
+422779,Robert,Robert Vinicius Rodrigues Silva,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/422779.png
+424277,Viery,Viery Fernandes Santos Lopes,20,Brazil,Defensor,https://media.api-sports.io/football/players/424277.png
+424568,Lauan,Lauan Marques Bento de Oliveira,21,Brazil,Defensor,https://media.api-sports.io/football/players/424568.png
+425085,Thiago Guth,Tiago Rafael Guth,20,Brazil,Defensor,https://media.api-sports.io/football/players/425085.png
+425125,Gustavo,Gustavo Reis Alcantara,20,Brazil,Goleiro,https://media.api-sports.io/football/players/425125.png
+425128,Gabriel Lopes,Gabriel da Silva Lopes,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/425128.png
+425130,Riquelme,Riquelme Reis de Almeida de Jesus dos S,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/425130.png
+425653,Mizael Santana,Mizael Santana Pereira Junior,21,Brazil,Defensor,https://media.api-sports.io/football/players/425653.png
+425714,Allan,Allan Andrade Elias,21,Brazil,Atacante,https://media.api-sports.io/football/players/425714.png
+425715,Arthur,Arthur Gabriel Santana Marcolino,20,Brazil,Defensor,https://media.api-sports.io/football/players/425715.png
+425733,Estêvão,Estêvão Willian Almeida de Oliveira Gonçalves,18,Brazil,Atacante,https://media.api-sports.io/football/players/425733.png
+425734,Vitor Figueiredo,Vitor dos Santos Figueiredo,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/425734.png
+425811,Rian Patric,Rian Patric Santos Batista,18,Brazil,Meio-Campo,https://media.api-sports.io/football/players/425811.png
+426813,Alexandre Cesar,Alexandre Cesar Santos Ribeiro,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/426813.png
+427736,Gustavo Gomes,Gustavo Nunes Fernandes Gomes,20,Brazil,Atacante,https://media.api-sports.io/football/players/427736.png
+428027,Kevyn,Kevyn Henrique Monteiro de Souza,20,Brazil,Defensor,https://media.api-sports.io/football/players/428027.png
+428989,Athyrson,Athyrson Ferreira Prates,21,Brazil,Atacante,https://media.api-sports.io/football/players/428989.png
+428990,Felipe Lima,Felipe de Almeida Lima,19,Brazil,Atacante,https://media.api-sports.io/football/players/428990.png
+431417,Vinicius,Vinicius Mendonça Pereira,21,Brazil,Atacante,https://media.api-sports.io/football/players/431417.png
+432082,Lucas Justen,Lucas da Sliva Justen,22,Brazil,Defensor,https://media.api-sports.io/football/players/432082.png
+432480,Marcos Vinicius,Marcos Vinicius da Silva Carvalho,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/432480.png
+433080,Kauan,Kauan Cristtyan Cabral do Carmo,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/433080.png
+435444,Kevyn,Kevyn Vinícius Medeiros de Freitas,21,Brazil,Goleiro,https://media.api-sports.io/football/players/435444.png
+435569,S. Palacios,Sergio Palacios,20,Colombia,Defensor,https://media.api-sports.io/football/players/435569.png
+443958,Andrey,Andrey da Silva Bezerra de Carvalho,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/443958.png
+443959,Randerson,Randerson de Sousa Almeida,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/443959.png
+444874,Ruan Índio,Ruan Silva Fonseca,19,Brazil,Atacante,https://media.api-sports.io/football/players/444874.png
+445230,Araújo,João Vitor Araújo da Silva,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/445230.png
+445690,Luan,Luan Dhonnatas da Silva Lobo,20,Brazil,Atacante,https://media.api-sports.io/football/players/445690.png
+445727,Marcos André Paulino Maia,Marcos André Paulino Maia,19,Brazil,Defensor,https://media.api-sports.io/football/players/445727.png
+449243,William,William Gomes Carvalho Santos,20,Brazil,Forward,https://media.api-sports.io/football/players/449243.png
+449244,Luighi Hanri,Luighi Hanri Sousa Santos,19,Brazil,Atacante,https://media.api-sports.io/football/players/449244.png
+449252,Pedro Cobra,Pedro Cobra Rodrigues,19,Brazil,Goleiro,https://media.api-sports.io/football/players/449252.png
+449253,João Victor Cunha,João Victor de Souza Cunha,18,Brazil,Defensor,https://media.api-sports.io/football/players/449253.png
+449254,Matheus Corrêa,Matheus Corrêa Leite de Moraes Gonçalv,18,Brazil,Goleiro,https://media.api-sports.io/football/players/449254.png
+452586,Sandrinho,Alessandro Carmona Correa,21,Brazil,Atacante,https://media.api-sports.io/football/players/452586.png
+452868,Hernandes Fagundes de Alencar,Hernandes Fagundes de Alencar,20,Brazil,Defensor,https://media.api-sports.io/football/players/452868.png
+452871,David Miguel,David Miguel de Souza Arcanjo,18,Brazil,Meio-Campo,https://media.api-sports.io/football/players/452871.png
+454126,Lucyan,Lucyan Gabriel Arruda Delgado,19,Brazil,Defensor,https://media.api-sports.io/football/players/454126.png
+454127,Pedro Estevam,Pedro Henrique Estevam,20,Brazil,Atacante,https://media.api-sports.io/football/players/454127.png
+454135,Thiago Beltrame,Thiago Beltrame Stallbaum,22,Brazil,Goleiro,https://media.api-sports.io/football/players/454135.png
+454136,Pablo,Pablo de Paula Cardoso,22,Brazil,Goleiro,https://media.api-sports.io/football/players/454136.png
+454137,Allan,Allan Vitor Silva de Barros,21,Brazil,Goleiro,https://media.api-sports.io/football/players/454137.png
+454138,JP,João Pedro Murilo de Paula Morais,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/454138.png
+454139,Bruno Lopes,Bruno Lopes Ferreira,18,Brazil,Atacante,https://media.api-sports.io/football/players/454139.png
+454147,Ruan Pablo,Ruan Pablo Barbosa Sousa,17,Brazil,Atacante,https://media.api-sports.io/football/players/454147.png
+454452,Victão,Victor Araújo de Alencar Oliveira,21,Brazil,Defensor,https://media.api-sports.io/football/players/454452.png
+454453,Leandrinho,Leandro Viana da Silva Gama,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/454453.png
+454454,Max,Maswel Ananias Silva,23,Brazil,Atacante,https://media.api-sports.io/football/players/454454.png
+454455,Pedrinho,Pedro Henrique Leão Alves Lopes,19,Brazil,Atacante,https://media.api-sports.io/football/players/454455.png
+454456,João Victor Schlickmann Carbone,João Victor Schlickmann Carbone,20,Brazil,Defensor,https://media.api-sports.io/football/players/454456.png
+454457,João Pedro Lecce,João Pedro Lecce de Souza,19,Brazil,Goleiro,https://media.api-sports.io/football/players/454457.png
+454458,Lukas Zuccarello,Lukas Rocha Zuccarello,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/454458.png
+454497,Marlinho,Marlon Yan Cavalcanti da Silva,20,Brazil,Atacante,https://media.api-sports.io/football/players/454497.png
+454498,Matheus Roger Costa Silva,Matheus Roger Costa Silva,19,Brazil,Goleiro,https://media.api-sports.io/football/players/454498.png
+454500,Guilherme Henrique  de Oliveira Morais,Guilherme Henrique de Oliveira Morais,19,Brazil,Atacante,https://media.api-sports.io/football/players/454500.png
+454501,Rafael Venâncio,Rafael Correia Venâncio,31,Brazil,Defensor,https://media.api-sports.io/football/players/454501.png
+454515,Breno Santos,Breno Santos Ignácio,27,Brazil,Meio-Campo,https://media.api-sports.io/football/players/454515.png
+454517,Mateus Macedo,Matheus Macedo dos Santos,20,Brazil,Defensor,https://media.api-sports.io/football/players/454517.png
+454518,Pedro Paranhos,Pedro Geovane Paranhos Santos,19,Brazil,Atacante,https://media.api-sports.io/football/players/454518.png
+454555,Guilherme,Guilherme Henrique Bernardineli Gomes,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/454555.png
+454556,Victor Thiago,Victor Thiago Alves Ferreira,18,Brazil,Defensor,https://media.api-sports.io/football/players/454556.png
+454557,João Vitor,João Vitor Cangane Cerantola Campos,20,Brazil,Goleiro,https://media.api-sports.io/football/players/454557.png
+454561,Igor Toledo,Igor Toledo,18,Brazil,Meio-Campo,https://media.api-sports.io/football/players/454561.png
+454562,Luiz Gustavo,Luiz Gustavo Marinho Ribeiro dos Santos,19,Brazil,Defensor,https://media.api-sports.io/football/players/454562.png
+454614,Yago Kauã,Yago Kauã Rodrigues Gonçalves,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/454614.png
+454615,Guilherme Pellegrin,Guilherme Pellegrin Almeida,18,Brazil,Defensor,https://media.api-sports.io/football/players/454615.png
+454616,Igor Felisberto,Igor Teixeira Felisberto,18,Brazil,Defensor,https://media.api-sports.io/football/players/454616.png
+454625,Pedro Bez,Pedro Bez Fontana Corrêa,21,Brazil,Goleiro,https://media.api-sports.io/football/players/454625.png
+454626,Mário Souza,Mário Vinnicius Souza Rodrigues Silva,20,Brazil,Goleiro,https://media.api-sports.io/football/players/454626.png
+454627,Pinna,Rafael Oliveira Pinna,18,Brazil,Atacante,https://media.api-sports.io/football/players/454627.png
+454628,Erick Garcia,Erick Ryan Garcia da Silva,20,Brazil,Defensor,https://media.api-sports.io/football/players/454628.png
+454629,Fabricio,Fabrício Maceda Lentz,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/454629.png
+454630,Eduardo,Eduardo Batista dos Santos,20,Brazil,Goleiro,https://media.api-sports.io/football/players/454630.png
+454813,Luiz Gustavo,Luiz Gustavo da Silva Alves,22,Brazil,Defensor,https://media.api-sports.io/football/players/454813.png
+455053,Guilherme Estrella,Guilherme Estrella de Paiva,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/455053.png
+455091,Robert Santos,Robert dos Santos Conceição,22,Brazil,Atacante,https://media.api-sports.io/football/players/455091.png
+455093,Kauan Lindes,Kauan Gabriel Cordeiro Lindes,22,Brazil,Meio-Campo,https://media.api-sports.io/football/players/455093.png
+455239,Diego Esser,Diego Esser Pereira,20,Brazil,Goleiro,https://media.api-sports.io/football/players/455239.png
+455276,Marlon,Marlon Santos Teodoro,20,Brazil,Atacante,https://media.api-sports.io/football/players/455276.png
+456004,Edenilson,Edenilson Santos Nascimento Filho,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/456004.png
+456005,Renato,Renato Victor Pereira das Neves,20,Brazil,Defensor,https://media.api-sports.io/football/players/456005.png
+456113,Kaik,Kaik Viçoza dos Anjos,21,Brazil,Defensor,https://media.api-sports.io/football/players/456113.png
+456787,Rubens,Rubens Flávio Klemann Marcarini,19,Brazil,Goleiro,https://media.api-sports.io/football/players/456787.png
+456943,Gustavo Almeida,Gustavo Ferreira de Almeida,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/456943.png
+457041,José Breno,José Breno,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/457041.png
+457419,Walace,Walace dos Santos França,20,Brazil,Atacante,https://media.api-sports.io/football/players/457419.png
+457420,Arthur Dias,Arthur dos Santos Barbosa Dias,18,Brazil,Defensor,https://media.api-sports.io/football/players/457420.png
+457504,Hiago,Hiago Souza Lima Santos,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/457504.png
+457505,Bruno Cheron,Bruno Fortuna Cheron,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/457505.png
+457506,Kaick,Kaick da Silva Ferreira,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/457506.png
+457507,Igor,Igor Eduardo Schlemper,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/457507.png
+457508,Riquelme Freitas,Riquelme Freitas dos Santos,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/457508.png
+457510,Felipe Preis,Felipe Gabriel Preis,19,Brazil,Goleiro,https://media.api-sports.io/football/players/457510.png
+457555,Luis Miguel,Luis Miguel Borges de Paula,20,Brazil,Atacante,https://media.api-sports.io/football/players/457555.png
+457557,Andrei,Andrei Gabriel dos Santos Ferreira,20,Brazil,Defensor,https://media.api-sports.io/football/players/457557.png
+458372,Dyego,Dyego Luis da Paz Nascimento,20,Brazil,Atacante,https://media.api-sports.io/football/players/458372.png
+458373,Marcelo Henrique,Marcelo Henrique Laborão dos Santos,20,Brazil,Defensor,https://media.api-sports.io/football/players/458373.png
+458374,Rhyan,Rhyan Luca Carvalho de Arruda,19,Brazil,Goleiro,https://media.api-sports.io/football/players/458374.png
+459954,João Rafael,João Rafael Macedo Pereira,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/459954.png
+459955,Julio César,Julio César da Silva de Paula,21,Brazil,Defensor,https://media.api-sports.io/football/players/459955.png
+460230,Henrique,Henrique Fabiano do Carmo,19,Brazil,Atacante,https://media.api-sports.io/football/players/460230.png
+460435,S. Ogundana,Elijah Oluwashola Ogundana,20,Nigeria,Atacante,https://media.api-sports.io/football/players/460435.png
+460436,João Alves,João Victor Alves Ferreira,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/460436.png
+460451,Felipe Teresa,Felipe Gabriel Cunha Teresa,19,Brazil,Atacante,https://media.api-sports.io/football/players/460451.png
+460485,Cristiano,Cristiano Araújo de Moraes Junior,20,Brazil,Goleiro,https://media.api-sports.io/football/players/460485.png
+460487,Filipe,Filipe Gabriel Rios Rodrigues,18,Brazil,Atacante,https://media.api-sports.io/football/players/460487.png
+460488,André Ricardo,André Ricardo Gomes da Silva Delço,20,Brazil,Atacante,https://media.api-sports.io/football/players/460488.png
+460489,Kauê Ricardo,Kauê Ricardo da Silva,19,Brazil,Atacante,https://media.api-sports.io/football/players/460489.png
+460490,Yuri Leles,Yuri Silva Leles de Souza,17,Brazil,Meio-Campo,https://media.api-sports.io/football/players/460490.png
+460492,Rafael Lima,Rafael da Silva Lima,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/460492.png
+460493,Danilo,Danilo Ferreira dos Santos,21,Brazil,Defensor,https://media.api-sports.io/football/players/460493.png
+460494,Joaquim,Joaquim Paolazzi Ananias,19,Brazil,Goleiro,https://media.api-sports.io/football/players/460494.png
+460495,Lucas Vargas,Lucas Vargas Cavalcanti,20,Brazil,Atacante,https://media.api-sports.io/football/players/460495.png
+460496,Kayke,Kayke Gouvêa Queiroz,19,Brazil,Atacante,https://media.api-sports.io/football/players/460496.png
+460497,Rhuan,Rhuan Lucas Gonçalves da Costa,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/460497.png
+460537,Lawan,Lawan Kennyd Gabriel Santos,20,Brazil,Atacante,https://media.api-sports.io/football/players/460537.png
+460845,João Tilápia,João Vitor Campos de Assis Ataide,20,Brazil,Atacante,https://media.api-sports.io/football/players/460845.png
+461009,Devid,Devid Richard Leite Santos,20,Brazil,Defensor,https://media.api-sports.io/football/players/461009.png
+461010,Luis Octavio,Luis Octavio Aurelio Lopes,18,Brazil,Defensor,https://media.api-sports.io/football/players/461010.png
+461690,Davi Goes,Davi Goes Silva Ferreira Carvalho,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/461690.png
+463947,Murilo D&apos;Angelo,Murilo D'Angelo Palomares,20,Brazil,Goleiro,https://media.api-sports.io/football/players/463947.png
+463948,Arthur Barbosa,Arthur Barbosa Moura de Oliveira,19,Brazil,Defensor,https://media.api-sports.io/football/players/463948.png
+463949,Gabriel Cunha,Gabriel de Sousa Santos da Cunha,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/463949.png
+463950,Tavinho,Luiz Otavio Maria,21,Brazil,Atacante,https://media.api-sports.io/football/players/463950.png
+463951,Henrique Menke,Henrique Menke Lopes,18,Brazil,Goleiro,https://media.api-sports.io/football/players/463951.png
+463952,Kauã Barbosa,Kauã da Silva Barbosa,18,Brazil,Defensor,https://media.api-sports.io/football/players/463952.png
+463953,Guilherme Bahia,Guilherme de Jesus Lima,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/463953.png
+463954,Eduardo Carvalho,Eduardo de Oliveira Carvalho,20,Brazil,Defensor,https://media.api-sports.io/football/players/463954.png
+463955,Italo,Italo Lucas do Nascimento Pereira,20,Brazil,Defensor,https://media.api-sports.io/football/players/463955.png
+463956,Pedro Kauã,Pedro Kauã Rodrigues Machado,19,Brazil,Defensor,https://media.api-sports.io/football/players/463956.png
+463957,Carioca,Guilherme Santos Barbosa,18,Brazil,Defensor,https://media.api-sports.io/football/players/463957.png
+463958,Rodriguinho,Rodrigo Otávio da Costa Rocha Filho,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/463958.png
+463959,Luis Otávio,Luis Otávio Costa de Aquino,18,Brazil,Meio-Campo,https://media.api-sports.io/football/players/463959.png
+463960,Adriel,Adriel Henrique Souza Bastos,21,Brazil,Atacante,https://media.api-sports.io/football/players/463960.png
+463961,Pedrinho,Pedro Henrique de Oliveira Marques,20,Brazil,Atacante,https://media.api-sports.io/football/players/463961.png
+463962,Yago,Yago Eduardo Noal Lopes,18,Brazil,Atacante,https://media.api-sports.io/football/players/463962.png
+463963,Felipe Lopes,Felipe Fonseca Lopes,20,Brazil,Goleiro,https://media.api-sports.io/football/players/463963.png
+463964,Lucas Moraes,Lucas Moraes Cavalcante,17,Brazil,Goleiro,https://media.api-sports.io/football/players/463964.png
+463965,Mateusinho,Matheus da Silva Duarte,20,Brazil,Defensor,https://media.api-sports.io/football/players/463965.png
+463966,Vinicius Dorneles,Vinicius Dorneles Teixeira,21,Brazil,Defensor,https://media.api-sports.io/football/players/463966.png
+463967,Luisão,Luis Henrique Fonseca Soares,20,Brazil,Defensor,https://media.api-sports.io/football/players/463967.png
+463968,Vinicius Bertuchi,Vinicius Nogueira Bertuchi,20,Brazil,Defensor,https://media.api-sports.io/football/players/463968.png
+463969,Lucas di Almeida,Lucas di Almeida Gonçalves,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/463969.png
+463970,Guilherme Sousa,Guilherme dos Santos Sousa,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/463970.png
+463971,João Arthur,João Arthur Gervasio da Silva Lima,18,Brazil,Meio-Campo,https://media.api-sports.io/football/players/463971.png
+463972,Thomas,Thomas Ubisk da Silva,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/463972.png
+463973,Bibi,Victor Gabriel Pereira de Araujo,20,Brazil,Atacante,https://media.api-sports.io/football/players/463973.png
+463974,Titto,Titto Teles Vasconcelos Mattos,20,Brazil,Atacante,https://media.api-sports.io/football/players/463974.png
+463975,Dieguinho,Diego da Cruz Lopes,18,Brazil,Meio-Campo,https://media.api-sports.io/football/players/463975.png
+463976,Vitinho,Victor Dourado dos Santos,17,Brazil,Meio-Campo,https://media.api-sports.io/football/players/463976.png
+463977,Luiz Fernando,Luiz Fernando dos Santos de Nardi,18,Brazil,Atacante,https://media.api-sports.io/football/players/463977.png
+463978,Kauã,Kauã Henrique Sampaio de Souza,17,Brazil,Atacante,https://media.api-sports.io/football/players/463978.png
+463979,Guilherme Inácio,Guilherme William Silva Inácio,18,Brazil,Atacante,https://media.api-sports.io/football/players/463979.png
+463980,M. Voronov,Maksym Voronov,19,Ukraine,Goleiro,https://media.api-sports.io/football/players/463980.png
+463981,Fábio Lucas,Fábio Lucas Ferreira dos Santos,19,Brazil,Defensor,https://media.api-sports.io/football/players/463981.png
+463982,Guilherme Back,Guilherme Back Kerschbaumm,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/463982.png
+463983,Kauê Sestrem,Kauê Vinicius Sestrem da Costa,19,Brazil,Atacante,https://media.api-sports.io/football/players/463983.png
+463984,Sorriso,Luiz Fernando Salles de Castro,19,Brazil,Atacante,https://media.api-sports.io/football/players/463984.png
+463986,João Loiola,João Victor Loiola Santos,20,Brazil,Defensor,https://media.api-sports.io/football/players/463986.png
+463987,Wallace II,Wallace Davi Nunes da Silva Dias,18,Brazil,Meio-Campo,https://media.api-sports.io/football/players/463987.png
+463988,Isaque,Isaque Severino Silva,18,Brazil,Meio-Campo,https://media.api-sports.io/football/players/463988.png
+464001,João Lima,João Vitor Lima Nogueira da Silva,20,Brazil,Defensor,https://media.api-sports.io/football/players/464001.png
+464002,Athos Thawan,Athos Thawan Miranda da Silva,20,Brazil,Defensor,https://media.api-sports.io/football/players/464002.png
+464003,Caio Araújo,Caio de Oliveira Araújo,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/464003.png
+464004,Alysson Edward,Alysson Edward Franco da Rocha dos Santos,19,Brazil,Atacante,https://media.api-sports.io/football/players/464004.png
+464005,Guga,Gustavo Gouveia Rodrigues Cruz,19,Brazil,Atacante,https://media.api-sports.io/football/players/464005.png
+464017,Germano,Antonio Germano da Silva Neto,19,Brazil,Defensor,https://media.api-sports.io/football/players/464017.png
+464018,Luis Aucélio,Luis Guilherme de Oliveira Aucélio,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/464018.png
+464019,Aranha,Wanderson Carlos Ferreira dos Santos,21,Brazil,Goleiro,https://media.api-sports.io/football/players/464019.png
+464020,Gabriel Kidani,Gabriel Kidani Bernardino,18,Brazil,Defensor,https://media.api-sports.io/football/players/464020.png
+464021,Rafael Coutinho,Rafael Barbosa Coutinho,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/464021.png
+464022,Wendell Sacramento,Wendell dos Santos Sacramento,20,Brazil,Atacante,https://media.api-sports.io/football/players/464022.png
+465165,Kenji,Kaique Kenji Takamura Correa,19,Brazil,Atacante,https://media.api-sports.io/football/players/465165.png
+465166,Arthur Viana,Arthur Rodrigues Viana,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/465166.png
+465167,Gustavo Zago,Gustavo Garbelini Zago,19,Brazil,Atacante,https://media.api-sports.io/football/players/465167.png
+465168,Tevis Gabriel,Tevis Gabriel Alves Santos,19,Brazil,Atacante,https://media.api-sports.io/football/players/465168.png
+465169,Murilo Rhikman,Murilo Rhikman Alves Pimentel,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/465169.png
+465170,Gui Meira,Guilherme Meira Ferreira Alves,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/465170.png
+465171,Nicolas Pontes,Nicolas Pontes De Souza Almeida,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/465171.png
+465172,Alessandro,Alessandro Rogério da Silva Júnior,18,Brazil,Meio-Campo,https://media.api-sports.io/football/players/465172.png
+465173,Henrique Silva,Henrique Fernandes da Silva,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/465173.png
+465174,C. Baptistella,Cauan Matteo Baptistella,18,Italy,Meio-Campo,https://media.api-sports.io/football/players/465174.png
+465175,Bruno Alves,Bruno Ferreira Alves,20,Brazil,Defensor,https://media.api-sports.io/football/players/465175.png
+465176,Victor Gabriel,Victor Gabriel Alves de Jesus,19,Brazil,Defensor,https://media.api-sports.io/football/players/465176.png
+465177,Marcelo,Marcelo Eráclito de Souza Filho,19,Brazil,Goleiro,https://media.api-sports.io/football/players/465177.png
+465178,Lucas Louback,Lucas Louback Gomes,19,Brazil,Atacante,https://media.api-sports.io/football/players/465178.png
+465179,Kauan Guilherme,Kauan Guilherme Lopes Pereira,20,Brazil,Atacante,https://media.api-sports.io/football/players/465179.png
+465180,Zé Phelipe,José Phelipe Phelipe dos Santos Dutra,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/465180.png
+465181,Mateus Iseppe,Mateus José Iseppe,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/465181.png
+465182,Paulo Gustavo,Paulo Gustavo Costa de Oliveira,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/465182.png
+465183,Maykon,Maykon Kesley de Jesus Ramalho,20,Brazil,Defensor,https://media.api-sports.io/football/players/465183.png
+465184,Robert,Robert Pinto Alves Assunção,20,Brazil,Goleiro,https://media.api-sports.io/football/players/465184.png
+465195,Paulo Sérgio,Paulo Sérgio Venuto Bezerra,20,Brazil,Atacante,https://media.api-sports.io/football/players/465195.png
+465196,Ryan Francisco,Ryan Francisco Rodrigues dos Santos Silva,19,Brazil,Atacante,https://media.api-sports.io/football/players/465196.png
+465197,João Gabriel,João Gabriel da Cruz Souza,21,Brazil,Atacante,https://media.api-sports.io/football/players/465197.png
+465198,Cauã Lucca,Cauã Lucca Silvério Ribeiro,21,Brazil,Meio-Campo,https://media.api-sports.io/football/players/465198.png
+465199,Lucas Ferreira,Lucas dos Santos Ferreira,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/465199.png
+465200,Matheus Alves,Matheus Alves Nascimento,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/465200.png
+465201,Guilherme Reis,Guilherme Reis Oliveira,19,Brazil,Defensor,https://media.api-sports.io/football/players/465201.png
+465202,Luis Osorio,Luis Osorio Messias de Oliveira,19,Brazil,Defensor,https://media.api-sports.io/football/players/465202.png
+465203,Lucas Loss,Lucas Brunoro Motta Retsos Loss,18,Brazil,Defensor,https://media.api-sports.io/football/players/465203.png
+465204,João Pedro,João Pedro Pantiga Gomes,19,Brazil,Goleiro,https://media.api-sports.io/football/players/465204.png
+467816,Mateus Schaffer,Mateus Gabriel Schaffer,18,Brazil,Defensor,https://media.api-sports.io/football/players/467816.png
+472802,Kayke Santos,Kayke Ayrton dos Santos Evaristo,17,Brazil,Atacante,https://media.api-sports.io/football/players/472802.png
+472847,João Trevisol,João Victor Trevisol da Silva,19,Brazil,Meio-Campo,https://media.api-sports.io/football/players/472847.png
+473310,Lucca Drummond,Lucca Pelosi Drummond,21,Brazil,Atacante,https://media.api-sports.io/football/players/473310.png
+473413,Igão,Igor Odoni Gomes,18,Brazil,Defensor,https://media.api-sports.io/football/players/473413.png
+475727,Juliano,Juliano Viana Papille,16,Brazil,Atacante,https://media.api-sports.io/football/players/475727.png
+482067,Adriel,Adriel Guilherme de Moraes,20,Brazil,Atacante,https://media.api-sports.io/football/players/482067.png
+482068,Fabiano,Fabiano Henrique Alves dos Santos,20,Brazil,Defensor,https://media.api-sports.io/football/players/482068.png
+486067,Jean Carlos Alves Ferreira,Jean Carlos Alves Ferreira,20,Brazil,Meio-Campo,https://media.api-sports.io/football/players/486067.png
+490157,Deivid,Deivid Andrade Soares,20,Brazil,Goleiro,https://media.api-sports.io/football/players/490157.png
+490476,Denner Evangelista,Denner Alves Evangelista Pereira,17,Brazil,Defensor,https://media.api-sports.io/football/players/490476.png
+492848,Paulo Roberto,Paulo Roberto Guimarães Bilion de Souza,19,Brazil,Atacante,https://media.api-sports.io/football/players/492848.png
+502726,Riquelme,Riquelme Felipe Silva de Almeida,18,Brazil,Meio-Campo,https://media.api-sports.io/football/players/502726.png
+502998,Tiago,Tiago Augusto Gonçalves,17,Brazil,Meio-Campo,https://media.api-sports.io/football/players/502998.png
+503145,Ruan Vitor,Ruan Vitor Oliveira Cardoso,20,Brazil,Atacante,https://media.api-sports.io/football/players/503145.png
+504017,Ruan,Ruan Rodrigues Carvalho,19,Brazil,Defensor,https://media.api-sports.io/football/players/504017.png

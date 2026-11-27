@@ -26,6 +26,8 @@ LOGGER = logging.getLogger("bi_futebol.extract")
 
 DEFAULT_BASE_URL = "https://v3.football.api-sports.io"
 DEFAULT_LEAGUE_ID = 71
+FREE_TIER_SEASON_OFFSET = 2  # Free plan exposes up to 2 seasons prior to current year
+DEFAULT_MAX_PLAYER_PAGES = 3  # Free plan limits /players pagination to 3 pages
 DEFAULT_MIN_INTERVAL_SECONDS = 6.5  # Safe for free-tier 10 req/min limit
 DEFAULT_TIMEOUT_SECONDS = 30.0
 MAX_RETRIES = 4
@@ -116,6 +118,7 @@ class ExtractionConfig:
     base_url: str = DEFAULT_BASE_URL
     min_interval_seconds: float = DEFAULT_MIN_INTERVAL_SECONDS
     timeout_seconds: float = DEFAULT_TIMEOUT_SECONDS
+    max_player_pages: int | None = DEFAULT_MAX_PLAYER_PAGES
 
 
 class ApiFootballClient:
@@ -236,12 +239,28 @@ class ApiFootballClient:
 
         raise ApiFootballError(f"Exhausted retries calling {endpoint}.")
 
-    def _get_paginated(self, endpoint: str, params: dict[str, Any]) -> list[dict[str, Any]]:
+    def _get_paginated(
+        self,
+        endpoint: str,
+        params: dict[str, Any],
+        *,
+        max_pages: int | None = None,
+    ) -> list[dict[str, Any]]:
         all_items: list[dict[str, Any]] = []
         page = 1
         total_pages = 1
+        effective_limit = max_pages if max_pages and max_pages > 0 else None
 
         while page <= total_pages:
+            if effective_limit is not None and page > effective_limit:
+                LOGGER.warning(
+                    "Reached max_pages=%d for %s (API reported %d total pages). Stopping pagination.",
+                    effective_limit,
+                    endpoint,
+                    total_pages,
+                )
+                break
+
             page_params = {**params, "page": page}
             payload = self._get(endpoint, params=page_params)
             items = payload.get("response") or []
@@ -292,16 +311,63 @@ class ApiFootballClient:
         LOGGER.info("Fetched %d fixtures for league=%d season=%d.", len(items), league_id, season)
         return items
 
-    def fetch_players(self, league_id: int, season: int) -> list[dict[str, Any]]:
-        """Fetch all paginated player records for the league/season."""
-        items = self._get_paginated("players", params={"league": league_id, "season": season})
+    def fetch_players(
+        self,
+        league_id: int,
+        season: int,
+        *,
+        team_id: int | None = None,
+        max_pages: int | None = DEFAULT_MAX_PLAYER_PAGES,
+    ) -> list[dict[str, Any]]:
+        """Fetch paginated player records for a league/season (optionally filtered by team)."""
+        params: dict[str, Any] = {"league": league_id, "season": season}
+        if team_id is not None:
+            params["team"] = team_id
+
+        items = self._get_paginated(
+            "players",
+            params=params,
+            max_pages=max_pages,
+        )
         LOGGER.info(
-            "Fetched %d total player entries for league=%d season=%d.",
+            "Fetched %d player entries for league=%d season=%d%s.",
             len(items),
             league_id,
             season,
+            f" team={team_id}" if team_id is not None else "",
         )
         return items
+
+    def fetch_players_by_teams(
+        self,
+        league_id: int,
+        season: int,
+        team_ids: list[int],
+        *,
+        max_pages: int | None = DEFAULT_MAX_PLAYER_PAGES,
+    ) -> list[dict[str, Any]]:
+        """Fetch players iterating team-by-team to stay within free-tier page limits."""
+        all_players: list[dict[str, Any]] = []
+        total_teams = len(team_ids)
+
+        for idx, team_id in enumerate(team_ids, start=1):
+            LOGGER.info("Fetching players for team %d/%d (team_id=%d).", idx, total_teams, team_id)
+            team_players = self.fetch_players(
+                league_id,
+                season,
+                team_id=team_id,
+                max_pages=max_pages,
+            )
+            all_players.extend(team_players)
+
+        LOGGER.info(
+            "Fetched %d total player entries across %d teams for league=%d season=%d.",
+            len(all_players),
+            total_teams,
+            league_id,
+            season,
+        )
+        return all_players
 
 
 def _parse_retry_after(header_value: str | None) -> float | None:
@@ -640,23 +706,9 @@ def transform_players_and_stats(
         )
     else:
         df_stats = pd.DataFrame(stats_rows, columns=ESTATISTICAS_COLUMNS)
-        # Ensure strict (id_jogador, id_clube) uniqueness per season grain
-        if df_stats.duplicated(subset=["id_jogador", "id_clube"]).any():
-            sum_cols = [
-                col
-                for col in stats_int_cols
-                if col not in ("id_jogador", "id_clube")
-            ]
-            agg_spec: dict[str, str] = {col: "sum" for col in sum_cols}
-            agg_spec["nota_media"] = "mean"
-            agg_spec["passes_precisao_pct"] = "mean"
-            df_stats = (
-                df_stats.groupby(["id_jogador", "id_clube"], as_index=False)
-                .agg(agg_spec)
-                .reindex(columns=ESTATISTICAS_COLUMNS)
-            )
-            df_stats["nota_media"] = df_stats["nota_media"].round(2)
-            df_stats["passes_precisao_pct"] = df_stats["passes_precisao_pct"].round(4)
+        # Deduplicate (id_jogador, id_clube) because team-by-team queries return
+        # transferred players' full-season stats in multiple team responses.
+        df_stats = df_stats.drop_duplicates(subset=["id_jogador", "id_clube"], keep="last")
 
         for col in stats_int_cols:
             df_stats[col] = df_stats[col].astype("Int64")
@@ -676,20 +728,45 @@ def save_csv_atomically(df: pd.DataFrame, target_path: Path) -> None:
     LOGGER.info("Saved %s (%d rows).", target_path, len(df))
 
 
+def resolve_free_tier_season(reference_year: int | None = None) -> int:
+    """Return the latest season available on API-Football's free plan (2 years prior)."""
+    year = reference_year if reference_year is not None else datetime.now(BRT_TIMEZONE).year
+    return year - FREE_TIER_SEASON_OFFSET
+
+
 def run_pipeline(config: ExtractionConfig) -> dict[str, Path]:
     """Execute end-to-end extraction, transformation, and CSV persistence."""
+    season = config.season if config.season is not None else resolve_free_tier_season()
+    LOGGER.info("Running extraction for league_id=%d, season=%d.", config.league_id, season)
+
     with ApiFootballClient(
         config.api_key,
         base_url=config.base_url,
         min_interval_seconds=config.min_interval_seconds,
         timeout_seconds=config.timeout_seconds,
     ) as client:
-        season = config.season or client.fetch_current_season(config.league_id)
-        LOGGER.info("Running extraction for league_id=%d, season=%d.", config.league_id, season)
-
         teams_raw = client.fetch_teams(config.league_id, season)
         fixtures_raw = client.fetch_fixtures(config.league_id, season)
-        players_raw = client.fetch_players(config.league_id, season)
+        team_ids = sorted(
+            {
+                int(item["team"]["id"])
+                for item in teams_raw
+                if (item.get("team") or {}).get("id") is not None
+            }
+        )
+        if team_ids:
+            players_raw = client.fetch_players_by_teams(
+                config.league_id,
+                season,
+                team_ids,
+                max_pages=config.max_player_pages,
+            )
+        else:
+            players_raw = client.fetch_players(
+                config.league_id,
+                season,
+                max_pages=config.max_player_pages,
+            )
 
     df_clubes = transform_clubs(teams_raw)
     df_partidas = transform_matches(fixtures_raw)
@@ -728,7 +805,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         "--season",
         type=int,
         default=int(os.environ["SEASON"]) if os.getenv("SEASON") else None,
-        help="Target season year (e.g., 2026). Auto-detected if omitted.",
+        help="Target season year (default: current year - 2 for API-Football free tier).",
     )
     parser.add_argument(
         "--output-dir",
@@ -743,6 +820,12 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         help="Minimum delay in seconds between API calls (default: 6.5).",
     )
     parser.add_argument(
+        "--max-player-pages",
+        type=int,
+        default=int(os.getenv("MAX_PLAYER_PAGES", DEFAULT_MAX_PLAYER_PAGES)),
+        help="Maximum /players pages to fetch (default: 3 for free tier; 0 = unlimited).",
+    )
+    parser.add_argument(
         "--log-level",
         default=os.getenv("LOG_LEVEL", "INFO"),
         choices=["DEBUG", "INFO", "WARNING", "ERROR"],
@@ -753,13 +836,12 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
 
 def main(argv: list[str] | None = None) -> int:
     """CLI entrypoint."""
+    load_dotenv()
     args = parse_args(argv)
     logging.basicConfig(
         level=getattr(logging, args.log_level),
         format="%(asctime)s | %(levelname)s | %(name)s | %(message)s",
     )
-
-    load_dotenv()
 
     api_key = os.getenv("API_FOOTBALL_KEY", "").strip()
     if not api_key:
@@ -775,6 +857,7 @@ def main(argv: list[str] | None = None) -> int:
         season=args.season,
         output_dir=args.output_dir,
         min_interval_seconds=args.min_interval,
+        max_player_pages=args.max_player_pages if args.max_player_pages > 0 else None,
     )
 
     try:
