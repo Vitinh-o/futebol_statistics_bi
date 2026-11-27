@@ -18,7 +18,7 @@ import re
 import time
 from typing import Any
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
-
+from dotenv import load_dotenv
 import pandas as pd
 import requests
 
@@ -758,6 +758,8 @@ def main(argv: list[str] | None = None) -> int:
         level=getattr(logging, args.log_level),
         format="%(asctime)s | %(levelname)s | %(name)s | %(message)s",
     )
+
+    load_dotenv()
 
     api_key = os.getenv("API_FOOTBALL_KEY", "").strip()
     if not api_key:
