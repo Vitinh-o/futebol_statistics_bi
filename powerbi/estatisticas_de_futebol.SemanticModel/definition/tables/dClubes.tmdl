@@ -1,0 +1,67 @@
+/// Dimensão de clubes do Brasileirão Série A
+table dClubes
+	lineageTag: 2a085d58-be5d-4ce8-84b7-483624ee3a5e
+
+	column id_clube
+		dataType: int64
+		isKey
+		isNullable: false
+		lineageTag: 2b7408a3-19d6-4d06-831f-a60901a89c5d
+		summarizeBy: none
+		sourceColumn: id_clube
+
+	column nome_clube
+		dataType: string
+		lineageTag: 65b4a7a0-0c76-45f6-abd9-098717d15ffa
+		sourceColumn: nome_clube
+
+	column sigla
+		dataType: string
+		lineageTag: 4bb504c6-10ef-4568-beab-f1640d294674
+		sourceColumn: sigla
+
+	column escudo_url
+		dataType: string
+		lineageTag: eee8b795-0ff0-405e-ad4c-4df88de69008
+		dataCategory: ImageUrl
+		sourceColumn: escudo_url
+
+	column estadio
+		dataType: string
+		lineageTag: a393178b-39f1-4e3a-93a2-4dc88369f303
+		sourceColumn: estadio
+
+	column cidade
+		dataType: string
+		lineageTag: ea29b2ca-eab5-4e19-919d-585a81ae6001
+		sourceColumn: cidade
+
+	partition dClubes = m
+		mode: import
+		source =
+				let
+				    // Remove eventual barra final do parâmetro pBaseUrl
+				    BaseUrlLimpa = Text.TrimEnd(pBaseUrl, "/"),
+				    // Carrega o CSV de clubes diretamente do GitHub via parâmetro
+				    Fonte = Csv.Document(
+				        Web.Contents(BaseUrlLimpa & "/clubes.csv"),
+				        [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]
+				    ),
+				    // Promove a primeira linha como cabeçalho
+				    CabecalhosPromovidos = Table.PromoteHeaders(Fonte, [PromoteAllScalars = true]),
+				    // Tipagem explícita usando cultura en-US para consistência com o arquivo gerado em Python
+				    TiposAlterados = Table.TransformColumnTypes(
+				        CabecalhosPromovidos,
+				        {
+				            {"id_clube", Int64.Type},
+				            {"nome_clube", type text},
+				            {"sigla", type text},
+				            {"escudo_url", type text},
+				            {"estadio", type text},
+				            {"cidade", type text}
+				        },
+				        "en-US"
+				    )
+				in
+				    TiposAlterados
+

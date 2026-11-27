@@ -1,0 +1,53 @@
+/// Tabela desconectada para seleção do Jogador B no comparativo Head-to-Head
+table dJogador_B
+	lineageTag: 0250456e-909b-4925-ae4c-44b5481b46e1
+
+	column id_jogador
+		dataType: int64
+		isKey
+		isNullable: false
+		lineageTag: 2d09f945-d70c-4014-ba18-2641e7dd6adb
+		summarizeBy: none
+		sourceColumn: id_jogador
+
+	column nome_jogador
+		dataType: string
+		lineageTag: 9744cf69-6b33-43f6-8ac9-4e71bd8ee38c
+		sourceColumn: nome_jogador
+
+	column nome_completo
+		dataType: string
+		lineageTag: bd377b45-771d-4223-b2ee-dd08e63f0f83
+		sourceColumn: nome_completo
+
+	column idade
+		dataType: int64
+		lineageTag: d07fc0ac-2158-458c-9caf-101e5a2e69d4
+		summarizeBy: none
+		sourceColumn: idade
+
+	column nacionalidade
+		dataType: string
+		lineageTag: e1fa9123-6512-469a-8ce6-e0cf5b066d3f
+		sourceColumn: nacionalidade
+
+	column posicao
+		dataType: string
+		lineageTag: 495a0d58-d145-46d8-9197-4321e52403be
+		sourceColumn: posicao
+
+	column foto_url
+		dataType: string
+		lineageTag: 7c2cb829-4642-45d0-a39a-2a947bc1a427
+		dataCategory: ImageUrl
+		sourceColumn: foto_url
+
+	partition dJogador_B = m
+		mode: import
+		source =
+				let
+				    // Referência direta à dimensão dJogadores para evitar nova requisição HTTP
+				    Fonte = dJogadores
+				in
+				    Fonte
+

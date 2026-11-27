@@ -9,7 +9,19 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_ProTooling = ["DevMode"]
+annotation PBI_ProTooling = ["DevMode","MCP-PBIModeling"]
+
+annotation PBI_QueryOrder = ["pBaseUrl"]
+
+ref table dClubes
+ref table dJogadores
+ref table dJogador_A
+ref table dJogador_B
+ref table fPartidas
+ref table dRodadas
+ref table fEstatisticasJogador
+ref table dCalendario
+ref table _Medidas
 
 ref cultureInfo en-US
 

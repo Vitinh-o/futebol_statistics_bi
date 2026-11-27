@@ -1,0 +1,55 @@
+/// Dimensão de rodadas derivada de fPartidas
+table dRodadas
+	lineageTag: 9a6e6959-36ad-433a-957c-e721f4fbcf5f
+
+	column rodada_num
+		dataType: int64
+		isKey
+		isNullable: false
+		lineageTag: b46d5a54-a899-4a30-aaf8-66658e86f621
+		summarizeBy: none
+		sourceColumn: rodada_num
+
+	column rodada_label
+		dataType: string
+		isNullable: false
+		lineageTag: 90b97388-dfcf-4803-b11a-2e1cc43b6a39
+		sourceColumn: rodada_label
+		sortByColumn: rodada_num
+
+	column turno
+		dataType: string
+		isNullable: false
+		lineageTag: 0b1e784f-d98b-4953-88b0-6730ca926ecb
+		sourceColumn: turno
+
+	partition dRodadas = m
+		mode: import
+		source =
+				let
+				    // Referencia fPartidas para derivar as rodadas únicas sem nova chamada HTTP
+				    Fonte = fPartidas,
+				    // Seleciona apenas a coluna de número da rodada
+				    ColunaSelecionada = Table.SelectColumns(Fonte, {"rodada_num"}),
+				    // Remove eventuais nulos antes da deduplicação
+				    SemNulos = Table.SelectRows(ColunaSelecionada, each [rodada_num] <> null),
+				    // Mantém apenas rodadas distintas e ordena numericamente
+				    RodadasDistintas = Table.Distinct(SemNulos),
+				    RodadasOrdenadas = Table.Sort(RodadasDistintas, {{"rodada_num", Order.Ascending}}),
+				    // Gera rótulo padronizado ("Rodada 01" ... "Rodada 38")
+				    AdicionaLabel = Table.AddColumn(
+				        RodadasOrdenadas,
+				        "rodada_label",
+				        each "Rodada " & Text.PadStart(Text.From([rodada_num]), 2, "0"),
+				        type text
+				    ),
+				    // Classifica entre 1º Turno (1-19) e 2º Turno (20-38)
+				    AdicionaTurno = Table.AddColumn(
+				        AdicionaLabel,
+				        "turno",
+				        each if [rodada_num] <= 19 then "1º Turno" else "2º Turno",
+				        type text
+				    )
+				in
+				    AdicionaTurno
+

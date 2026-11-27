@@ -1,0 +1,102 @@
+/// Fato de partidas no grão clube por partida (2 linhas por jogo)
+table fPartidas
+	lineageTag: a1344f2e-69bc-4a6e-a5fd-fa9a76884d88
+
+	column id_partida
+		dataType: int64
+		isNullable: false
+		lineageTag: 7a65cbb8-0c38-49fe-8274-c0979d5465b2
+		summarizeBy: none
+		sourceColumn: id_partida
+
+	column rodada_num
+		dataType: int64
+		isNullable: false
+		lineageTag: 8ea784fd-19ff-459c-ac70-551e8033a1cf
+		summarizeBy: none
+		sourceColumn: rodada_num
+
+	column data_jogo
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 301ce445-5d2a-4b18-b573-d7a10b5452be
+		sourceColumn: data_jogo
+
+	column id_clube
+		dataType: int64
+		isNullable: false
+		lineageTag: 4b596ffd-cc41-4f34-aade-e76fc2bd892d
+		summarizeBy: none
+		sourceColumn: id_clube
+
+	column id_adversario
+		dataType: int64
+		isNullable: false
+		lineageTag: 209df268-d229-432d-b0ee-9bbd40be942a
+		summarizeBy: none
+		sourceColumn: id_adversario
+
+	column mando
+		dataType: string
+		lineageTag: fd206c7b-a740-4109-8ab0-85729e82954d
+		sourceColumn: mando
+
+	column status_jogo
+		dataType: string
+		lineageTag: b07f0ce2-1591-408a-91d5-babf0822d533
+		sourceColumn: status_jogo
+
+	column gols_pro
+		dataType: int64
+		lineageTag: 38acbcad-57cb-4a4a-83cb-e56cc7028bf2
+		sourceColumn: gols_pro
+
+	column gols_contra
+		dataType: int64
+		lineageTag: 1fe29a23-ede0-4417-a8f2-2b05d738d814
+		sourceColumn: gols_contra
+
+	column pontos
+		dataType: int64
+		lineageTag: 3fdc4ce4-4151-43f6-9dd0-8557a9411400
+		sourceColumn: pontos
+
+	column resultado
+		dataType: string
+		lineageTag: 789f4669-be68-4bf6-b5f6-e0a5293a6aff
+		sourceColumn: resultado
+
+	partition fPartidas = m
+		mode: import
+		source =
+				let
+				    // Remove eventual barra final do parâmetro pBaseUrl
+				    BaseUrlLimpa = Text.TrimEnd(pBaseUrl, "/"),
+				    // Carrega o CSV de partidas diretamente do GitHub via parâmetro
+				    Fonte = Csv.Document(
+				        Web.Contents(BaseUrlLimpa & "/partidas.csv"),
+				        [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]
+				    ),
+				    // Promove a primeira linha como cabeçalho
+				    CabecalhosPromovidos = Table.PromoteHeaders(Fonte, [PromoteAllScalars = true]),
+				    // Tipagem explícita em en-US para interpretar datas ISO (YYYY-MM-DD) corretamente
+				    TiposAlterados = Table.TransformColumnTypes(
+				        CabecalhosPromovidos,
+				        {
+				            {"id_partida", Int64.Type},
+				            {"rodada_num", Int64.Type},
+				            {"data_jogo", type date},
+				            {"id_clube", Int64.Type},
+				            {"id_adversario", Int64.Type},
+				            {"mando", type text},
+				            {"status_jogo", type text},
+				            {"gols_pro", Int64.Type},
+				            {"gols_contra", Int64.Type},
+				            {"pontos", Int64.Type},
+				            {"resultado", type text}
+				        },
+				        "en-US"
+				    )
+				in
+				    TiposAlterados
+

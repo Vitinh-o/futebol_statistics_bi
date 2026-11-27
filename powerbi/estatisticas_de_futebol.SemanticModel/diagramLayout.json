@@ -4,10 +4,128 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 0,
+        "x": 905,
         "y": 0
       },
-      "nodes": [],
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 38
+          },
+          "nodeIndex": "dClubes",
+          "nodeLineageTag": "2a085d58-be5d-4ce8-84b7-483624ee3a5e",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 284,
+            "y": 26
+          },
+          "nodeIndex": "dJogador_A",
+          "nodeLineageTag": "185d5049-b3d4-42ea-a4f8-3ad08bc3add3",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 568,
+            "y": 26
+          },
+          "nodeIndex": "dJogador_B",
+          "nodeLineageTag": "0250456e-909b-4925-ae4c-44b5481b46e1",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 852,
+            "y": 26
+          },
+          "nodeIndex": "dJogadores",
+          "nodeLineageTag": "35dcfbfd-7f7b-48d8-b095-38f0704293ea",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1136,
+            "y": 74
+          },
+          "nodeIndex": "dRodadas",
+          "nodeLineageTag": "9a6e6959-36ad-433a-957c-e721f4fbcf5f",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1420,
+            "y": 0
+          },
+          "nodeIndex": "fEstatisticasJogador",
+          "nodeLineageTag": "fc465d53-a849-495f-9441-1207db0d7f33",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1704,
+            "y": 0
+          },
+          "nodeIndex": "fPartidas",
+          "nodeLineageTag": "a1344f2e-69bc-4a6e-a5fd-fa9a76884d88",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1988,
+            "y": 50
+          },
+          "nodeIndex": "_Medidas",
+          "nodeLineageTag": "f63e0794-a83e-4bf0-bc5e-49690a0dfbf4",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2272,
+            "y": 0
+          },
+          "nodeIndex": "dCalendario",
+          "nodeLineageTag": "c283d590-a9e5-44f3-a722-7569172a13d4",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
       "name": "Todas as tabelas",
       "zoomValue": 100,
       "pinKeyFieldsToTop": false,

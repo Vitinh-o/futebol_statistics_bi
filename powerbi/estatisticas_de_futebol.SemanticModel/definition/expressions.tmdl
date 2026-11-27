@@ -1,0 +1,10 @@
+/// Url base do github desse repositório
+expression pBaseUrl =
+		let
+		    Fonte = "https://raw.githubusercontent.com/Vitinh-o/futebol_statistics_bi/main/data" meta [IsParameterQuery = true, IsParameterQueryRequired = false, Type = type text]
+		in
+		    Fonte
+	lineageTag: aabff8cd-33a2-479c-bcc8-176d9b7f0b9c
+
+	annotation PBI_ResultType = Text
+

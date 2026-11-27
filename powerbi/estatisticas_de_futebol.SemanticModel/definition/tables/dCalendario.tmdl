@@ -1,0 +1,89 @@
+/// Dimensão calendário ancorada nas datas de fPartidas
+table dCalendario
+	lineageTag: c283d590-a9e5-44f3-a722-7569172a13d4
+	dataCategory: Time
+
+	column Date
+		isHidden
+		isNameInferred
+		sourceColumn: [Date]
+
+	column Data
+		isUnique
+		isKey
+		formatString: Short Date
+		isNameInferred
+		sourceColumn: [Data]
+
+	column Ano
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Ano]
+
+	column Mes_Num
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Mes_Num]
+
+	column Mes_Nome
+		isNameInferred
+		sourceColumn: [Mes_Nome]
+		sortByColumn: Mes_Num
+
+	column Mes_Abrev
+		isNameInferred
+		sourceColumn: [Mes_Abrev]
+		sortByColumn: Mes_Num
+
+	column Ano_Mes
+		isNameInferred
+		sourceColumn: [Ano_Mes]
+
+	column Ano_Mes_Num
+		isHidden
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Ano_Mes_Num]
+
+	column Ano_Mes_Label
+		isNameInferred
+		sourceColumn: [Ano_Mes_Label]
+		sortByColumn: Ano_Mes_Num
+
+	column Trimestre
+		isNameInferred
+		sourceColumn: [Trimestre]
+
+	column Dia_Semana_Num
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Dia_Semana_Num]
+
+	column Dia_Semana
+		isNameInferred
+		sourceColumn: [Dia_Semana]
+		sortByColumn: Dia_Semana_Num
+
+	partition dCalendario = calculated
+		mode: import
+		source =
+				VAR DataMin = MIN(fPartidas[data_jogo])
+				VAR DataMax = MAX(fPartidas[data_jogo])
+				VAR DataInicio = IF(ISBLANK(DataMin), DATE(2024, 1, 1), DATE(YEAR(DataMin), 1, 1))
+				VAR DataFim = IF(ISBLANK(DataMax), DATE(2024, 12, 31), DATE(YEAR(DataMax), 12, 31))
+				RETURN
+				ADDCOLUMNS(
+				    CALENDAR(DataInicio, DataFim),
+				    "Data", [Date],
+				    "Ano", YEAR([Date]),
+				    "Mes_Num", MONTH([Date]),
+				    "Mes_Nome", FORMAT([Date], "mmmm", "pt-BR"),
+				    "Mes_Abrev", FORMAT([Date], "mmm", "pt-BR"),
+				    "Ano_Mes", FORMAT([Date], "yyyy-MM"),
+				    "Ano_Mes_Num", YEAR([Date]) * 100 + MONTH([Date]),
+				    "Ano_Mes_Label", FORMAT([Date], "mmm/yy", "pt-BR"),
+				    "Trimestre", "T" & QUARTER([Date]),
+				    "Dia_Semana_Num", WEEKDAY([Date], 2),
+				    "Dia_Semana", FORMAT([Date], "dddd", "pt-BR")
+				)
+

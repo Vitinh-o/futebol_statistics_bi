@@ -1,0 +1,385 @@
+/// Tabela dedicada para organização de todas as medidas DAX do modelo
+table _Medidas
+	lineageTag: f63e0794-a83e-4bf0-bc5e-49690a0dfbf4
+
+	measure 'Pontos Totais' = SUM(fPartidas[pontos])
+		formatString: #,0
+		displayFolder: 01. Campeonato
+		lineageTag: 3b705691-efa4-42b2-96da-38b5b476ccab
+
+	measure 'Jogos Disputados' =
+			CALCULATE(
+			    COUNTROWS(fPartidas),
+			    fPartidas[status_jogo] = "FT"
+			)
+		formatString: #,0
+		displayFolder: 01. Campeonato
+		lineageTag: cc4d491d-0532-456f-b2b1-f2f3da9498cc
+
+	measure Vitórias =
+			CALCULATE(
+			    COUNTROWS(fPartidas),
+			    fPartidas[resultado] = "V",
+			    fPartidas[status_jogo] = "FT"
+			)
+		formatString: #,0
+		displayFolder: 01. Campeonato
+		lineageTag: e19e80fc-bf53-42ea-a659-9e8c38db71a3
+
+	measure Empates =
+			CALCULATE(
+			    COUNTROWS(fPartidas),
+			    fPartidas[resultado] = "E",
+			    fPartidas[status_jogo] = "FT"
+			)
+		formatString: #,0
+		displayFolder: 01. Campeonato
+		lineageTag: 78166cda-5000-4d9d-8058-9c025ce913e9
+
+	measure Derrotas =
+			CALCULATE(
+			    COUNTROWS(fPartidas),
+			    fPartidas[resultado] = "D",
+			    fPartidas[status_jogo] = "FT"
+			)
+		formatString: #,0
+		displayFolder: 01. Campeonato
+		lineageTag: 1ae0ab9e-7302-4e2e-a5ba-4e73218d80e0
+
+	measure 'Gols Pró' = SUM(fPartidas[gols_pro])
+		formatString: #,0
+		displayFolder: 01. Campeonato
+		lineageTag: fc7eb728-7dae-4e33-9b81-38800474faf3
+
+	measure 'Gols Contra' = SUM(fPartidas[gols_contra])
+		formatString: #,0
+		displayFolder: 01. Campeonato
+		lineageTag: 45e796ad-ef93-44ea-a472-bd819b6aa698
+
+	measure 'Saldo de Gols' = [Gols Pró] - [Gols Contra]
+		formatString: +#,0;-#,0;0
+		displayFolder: 01. Campeonato
+		lineageTag: 0874addd-e402-467d-ba3c-c19595e1f3c2
+
+	measure 'Aproveitamento %' = DIVIDE([Pontos Totais], [Jogos Disputados] * 3, 0)
+		formatString: 0.0%
+		displayFolder: 01. Campeonato
+		lineageTag: 069ef1e2-5c8c-4343-81ec-8efd456e27c3
+
+	measure 'Média Gols/Jogo' = DIVIDE([Gols Pró], [Jogos Disputados], 0)
+		formatString: 0.00
+		displayFolder: 01. Campeonato
+		lineageTag: e07248b4-e41c-40a7-b0f8-478d94877f59
+
+	measure 'Pontos Acumulados' =
+			VAR RodadaMax = MAX(dRodadas[rodada_num])
+			RETURN
+			CALCULATE(
+			    [Pontos Totais],
+			    FILTER(
+			        ALLSELECTED(dRodadas[rodada_num]),
+			        dRodadas[rodada_num] <= RodadaMax
+			    )
+			)
+		formatString: #,0
+		displayFolder: 01. Campeonato
+		lineageTag: 3a5f26c7-58ec-4bb9-8f82-67c672f53a42
+
+	measure 'Posição Classificação' =
+			VAR ClubeSelecionado = HASONEVALUE(dClubes[id_clube])
+			RETURN
+			IF(
+			    ClubeSelecionado,
+			    RANKX(
+			        ALLSELECTED(dClubes),
+			        [Pontos Totais] * 1000000
+			            + [Vitórias] * 10000
+			            + ([Saldo de Gols] + 500) * 100
+			            + [Gols Pró],
+			        ,
+			        DESC,
+			        DENSE
+			    )
+			)
+		formatString: #,0
+		displayFolder: 01. Campeonato
+		lineageTag: aec253ce-7160-4d16-8aa7-bb2ae2c523a3
+
+	measure 'Minutos Jogados' = SUM(fEstatisticasJogador[minutos_jogados])
+		formatString: #,0
+		displayFolder: 02. Jogadores
+		lineageTag: 4371a36b-49b6-44e1-9cfe-ddab6751e397
+
+	measure 'Jogos Jogador' = SUM(fEstatisticasJogador[jogos])
+		formatString: #,0
+		displayFolder: 02. Jogadores
+		lineageTag: e6a45b71-93ab-4172-9f55-5dbd4cfb3bc4
+
+	measure Titularidades = SUM(fEstatisticasJogador[titularidades])
+		formatString: #,0
+		displayFolder: 02. Jogadores
+		lineageTag: 1d1f6783-b341-48be-b7ff-89b969a42ec7
+
+	measure Gols = SUM(fEstatisticasJogador[gols])
+		formatString: #,0
+		displayFolder: 02. Jogadores
+		lineageTag: 1b863c06-3b2b-486b-93b6-33d4248eaad1
+
+	measure Assistências = SUM(fEstatisticasJogador[assistencias])
+		formatString: #,0
+		displayFolder: 02. Jogadores
+		lineageTag: 9bad98c2-a379-441a-8521-0e77950a8fee
+
+	measure 'Participações em Gol (G+A)' = [Gols] + [Assistências]
+		formatString: #,0
+		displayFolder: 02. Jogadores
+		lineageTag: 59b7b9a7-905d-43b0-a27b-d93656fd8b97
+
+	measure 'Nota Média' = AVERAGE(fEstatisticasJogador[nota_media])
+		formatString: 0.00
+		displayFolder: 02. Jogadores
+		lineageTag: 81079623-d222-436e-9356-0fa4c3ba6457
+
+	measure 'Gols por 90min' = DIVIDE([Gols] * 90, [Minutos Jogados], 0)
+		formatString: 0.00
+		displayFolder: 02. Jogadores
+		lineageTag: 30e5c423-2366-448c-ad43-20ecf8bdd77e
+
+	measure 'Assistências por 90min' = DIVIDE([Assistências] * 90, [Minutos Jogados], 0)
+		formatString: 0.00
+		displayFolder: 02. Jogadores
+		lineageTag: 83a089ab-7b8f-4226-a272-bc01eeac1401
+
+	measure 'G+A por 90min' = DIVIDE([Participações em Gol (G+A)] * 90, [Minutos Jogados], 0)
+		formatString: 0.00
+		displayFolder: 02. Jogadores
+		lineageTag: b5c1c0b3-585e-4947-963a-3abba941341c
+
+	measure 'Finalizações Totais' = SUM(fEstatisticasJogador[finalizacoes_total])
+		formatString: #,0
+		displayFolder: 02. Jogadores
+		lineageTag: 24c22f84-10c5-4179-8b73-42402574f6f9
+
+	measure 'Conversão de Chutes %' = DIVIDE([Gols], [Finalizações Totais], 0)
+		formatString: 0.0%
+		displayFolder: 02. Jogadores
+		lineageTag: 080831da-38fc-4670-a6ab-6e543a9803dc
+
+	measure 'Passes Chave' = SUM(fEstatisticasJogador[passes_chave])
+		formatString: #,0
+		displayFolder: 02. Jogadores
+		lineageTag: 6320dae8-08da-467f-9190-5cd3fc64d3ef
+
+	measure 'Precisão de Passe %' = AVERAGE(fEstatisticasJogador[passes_precisao_pct])
+		formatString: 0.0%
+		displayFolder: 02. Jogadores
+		lineageTag: 52b8bb7f-fee8-482f-a9a0-77e6b7a77e6f
+
+	measure Desarmes = SUM(fEstatisticasJogador[desarmes])
+		formatString: #,0
+		displayFolder: 02. Jogadores
+		lineageTag: 46ed2d26-efbe-466d-91af-6dd1e8e37517
+
+	measure 'Cartões Amarelos' = SUM(fEstatisticasJogador[cartoes_amarelos])
+		formatString: #,0
+		displayFolder: 02. Jogadores
+		lineageTag: 4384c783-b980-41d1-97c8-bcf537e59096
+
+	measure 'Cartões Vermelhos' = SUM(fEstatisticasJogador[cartoes_vermelhos])
+		formatString: #,0
+		displayFolder: 02. Jogadores
+		lineageTag: b580daed-e08f-4836-9578-b88bd5471092
+
+	measure 'Nota Média (A)' =
+			CALCULATE(
+			    [Nota Média],
+			    TREATAS(VALUES(dJogador_A[id_jogador]), fEstatisticasJogador[id_jogador])
+			)
+		formatString: 0.00
+		displayFolder: 03. Head-to-Head
+		lineageTag: c8653c41-f4ba-41b2-b30a-69eba8c50ac7
+
+	measure 'Nota Média (B)' =
+			CALCULATE(
+			    [Nota Média],
+			    TREATAS(VALUES(dJogador_B[id_jogador]), fEstatisticasJogador[id_jogador])
+			)
+		formatString: 0.00
+		displayFolder: 03. Head-to-Head
+		lineageTag: 77e0de96-c3a9-4e43-bfeb-baf8b1c70af0
+
+	measure 'Diff Nota Média (A - B)' = [Nota Média (A)] - [Nota Média (B)]
+		formatString: +0.00;-0.00;0.00
+		displayFolder: 03. Head-to-Head
+		lineageTag: 1c28594d-208d-43d2-8c3b-c90206f04893
+
+	measure 'Gols por 90min (A)' =
+			CALCULATE(
+			    [Gols por 90min],
+			    TREATAS(VALUES(dJogador_A[id_jogador]), fEstatisticasJogador[id_jogador])
+			)
+		formatString: 0.00
+		displayFolder: 03. Head-to-Head
+		lineageTag: 38a7f62a-f796-419a-905d-e9a913f2f114
+
+	measure 'Gols por 90min (B)' =
+			CALCULATE(
+			    [Gols por 90min],
+			    TREATAS(VALUES(dJogador_B[id_jogador]), fEstatisticasJogador[id_jogador])
+			)
+		formatString: 0.00
+		displayFolder: 03. Head-to-Head
+		lineageTag: 5cc11ecd-9d39-4947-a984-9fc0fcb4db5c
+
+	measure 'Diff Gols por 90min (A - B)' = [Gols por 90min (A)] - [Gols por 90min (B)]
+		formatString: +0.00;-0.00;0.00
+		displayFolder: 03. Head-to-Head
+		lineageTag: 824cfd19-f4ed-470a-92fd-ab1c8d45b1c6
+
+	measure 'Assistências por 90min (A)' =
+			CALCULATE(
+			    [Assistências por 90min],
+			    TREATAS(VALUES(dJogador_A[id_jogador]), fEstatisticasJogador[id_jogador])
+			)
+		formatString: 0.00
+		displayFolder: 03. Head-to-Head
+		lineageTag: ad252ab8-271f-477e-ab48-214ffbcdae4e
+
+	measure 'Assistências por 90min (B)' =
+			CALCULATE(
+			    [Assistências por 90min],
+			    TREATAS(VALUES(dJogador_B[id_jogador]), fEstatisticasJogador[id_jogador])
+			)
+		formatString: 0.00
+		displayFolder: 03. Head-to-Head
+		lineageTag: 21f77675-ab86-4248-8b4f-6ff28692abc1
+
+	measure 'Diff Assistências por 90min (A - B)' = [Assistências por 90min (A)] - [Assistências por 90min (B)]
+		formatString: +0.00;-0.00;0.00
+		displayFolder: 03. Head-to-Head
+		lineageTag: b3c331ba-86ec-4984-83f9-ed8bed3efae9
+
+	measure 'Participações em Gol (G+A) (A)' =
+			CALCULATE(
+			    [Participações em Gol (G+A)],
+			    TREATAS(VALUES(dJogador_A[id_jogador]), fEstatisticasJogador[id_jogador])
+			)
+		formatString: #,0
+		displayFolder: 03. Head-to-Head
+		lineageTag: 7dd06a35-45e9-4fff-a113-c606f345d198
+
+	measure 'Participações em Gol (G+A) (B)' =
+			CALCULATE(
+			    [Participações em Gol (G+A)],
+			    TREATAS(VALUES(dJogador_B[id_jogador]), fEstatisticasJogador[id_jogador])
+			)
+		formatString: #,0
+		displayFolder: 03. Head-to-Head
+		lineageTag: 65cebd73-7db0-4dad-a459-158f2d75d8ca
+
+	measure 'Diff Participações em Gol (G+A) (A - B)' = [Participações em Gol (G+A) (A)] - [Participações em Gol (G+A) (B)]
+		formatString: +#,0;-#,0;0
+		displayFolder: 03. Head-to-Head
+		lineageTag: 39ac6e57-5b56-497a-9931-06380bded96f
+
+	measure 'Passes Chave (A)' =
+			CALCULATE(
+			    [Passes Chave],
+			    TREATAS(VALUES(dJogador_A[id_jogador]), fEstatisticasJogador[id_jogador])
+			)
+		formatString: #,0
+		displayFolder: 03. Head-to-Head
+		lineageTag: 2134a05f-f1b4-4708-94bb-19266e28457c
+
+	measure 'Passes Chave (B)' =
+			CALCULATE(
+			    [Passes Chave],
+			    TREATAS(VALUES(dJogador_B[id_jogador]), fEstatisticasJogador[id_jogador])
+			)
+		formatString: #,0
+		displayFolder: 03. Head-to-Head
+		lineageTag: 292dc1ca-0cf0-452e-839f-080e21a64755
+
+	measure 'Diff Passes Chave (A - B)' = [Passes Chave (A)] - [Passes Chave (B)]
+		formatString: +#,0;-#,0;0
+		displayFolder: 03. Head-to-Head
+		lineageTag: f3dda0bd-3bc1-4abe-8aeb-abe4f8496df5
+
+	measure 'Precisão de Passe % (A)' =
+			CALCULATE(
+			    [Precisão de Passe %],
+			    TREATAS(VALUES(dJogador_A[id_jogador]), fEstatisticasJogador[id_jogador])
+			)
+		formatString: 0.0%
+		displayFolder: 03. Head-to-Head
+		lineageTag: 05b6e237-9492-4f29-b5a1-d7ea97c6cdbb
+
+	measure 'Precisão de Passe % (B)' =
+			CALCULATE(
+			    [Precisão de Passe %],
+			    TREATAS(VALUES(dJogador_B[id_jogador]), fEstatisticasJogador[id_jogador])
+			)
+		formatString: 0.0%
+		displayFolder: 03. Head-to-Head
+		lineageTag: e25e6373-0b1c-454b-bc0f-c4ee45a5f70e
+
+	measure 'Diff Precisão de Passe % (A - B)' = [Precisão de Passe % (A)] - [Precisão de Passe % (B)]
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: 03. Head-to-Head
+		lineageTag: ac56a8d2-9c8e-4003-ba3f-293b06699f06
+
+	measure 'Desarmes (A)' =
+			CALCULATE(
+			    [Desarmes],
+			    TREATAS(VALUES(dJogador_A[id_jogador]), fEstatisticasJogador[id_jogador])
+			)
+		formatString: #,0
+		displayFolder: 03. Head-to-Head
+		lineageTag: 41069a72-f706-4a27-b6c0-75d5c4d5eaf1
+
+	measure 'Desarmes (B)' =
+			CALCULATE(
+			    [Desarmes],
+			    TREATAS(VALUES(dJogador_B[id_jogador]), fEstatisticasJogador[id_jogador])
+			)
+		formatString: #,0
+		displayFolder: 03. Head-to-Head
+		lineageTag: ad6a7dd9-c4d9-42ec-8963-8491ece53cb3
+
+	measure 'Diff Desarmes (A - B)' = [Desarmes (A)] - [Desarmes (B)]
+		formatString: +#,0;-#,0;0
+		displayFolder: 03. Head-to-Head
+		lineageTag: 9a855043-4d90-4cc2-9dfb-ec01f5c822c6
+
+	measure 'Minutos Jogados (A)' =
+			CALCULATE(
+			    [Minutos Jogados],
+			    TREATAS(VALUES(dJogador_A[id_jogador]), fEstatisticasJogador[id_jogador])
+			)
+		formatString: #,0
+		displayFolder: 03. Head-to-Head
+		lineageTag: 000f7f55-21e7-44c4-8bf1-56b252631ae2
+
+	measure 'Minutos Jogados (B)' =
+			CALCULATE(
+			    [Minutos Jogados],
+			    TREATAS(VALUES(dJogador_B[id_jogador]), fEstatisticasJogador[id_jogador])
+			)
+		formatString: #,0
+		displayFolder: 03. Head-to-Head
+		lineageTag: a2eb8cae-a85c-4539-b2b8-cdf85be3f832
+
+	measure 'Diff Minutos Jogados (A - B)' = [Minutos Jogados (A)] - [Minutos Jogados (B)]
+		formatString: +#,0;-#,0;0
+		displayFolder: 03. Head-to-Head
+		lineageTag: a914b121-200e-4c26-a5c1-20012bea1c90
+
+	column __Dummy
+		isHidden
+		isNameInferred
+		sourceColumn: [__Dummy]
+
+	partition _Medidas = calculated
+		mode: import
+		source = ROW("__Dummy", BLANK())
+

@@ -1,0 +1,137 @@
+/// Fato de estatísticas individuais por jogador e clube na temporada
+table fEstatisticasJogador
+	lineageTag: fc465d53-a849-495f-9441-1207db0d7f33
+
+	column id_jogador
+		dataType: int64
+		isNullable: false
+		lineageTag: f2a1f8be-3bf7-4e66-a279-e09141f896b6
+		summarizeBy: none
+		sourceColumn: id_jogador
+
+	column id_clube
+		dataType: int64
+		isNullable: false
+		lineageTag: f498425f-d802-4c76-be4f-f039b66cf5e8
+		summarizeBy: none
+		sourceColumn: id_clube
+
+	column jogos
+		dataType: int64
+		lineageTag: 07cfe090-1c6c-4de6-a76c-a7af498bc5e3
+		sourceColumn: jogos
+
+	column titularidades
+		dataType: int64
+		lineageTag: 69e54daf-28b2-482e-b42c-e20921886e80
+		sourceColumn: titularidades
+
+	column minutos_jogados
+		dataType: int64
+		lineageTag: 55fe796a-d606-4175-97c7-764966519996
+		sourceColumn: minutos_jogados
+
+	column nota_media
+		dataType: double
+		formatString: 0.00
+		lineageTag: b3b402b8-e12f-44ff-8517-a928bd3b5dd6
+		summarizeBy: average
+		sourceColumn: nota_media
+
+	column gols
+		dataType: int64
+		lineageTag: 00f85898-258c-49a5-9336-422380e9924a
+		sourceColumn: gols
+
+	column assistencias
+		dataType: int64
+		lineageTag: a37e5489-4d15-4657-835d-9d5f91d7d050
+		sourceColumn: assistencias
+
+	column finalizacoes_total
+		dataType: int64
+		lineageTag: 9ab857ca-ffa9-4172-bd54-b840c27a0728
+		sourceColumn: finalizacoes_total
+
+	column finalizacoes_no_gol
+		dataType: int64
+		lineageTag: dc85cd29-a8b8-4968-83bc-e5d490c43696
+		sourceColumn: finalizacoes_no_gol
+
+	column passes_total
+		dataType: int64
+		lineageTag: de242474-97ff-4ef6-a613-8f4ec53fc672
+		sourceColumn: passes_total
+
+	column passes_precisao_pct
+		dataType: double
+		formatString: 0.0%
+		lineageTag: 9de2d88d-1416-4e06-92c8-5c0a6ac587c3
+		summarizeBy: average
+		sourceColumn: passes_precisao_pct
+
+	column passes_chave
+		dataType: int64
+		lineageTag: 6ab9ac53-160d-4f73-aa98-5403028a4991
+		sourceColumn: passes_chave
+
+	column desarmes
+		dataType: int64
+		lineageTag: d20894cc-7683-4c54-ab65-97efc13878c4
+		sourceColumn: desarmes
+
+	column interceptacoes
+		dataType: int64
+		lineageTag: 00a641ac-1be7-4b9d-8974-a7d11ab58cf7
+		sourceColumn: interceptacoes
+
+	column cartoes_amarelos
+		dataType: int64
+		lineageTag: 882790bb-14f9-4705-a2d3-8b59dfae3047
+		sourceColumn: cartoes_amarelos
+
+	column cartoes_vermelhos
+		dataType: int64
+		lineageTag: 8952f161-4603-4c61-a649-582ccd9f7b77
+		sourceColumn: cartoes_vermelhos
+
+	partition fEstatisticasJogador = m
+		mode: import
+		source =
+				let
+				    // Remove eventual barra final do parâmetro pBaseUrl
+				    BaseUrlLimpa = Text.TrimEnd(pBaseUrl, "/"),
+				    // Carrega o CSV de estatísticas individuais diretamente do GitHub via parâmetro
+				    Fonte = Csv.Document(
+				        Web.Contents(BaseUrlLimpa & "/estatisticas_jogadores.csv"),
+				        [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]
+				    ),
+				    // Promove a primeira linha como cabeçalho
+				    CabecalhosPromovidos = Table.PromoteHeaders(Fonte, [PromoteAllScalars = true]),
+				    // Tipagem explícita em cultura en-US para interpretar decimais com ponto (ex: 7.08) corretamente
+				    TiposAlterados = Table.TransformColumnTypes(
+				        CabecalhosPromovidos,
+				        {
+				            {"id_jogador", Int64.Type},
+				            {"id_clube", Int64.Type},
+				            {"jogos", Int64.Type},
+				            {"titularidades", Int64.Type},
+				            {"minutos_jogados", Int64.Type},
+				            {"nota_media", type number},
+				            {"gols", Int64.Type},
+				            {"assistencias", Int64.Type},
+				            {"finalizacoes_total", Int64.Type},
+				            {"finalizacoes_no_gol", Int64.Type},
+				            {"passes_total", Int64.Type},
+				            {"passes_precisao_pct", type number},
+				            {"passes_chave", Int64.Type},
+				            {"desarmes", Int64.Type},
+				            {"interceptacoes", Int64.Type},
+				            {"cartoes_amarelos", Int64.Type},
+				            {"cartoes_vermelhos", Int64.Type}
+				        },
+				        "en-US"
+				    )
+				in
+				    TiposAlterados
+

@@ -1,0 +1,74 @@
+/// Dimensão de jogadores do Brasileirão Série A
+table dJogadores
+	lineageTag: 35dcfbfd-7f7b-48d8-b095-38f0704293ea
+
+	column id_jogador
+		dataType: int64
+		isKey
+		isNullable: false
+		lineageTag: 93c8fc91-bbe6-4eeb-ab38-622d6d5bc554
+		summarizeBy: none
+		sourceColumn: id_jogador
+
+	column nome_jogador
+		dataType: string
+		lineageTag: 554da254-97a3-4aa2-b4da-6eda44c0ef5b
+		sourceColumn: nome_jogador
+
+	column nome_completo
+		dataType: string
+		lineageTag: e3bb39a2-26b2-45e6-91d8-1ff9f8503087
+		sourceColumn: nome_completo
+
+	column idade
+		dataType: int64
+		lineageTag: 7236746a-aa4d-4478-83d4-96c0a355a12e
+		summarizeBy: none
+		sourceColumn: idade
+
+	column nacionalidade
+		dataType: string
+		lineageTag: a05d543b-479a-45fa-9677-bd5176ef1de3
+		sourceColumn: nacionalidade
+
+	column posicao
+		dataType: string
+		lineageTag: 6789de4c-2edd-4712-9067-fcf1533132d4
+		sourceColumn: posicao
+
+	column foto_url
+		dataType: string
+		lineageTag: e1d77018-fc58-4dc9-9144-afdffcc635b9
+		dataCategory: ImageUrl
+		sourceColumn: foto_url
+
+	partition dJogadores = m
+		mode: import
+		source =
+				let
+				    // Remove eventual barra final do parâmetro pBaseUrl
+				    BaseUrlLimpa = Text.TrimEnd(pBaseUrl, "/"),
+				    // Carrega o CSV de jogadores diretamente do GitHub via parâmetro
+				    Fonte = Csv.Document(
+				        Web.Contents(BaseUrlLimpa & "/jogadores.csv"),
+				        [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]
+				    ),
+				    // Promove a primeira linha como cabeçalho
+				    CabecalhosPromovidos = Table.PromoteHeaders(Fonte, [PromoteAllScalars = true]),
+				    // Tipagem explícita em cultura en-US
+				    TiposAlterados = Table.TransformColumnTypes(
+				        CabecalhosPromovidos,
+				        {
+				            {"id_jogador", Int64.Type},
+				            {"nome_jogador", type text},
+				            {"nome_completo", type text},
+				            {"idade", Int64.Type},
+				            {"nacionalidade", type text},
+				            {"posicao", type text},
+				            {"foto_url", type text}
+				        },
+				        "en-US"
+				    )
+				in
+				    TiposAlterados
+

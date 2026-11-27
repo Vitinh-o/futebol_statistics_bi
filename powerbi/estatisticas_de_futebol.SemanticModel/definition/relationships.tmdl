@@ -1,0 +1,25 @@
+relationship fPartidas_dClubes_id_clube
+	fromColumn: fPartidas.id_clube
+	toColumn: dClubes.id_clube
+
+relationship fPartidas_dClubes_id_adversario
+	isActive: false
+	fromColumn: fPartidas.id_adversario
+	toColumn: dClubes.id_clube
+
+relationship fPartidas_dRodadas_rodada_num
+	fromColumn: fPartidas.rodada_num
+	toColumn: dRodadas.rodada_num
+
+relationship fPartidas_dCalendario_Data
+	fromColumn: fPartidas.data_jogo
+	toColumn: dCalendario.Data
+
+relationship fEstatisticasJogador_dClubes_id_clube
+	fromColumn: fEstatisticasJogador.id_clube
+	toColumn: dClubes.id_clube
+
+relationship fEstatisticasJogador_dJogadores_id_jogador
+	fromColumn: fEstatisticasJogador.id_jogador
+	toColumn: dJogadores.id_jogador
+
