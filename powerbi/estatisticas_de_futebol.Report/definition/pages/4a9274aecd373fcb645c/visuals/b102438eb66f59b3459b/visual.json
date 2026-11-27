@@ -1,0 +1,89 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
+  "name": "b102438eb66f59b3459b",
+  "position": {
+    "x": 33.163636363636364,
+    "y": 338.61818181818182,
+    "z": 1,
+    "height": 300.21818181818185,
+    "width": 673.74545454545455,
+    "tabOrder": 1
+  },
+  "visual": {
+    "visualType": "columnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dRodadas"
+                    }
+                  },
+                  "Property": "rodada_num"
+                }
+              },
+              "queryRef": "dRodadas.rodada_num",
+              "nativeQueryRef": "rodada_num",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Gols Pró"
+                }
+              },
+              "queryRef": "_Medidas.Gols Pró",
+              "nativeQueryRef": "Gols Pró"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Gols Contra"
+                }
+              },
+              "queryRef": "_Medidas.Gols Contra",
+              "nativeQueryRef": "Gols Contra"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Medidas"
+                  }
+                },
+                "Property": "Gols Pró"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
+  "name": "42d3f97c6b801f90ab21",
+  "position": {
+    "x": 39.676549865229106,
+    "y": 86.2533692722372,
+    "z": 0,
+    "height": 162.32727272727274,
+    "width": 1818.7636363636366,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Artilheiro (Card)"
+                }
+              },
+              "queryRef": "_Medidas.Artilheiro (Card)",
+              "nativeQueryRef": "Artilheiro (Card)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Líder de Assistências (Card)"
+                }
+              },
+              "queryRef": "_Medidas.Líder de Assistências (Card)",
+              "nativeQueryRef": "Líder de Assistências (Card)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Líder de G+A (Card)"
+                }
+              },
+              "queryRef": "_Medidas.Líder de G+A (Card)",
+              "nativeQueryRef": "Líder de G+A (Card)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Líder de G+A por 90min (Card)"
+                }
+              },
+              "queryRef": "_Medidas.Líder de G+A por 90min (Card)",
+              "nativeQueryRef": "Líder de G+A por 90min (Card)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Maior Nota Média (Card)"
+                }
+              },
+              "queryRef": "_Medidas.Maior Nota Média (Card)",
+              "nativeQueryRef": "Maior Nota Média (Card)"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

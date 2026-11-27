@@ -1,0 +1,94 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
+  "name": "3e50e1e6313b0d8139eb",
+  "position": {
+    "x": 478.25454545454551,
+    "y": 85.527272727272731,
+    "z": 0,
+    "height": 162.32727272727274,
+    "width": 1380.6545454545455,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Posição Classificação"
+                }
+              },
+              "queryRef": "_Medidas.Posição Classificação",
+              "nativeQueryRef": "Posição Classificação"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Pontos Totais"
+                }
+              },
+              "queryRef": "_Medidas.Pontos Totais",
+              "nativeQueryRef": "Pontos Totais"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Aproveitamento %"
+                }
+              },
+              "queryRef": "_Medidas.Aproveitamento %",
+              "nativeQueryRef": "Aproveitamento %"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Gols Pró"
+                }
+              },
+              "queryRef": "_Medidas.Gols Pró",
+              "nativeQueryRef": "Gols Pró"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Gols Contra"
+                }
+              },
+              "queryRef": "_Medidas.Gols Contra",
+              "nativeQueryRef": "Gols Contra"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

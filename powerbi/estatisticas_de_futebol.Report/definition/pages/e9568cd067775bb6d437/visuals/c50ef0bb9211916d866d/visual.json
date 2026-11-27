@@ -1,0 +1,218 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
+  "name": "c50ef0bb9211916d866d",
+  "position": {
+    "x": 13.963636363636365,
+    "y": 296.72727272727275,
+    "z": 1000,
+    "height": 755.78181818181827,
+    "width": 1014.1090909090909,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Posição Classificação"
+                }
+              },
+              "queryRef": "_Medidas.Posição Classificação",
+              "nativeQueryRef": "Posição Classificação"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dClubes"
+                    }
+                  },
+                  "Property": "nome_clube"
+                }
+              },
+              "queryRef": "dClubes.nome_clube",
+              "nativeQueryRef": "nome_clube"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Pontos Totais"
+                }
+              },
+              "queryRef": "_Medidas.Pontos Totais",
+              "nativeQueryRef": "Pontos Totais"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Jogos Disputados"
+                }
+              },
+              "queryRef": "_Medidas.Jogos Disputados",
+              "nativeQueryRef": "Jogos Disputados"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Vitórias"
+                }
+              },
+              "queryRef": "_Medidas.Vitórias",
+              "nativeQueryRef": "Vitórias"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Empates"
+                }
+              },
+              "queryRef": "_Medidas.Empates",
+              "nativeQueryRef": "Empates"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Derrotas"
+                }
+              },
+              "queryRef": "_Medidas.Derrotas",
+              "nativeQueryRef": "Derrotas"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Gols Pró"
+                }
+              },
+              "queryRef": "_Medidas.Gols Pró",
+              "nativeQueryRef": "Gols Pró"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Gols Contra"
+                }
+              },
+              "queryRef": "_Medidas.Gols Contra",
+              "nativeQueryRef": "Gols Contra"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Saldo de Gols"
+                }
+              },
+              "queryRef": "_Medidas.Saldo de Gols",
+              "nativeQueryRef": "Saldo de Gols"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Aproveitamento %"
+                }
+              },
+              "queryRef": "_Medidas.Aproveitamento %",
+              "nativeQueryRef": "Aproveitamento %"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Medidas"
+                  }
+                },
+                "Property": "Posição Classificação"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "62.200004905166466D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Medidas.Posição Classificação"
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {}
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

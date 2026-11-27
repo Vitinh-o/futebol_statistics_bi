@@ -1,0 +1,93 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
+  "name": "3da4a8e7541610312399",
+  "position": {
+    "x": 1052.2911051212939,
+    "y": 674.50134770889485,
+    "z": 3000,
+    "height": 377.7897574123989,
+    "width": 805.60646900269535,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "clusteredBarChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dClubes"
+                    }
+                  },
+                  "Property": "nome_clube"
+                }
+              },
+              "queryRef": "dClubes.nome_clube",
+              "nativeQueryRef": "nome_clube",
+              "active": true
+            }
+          ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fPartidas"
+                    }
+                  },
+                  "Property": "mando"
+                }
+              },
+              "queryRef": "fPartidas.mando",
+              "nativeQueryRef": "mando"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Aproveitamento %"
+                }
+              },
+              "queryRef": "_Medidas.Aproveitamento %",
+              "nativeQueryRef": "Aproveitamento %"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Medidas"
+                  }
+                },
+                "Property": "Aproveitamento %"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

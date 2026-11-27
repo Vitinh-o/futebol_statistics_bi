@@ -1,0 +1,174 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
+  "name": "094d7c5a2329acb9186b",
+  "position": {
+    "x": 40.145454545454548,
+    "y": 663.27272727272737,
+    "z": 3000,
+    "height": 354.32727272727277,
+    "width": 1818.7636363636366,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dJogadores"
+                    }
+                  },
+                  "Property": "nome_jogador"
+                }
+              },
+              "queryRef": "dJogadores.nome_jogador",
+              "nativeQueryRef": "nome_jogador"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dClubes"
+                    }
+                  },
+                  "Property": "nome_clube"
+                }
+              },
+              "queryRef": "dClubes.nome_clube",
+              "nativeQueryRef": "nome_clube"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dJogadores"
+                    }
+                  },
+                  "Property": "posicao"
+                }
+              },
+              "queryRef": "dJogadores.posicao",
+              "nativeQueryRef": "posicao"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fEstatisticasJogador"
+                        }
+                      },
+                      "Property": "jogos"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(fEstatisticasJogador.jogos)",
+              "nativeQueryRef": "Soma de jogos"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Minutos Jogados"
+                }
+              },
+              "queryRef": "_Medidas.Minutos Jogados",
+              "nativeQueryRef": "Minutos Jogados"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fEstatisticasJogador"
+                        }
+                      },
+                      "Property": "nota_media"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Avg(fEstatisticasJogador.nota_media)",
+              "nativeQueryRef": "Média de nota_media"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Gols"
+                }
+              },
+              "queryRef": "_Medidas.Gols",
+              "nativeQueryRef": "Gols"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Assistências"
+                }
+              },
+              "queryRef": "_Medidas.Assistências",
+              "nativeQueryRef": "Assistências"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "G+A por 90min"
+                }
+              },
+              "queryRef": "_Medidas.G+A por 90min",
+              "nativeQueryRef": "G+A por 90min"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Conversão de Chutes %"
+                }
+              },
+              "queryRef": "_Medidas.Conversão de Chutes %",
+              "nativeQueryRef": "Conversão de Chutes %"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

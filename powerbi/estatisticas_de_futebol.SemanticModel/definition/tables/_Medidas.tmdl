@@ -374,6 +374,200 @@ table _Medidas
 		displayFolder: 03. Head-to-Head
 		lineageTag: a914b121-200e-4c26-a5c1-20012bea1c90
 
+	measure Líder =
+			VAR TabelaClubes =
+			    ADDCOLUMNS(
+			        ALLSELECTED(dClubes),
+			        "@Score",
+			            [Pontos Totais] * 1000000
+			                + [Vitórias] * 10000
+			                + ([Saldo de Gols] + 500) * 100
+			                + [Gols Pró]
+			    )
+			VAR TabelaOrdenada =
+			    TOPN(1, TabelaClubes, [@Score], DESC)
+			RETURN
+			    SELECTCOLUMNS(TabelaOrdenada, "Nome", dClubes[nome_clube])
+		displayFolder: 01. Campeonato
+		lineageTag: 395ab739-56a1-4e08-be0d-09bcbde85eeb
+
+	measure 'Melhor Ataque' =
+			VAR TabelaAtaques =
+			    ADDCOLUMNS(
+			        ALLSELECTED(dClubes),
+			        "@GolsPro", [Gols Pró]
+			    )
+			VAR TopAtaque =
+			    TOPN(1, TabelaAtaques, [@GolsPro], DESC)
+			RETURN
+			    SELECTCOLUMNS(TopAtaque, "Nome", dClubes[nome_clube])
+		displayFolder: 01. Campeonato
+		lineageTag: d3825b8b-eff5-4d47-97fb-a7492d6c96f8
+
+	measure 'Líder (Card)' =
+			VAR TabelaClubes =
+			    ADDCOLUMNS(
+			        ALLSELECTED(dClubes),
+			        "@Score",
+			            [Pontos Totais] * 1000000
+			                + [Vitórias] * 10000
+			                + ([Saldo de Gols] + 500) * 100
+			                + [Gols Pró]
+			    )
+			VAR TopClube =
+			    TOPN(1, TabelaClubes, [@Score], DESC)
+			VAR Nome =
+			    SELECTCOLUMNS(TopClube, "Nome", dClubes[nome_clube])
+			VAR Pts =
+			    CALCULATE([Pontos Totais], TopClube)
+			RETURN
+			    IF(
+			        NOT ISEMPTY(TopClube),
+			        Nome & " (" & FORMAT(Pts, "#,0") & " pts)"
+			    )
+		displayFolder: 01. Campeonato
+		lineageTag: 53093263-b83b-4121-9ade-24b050627988
+
+	measure 'Melhor Ataque (Card)' =
+			VAR TabelaAtaques =
+			    ADDCOLUMNS(
+			        ALLSELECTED(dClubes),
+			        "@GolsPro", [Gols Pró]
+			    )
+			VAR TopAtaque =
+			    TOPN(1, TabelaAtaques, [@GolsPro], DESC)
+			VAR Nome =
+			    SELECTCOLUMNS(TopAtaque, "Nome", dClubes[nome_clube])
+			VAR Gols =
+			    CALCULATE([Gols Pró], TopAtaque)
+			RETURN
+			    IF(
+			        NOT ISEMPTY(TopAtaque),
+			        Nome & " (" & FORMAT(Gols, "#,0") & " gols)"
+			    )
+		displayFolder: 01. Campeonato
+		lineageTag: 306aecc1-40e1-4362-a0a8-3f9b5f3ec5db
+
+	measure 'Artilheiro (Card)' =
+			VAR TabelaJogadores =
+			    FILTER(
+			        ADDCOLUMNS(
+			            ALLSELECTED(dJogadores),
+			            "@Valor", [Gols],
+			            "@Minutos", [Minutos Jogados]
+			        ),
+			        NOT ISBLANK([@Valor]) && [@Minutos] > 0
+			    )
+			VAR TopJogador =
+			    TOPN(1, TabelaJogadores, [@Valor], DESC, [@Minutos], DESC, dJogadores[id_jogador], ASC)
+			VAR Nome =
+			    MAXX(TopJogador, dJogadores[nome_jogador])
+			VAR Valor =
+			    MAXX(TopJogador, [@Valor])
+			RETURN
+			    IF(
+			        NOT ISEMPTY(TopJogador),
+			        Nome & " (" & FORMAT(Valor, "#,0") & " gols)"
+			    )
+		displayFolder: 02. Jogadores
+		lineageTag: 16bd83d6-6da2-4524-92ef-97191f669f96
+
+	measure 'Líder de Assistências (Card)' =
+			VAR TabelaJogadores =
+			    FILTER(
+			        ADDCOLUMNS(
+			            ALLSELECTED(dJogadores),
+			            "@Valor", [Assistências],
+			            "@Minutos", [Minutos Jogados]
+			        ),
+			        NOT ISBLANK([@Valor]) && [@Minutos] > 0
+			    )
+			VAR TopJogador =
+			    TOPN(1, TabelaJogadores, [@Valor], DESC, [@Minutos], DESC, dJogadores[id_jogador], ASC)
+			VAR Nome =
+			    MAXX(TopJogador, dJogadores[nome_jogador])
+			VAR Valor =
+			    MAXX(TopJogador, [@Valor])
+			RETURN
+			    IF(
+			        NOT ISEMPTY(TopJogador),
+			        Nome & " (" & FORMAT(Valor, "#,0") & " assist.)"
+			    )
+		displayFolder: 02. Jogadores
+		lineageTag: 2342da15-6e99-4af9-92bf-fa71df246e11
+
+	measure 'Maior Nota Média (Card)' =
+			VAR TabelaJogadores =
+			    FILTER(
+			        ADDCOLUMNS(
+			            ALLSELECTED(dJogadores),
+			            "@Valor", [Nota Média],
+			            "@Minutos", [Minutos Jogados]
+			        ),
+			        NOT ISBLANK([@Valor]) && [@Minutos] > 0
+			    )
+			VAR TopJogador =
+			    TOPN(1, TabelaJogadores, [@Valor], DESC, [@Minutos], DESC, dJogadores[id_jogador], ASC)
+			VAR Nome =
+			    MAXX(TopJogador, dJogadores[nome_jogador])
+			VAR Valor =
+			    MAXX(TopJogador, [@Valor])
+			RETURN
+			    IF(
+			        NOT ISEMPTY(TopJogador),
+			        Nome & " (" & FORMAT(Valor, "0.00") & ")"
+			    )
+		displayFolder: 02. Jogadores
+		lineageTag: 9229b9ef-c33b-42cb-83b9-2de6478a957e
+
+	measure 'Líder de G+A (Card)' =
+			VAR TabelaJogadores =
+			    FILTER(
+			        ADDCOLUMNS(
+			            ALLSELECTED(dJogadores),
+			            "@Valor", [Participações em Gol (G+A)],
+			            "@Minutos", [Minutos Jogados]
+			        ),
+			        NOT ISBLANK([@Valor]) && [@Minutos] > 0
+			    )
+			VAR TopJogador =
+			    TOPN(1, TabelaJogadores, [@Valor], DESC, [@Minutos], DESC, dJogadores[id_jogador], ASC)
+			VAR Nome =
+			    MAXX(TopJogador, dJogadores[nome_jogador])
+			VAR Valor =
+			    MAXX(TopJogador, [@Valor])
+			RETURN
+			    IF(
+			        NOT ISEMPTY(TopJogador),
+			        Nome & " (" & FORMAT(Valor, "#,0") & " G+A)"
+			    )
+		displayFolder: 02. Jogadores
+		lineageTag: 64ed8997-7f19-4b1a-b841-f490a9a8f65d
+
+	measure 'Líder de G+A por 90min (Card)' =
+			VAR TabelaJogadores =
+			    FILTER(
+			        ADDCOLUMNS(
+			            ALLSELECTED(dJogadores),
+			            "@Valor", [G+A por 90min],
+			            "@Minutos", [Minutos Jogados]
+			        ),
+			        NOT ISBLANK([@Valor]) && [@Minutos] > 0
+			    )
+			VAR TopJogador =
+			    TOPN(1, TabelaJogadores, [@Valor], DESC, [@Minutos], DESC, dJogadores[id_jogador], ASC)
+			VAR Nome =
+			    MAXX(TopJogador, dJogadores[nome_jogador])
+			VAR Valor =
+			    MAXX(TopJogador, [@Valor])
+			RETURN
+			    IF(
+			        NOT ISEMPTY(TopJogador),
+			        Nome & " (" & FORMAT(Valor, "0.00") & " /90)"
+			    )
+		displayFolder: 02. Jogadores
+		lineageTag: 0c544ab7-a887-4e65-80d5-06e3299e16c2
+
 	column __Dummy
 		isHidden
 		isNameInferred

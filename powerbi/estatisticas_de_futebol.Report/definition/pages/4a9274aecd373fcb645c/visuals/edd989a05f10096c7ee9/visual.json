@@ -1,0 +1,164 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
+  "name": "edd989a05f10096c7ee9",
+  "position": {
+    "x": 726.10909090909092,
+    "y": 338.61818181818182,
+    "z": 4,
+    "height": 673.74545454545455,
+    "width": 1132.8000000000002,
+    "tabOrder": 4
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dJogadores"
+                    }
+                  },
+                  "Property": "nome_jogador"
+                }
+              },
+              "queryRef": "dJogadores.nome_jogador",
+              "nativeQueryRef": "nome_jogador"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dJogadores"
+                    }
+                  },
+                  "Property": "posicao"
+                }
+              },
+              "queryRef": "dJogadores.posicao",
+              "nativeQueryRef": "posicao"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Jogos Jogador"
+                }
+              },
+              "queryRef": "_Medidas.Jogos Jogador",
+              "nativeQueryRef": "Jogos Jogador"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Titularidades"
+                }
+              },
+              "queryRef": "_Medidas.Titularidades",
+              "nativeQueryRef": "Titularidades"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Minutos Jogados"
+                }
+              },
+              "queryRef": "_Medidas.Minutos Jogados",
+              "nativeQueryRef": "Minutos Jogados"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Nota Média"
+                }
+              },
+              "queryRef": "_Medidas.Nota Média",
+              "nativeQueryRef": "Nota Média"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Gols"
+                }
+              },
+              "queryRef": "_Medidas.Gols",
+              "nativeQueryRef": "Gols"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Assistências"
+                }
+              },
+              "queryRef": "_Medidas.Assistências",
+              "nativeQueryRef": "Assistências"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Cartões Amarelos"
+                }
+              },
+              "queryRef": "_Medidas.Cartões Amarelos",
+              "nativeQueryRef": "Cartões Amarelos"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Cartões Vermelhos"
+                }
+              },
+              "queryRef": "_Medidas.Cartões Vermelhos",
+              "nativeQueryRef": "Cartões Vermelhos"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

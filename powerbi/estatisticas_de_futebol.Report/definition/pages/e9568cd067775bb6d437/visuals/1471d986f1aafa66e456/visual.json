@@ -1,0 +1,80 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
+  "name": "1471d986f1aafa66e456",
+  "position": {
+    "x": 13.963636363636365,
+    "y": 96,
+    "z": 0,
+    "height": 162.32727272727274,
+    "width": 1818.7636363636366,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Líder (Card)"
+                }
+              },
+              "queryRef": "_Medidas.Líder (Card)",
+              "nativeQueryRef": "Líder (Card)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Aproveitamento %"
+                }
+              },
+              "queryRef": "_Medidas.Aproveitamento %",
+              "nativeQueryRef": "Aproveitamento %"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Média Gols/Jogo"
+                }
+              },
+              "queryRef": "_Medidas.Média Gols/Jogo",
+              "nativeQueryRef": "Média Gols/Jogo"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Melhor Ataque (Card)"
+                }
+              },
+              "queryRef": "_Medidas.Melhor Ataque (Card)",
+              "nativeQueryRef": "Melhor Ataque (Card)"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
