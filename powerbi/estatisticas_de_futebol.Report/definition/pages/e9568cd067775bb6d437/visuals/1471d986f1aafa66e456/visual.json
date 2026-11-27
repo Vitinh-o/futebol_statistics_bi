@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
   "name": "1471d986f1aafa66e456",
   "position": {
-    "x": 13.963636363636365,
-    "y": 96,
-    "z": 0,
-    "height": 162.32727272727274,
-    "width": 1818.7636363636366,
-    "tabOrder": 0
+    "x": 200,
+    "y": 92,
+    "z": 300,
+    "height": 92,
+    "width": 1060,
+    "tabOrder": 300
   },
   "visual": {
     "visualType": "cardVisual",
@@ -37,11 +37,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Aproveitamento %"
+                  "Property": "Aproveitamento Líder %"
                 }
               },
-              "queryRef": "_Medidas.Aproveitamento %",
-              "nativeQueryRef": "Aproveitamento %"
+              "queryRef": "_Medidas.Aproveitamento Líder %",
+              "nativeQueryRef": "Aproveitamento Líder %"
             },
             {
               "field": {
@@ -51,11 +51,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Média Gols/Jogo"
+                  "Property": "Média Gols por Partida"
                 }
               },
-              "queryRef": "_Medidas.Média Gols/Jogo",
-              "nativeQueryRef": "Média Gols/Jogo"
+              "queryRef": "_Medidas.Média Gols por Partida",
+              "nativeQueryRef": "Média Gols por Partida"
             },
             {
               "field": {
@@ -75,6 +75,28 @@
         }
       }
     },
-    "drillFilterOtherVisuals": true
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "layout": [
+        {
+          "properties": {
+            "cellPadding": {
+              "expr": {
+                "Literal": {
+                  "Value": "14L"
+                }
+              }
+            },
+            "maxTiles": {
+              "expr": {
+                "Literal": {
+                  "Value": "4L"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
   }
 }

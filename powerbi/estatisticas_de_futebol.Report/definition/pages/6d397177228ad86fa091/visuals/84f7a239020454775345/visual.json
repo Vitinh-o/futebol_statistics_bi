@@ -2,15 +2,227 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
   "name": "84f7a239020454775345",
   "position": {
-    "x": 27.927272727272729,
-    "y": 624.87272727272727,
-    "z": 2,
-    "height": 406.69090909090914,
-    "width": 1843.2,
-    "tabOrder": 2
+    "x": 200,
+    "y": 464,
+    "z": 600,
+    "height": 236,
+    "width": 1060,
+    "tabOrder": 600
   },
   "visual": {
     "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dMetricas_H2H"
+                    }
+                  },
+                  "Property": "Metrica"
+                }
+              },
+              "queryRef": "dMetricas_H2H.Metrica",
+              "nativeQueryRef": "Metrica"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "H2H Valor Formatado (A)"
+                }
+              },
+              "queryRef": "_Medidas.H2H Valor Formatado (A)",
+              "nativeQueryRef": "H2H Valor Formatado (A)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "H2H Diferença Formatada (A - B)"
+                }
+              },
+              "queryRef": "_Medidas.H2H Diferença Formatada (A - B)",
+              "nativeQueryRef": "H2H Diferença Formatada (A - B)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "H2H Valor Formatado (B)"
+                }
+              },
+              "queryRef": "_Medidas.H2H Valor Formatado (B)",
+              "nativeQueryRef": "H2H Valor Formatado (B)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "H2H Vantagem"
+                }
+              },
+              "queryRef": "_Medidas.H2H Vantagem",
+              "nativeQueryRef": "H2H Vantagem"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "375.55555555555554D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "dMetricas_H2H.Metrica"
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {}
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Scorecard Comparativo (Jogador A vs. Jogador B)'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Segoe UI'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10.5D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0F172A'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "h2h_grp_scorecard",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dMetricas_H2H"
+              }
+            },
+            "Property": "Grupo"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "d",
+              "Entity": "dMetricas_H2H",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "d"
+                          }
+                        },
+                        "Property": "Grupo"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Scorecard'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
   }
 }

@@ -2,15 +2,128 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
   "name": "886e5dea874bc15e7417",
   "position": {
-    "x": 33.163636363636364,
-    "y": 712.14545454545464,
-    "z": 2,
-    "height": 300,
-    "width": 674,
-    "tabOrder": 2
+    "x": 200,
+    "y": 458,
+    "z": 500,
+    "height": 242,
+    "width": 470,
+    "tabOrder": 500
   },
   "visual": {
-    "visualType": "barChart",
-    "drillFilterOtherVisuals": true
+    "visualType": "lineClusteredColumnComboChart",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dRodadas"
+                    }
+                  },
+                  "Property": "turno"
+                }
+              },
+              "queryRef": "dRodadas.turno",
+              "nativeQueryRef": "turno",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Pontos Totais"
+                }
+              },
+              "queryRef": "_Medidas.Pontos Totais",
+              "nativeQueryRef": "Pontos Totais"
+            }
+          ]
+        },
+        "Y2": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Aproveitamento %"
+                }
+              },
+              "queryRef": "_Medidas.Aproveitamento %",
+              "nativeQueryRef": "Aproveitamento %"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Pontos & Aproveitamento % por Turno'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Segoe UI'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10.5D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0F172A'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
   }
 }

@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
   "name": "c50ef0bb9211916d866d",
   "position": {
-    "x": 13.963636363636365,
-    "y": 296.72727272727275,
-    "z": 1000,
-    "height": 755.78181818181827,
-    "width": 1014.1090909090909,
-    "tabOrder": 1000
+    "x": 200,
+    "y": 200,
+    "z": 400,
+    "height": 500,
+    "width": 580,
+    "tabOrder": 400
   },
   "visual": {
     "visualType": "tableEx",
@@ -28,6 +28,20 @@
               },
               "queryRef": "_Medidas.Posição Classificação",
               "nativeQueryRef": "Posição Classificação"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dClubes"
+                    }
+                  },
+                  "Property": "escudo_url"
+                }
+              },
+              "queryRef": "dClubes.escudo_url",
+              "nativeQueryRef": "escudo_url"
             },
             {
               "field": {
@@ -213,6 +227,60 @@
         }
       ]
     },
-    "drillFilterOtherVisuals": true
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Classificação Geral — Série A 2024'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Segoe UI'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10.5D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0F172A'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
   }
 }

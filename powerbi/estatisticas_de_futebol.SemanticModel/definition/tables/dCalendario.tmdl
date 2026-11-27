@@ -5,6 +5,7 @@ table dCalendario
 
 	column Date
 		isHidden
+		lineageTag: 60cb96a3-ba85-4e53-b949-2fd6b39b2c7b
 		isNameInferred
 		sourceColumn: [Date]
 
@@ -12,54 +13,65 @@ table dCalendario
 		isUnique
 		isKey
 		formatString: Short Date
+		lineageTag: 2948cead-ce14-4a7e-8cc1-d6b4118479aa
 		isNameInferred
 		sourceColumn: [Data]
 
 	column Ano
+		lineageTag: df319734-9bcc-432e-82ae-24687d0db33c
 		summarizeBy: none
 		isNameInferred
 		sourceColumn: [Ano]
 
 	column Mes_Num
+		lineageTag: cb0fb988-a050-4eb8-a586-6ad5ce922466
 		summarizeBy: none
 		isNameInferred
 		sourceColumn: [Mes_Num]
 
 	column Mes_Nome
+		lineageTag: 4033c4d5-5f65-44f7-ab68-ab229fcf905e
 		isNameInferred
 		sourceColumn: [Mes_Nome]
 		sortByColumn: Mes_Num
 
 	column Mes_Abrev
+		lineageTag: 3e9afc9a-7fd2-4e05-99e9-abd735310f5b
 		isNameInferred
 		sourceColumn: [Mes_Abrev]
 		sortByColumn: Mes_Num
 
 	column Ano_Mes
+		lineageTag: 6a623a7b-29a7-480f-84f8-4e730b0d2969
 		isNameInferred
 		sourceColumn: [Ano_Mes]
 
 	column Ano_Mes_Num
 		isHidden
+		lineageTag: a7da34d2-bd0e-4d21-bdfe-9d4bf2e58cbe
 		summarizeBy: none
 		isNameInferred
 		sourceColumn: [Ano_Mes_Num]
 
 	column Ano_Mes_Label
+		lineageTag: 5bcee7b6-e257-4bce-a2ed-861f99e7489f
 		isNameInferred
 		sourceColumn: [Ano_Mes_Label]
 		sortByColumn: Ano_Mes_Num
 
 	column Trimestre
+		lineageTag: 61691531-f166-4515-8444-0e721f181bb7
 		isNameInferred
 		sourceColumn: [Trimestre]
 
 	column Dia_Semana_Num
+		lineageTag: 2d3a5d96-7551-41f1-b5ea-db5f3467ee1f
 		summarizeBy: none
 		isNameInferred
 		sourceColumn: [Dia_Semana_Num]
 
 	column Dia_Semana
+		lineageTag: b68a59b6-b3ed-4bc8-a322-da5d932e1720
 		isNameInferred
 		sourceColumn: [Dia_Semana]
 		sortByColumn: Dia_Semana_Num

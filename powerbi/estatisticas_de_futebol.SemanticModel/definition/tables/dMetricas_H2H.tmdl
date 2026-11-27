@@ -1,0 +1,48 @@
+/// Tabela desconectada de métricas para os visuais comparativos da Página 4 (Head-to-Head)
+table dMetricas_H2H
+	lineageTag: 44d0c4d5-43ce-46e8-bf27-daf0e4682425
+
+	column Ordem
+		lineageTag: d29ad7e9-e4e5-4123-aff6-ae7f80271cf7
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Ordem]
+
+	column Grupo
+		lineageTag: f2a8a8d5-7121-4928-af28-0f82b08f4f27
+		isNameInferred
+		sourceColumn: [Grupo]
+
+	column Metrica
+		lineageTag: 1cabae13-6955-4424-bbe0-b32f9ae8ec45
+		isNameInferred
+		sourceColumn: [Metrica]
+
+	partition dMetricas_H2H = calculated
+		mode: import
+		source =
+				DATATABLE(
+				    "Ordem", INTEGER,
+				    "Grupo", STRING,
+				    "Metrica", STRING,
+				    {
+				        { 1, "Eficiência / 90min", "Gols / 90min" },
+				        { 2, "Eficiência / 90min", "Assistências / 90min" },
+				        { 3, "Eficiência / 90min", "G + A / 90min" },
+				        { 4, "Eficiência / 90min", "Finalizações no Gol / 90" },
+				        { 5, "Eficiência / 90min", "Passes Chave / 90min" },
+				        { 11, "Volume", "Gols" },
+				        { 12, "Volume", "Assistências" },
+				        { 13, "Volume", "G + A" },
+				        { 14, "Volume", "Passes Chave" },
+				        { 15, "Volume", "Desarmes" },
+				        { 21, "Scorecard", "Nota Média" },
+				        { 22, "Scorecard", "Gols / 90min" },
+				        { 23, "Scorecard", "Assistências / 90min" },
+				        { 24, "Scorecard", "Participações em Gol (G+A)" },
+				        { 25, "Scorecard", "Passes Chave" },
+				        { 26, "Scorecard", "Desarmes" },
+				        { 27, "Scorecard", "Minutos Jogados" }
+				    }
+				)
+

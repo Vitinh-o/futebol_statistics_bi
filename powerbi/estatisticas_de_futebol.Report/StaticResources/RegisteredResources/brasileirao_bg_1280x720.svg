@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="sidebarGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#0B1220"/>
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Main Canvas Background -->
+  <rect x="0" y="0" width="1280" height="720" fill="#F1F5F9"/>
+
+  <!-- Subtle Header Bottom Divider in Main Area -->
+  <line x1="200" y1="82" x2="1260" y2="82" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Left Navigation Sidebar Rail (180px) -->
+  <rect x="0" y="0" width="180" height="720" fill="url(#sidebarGrad)"/>
+
+  <!-- Top Emerald Brand Accent Bar -->
+  <rect x="0" y="0" width="180" height="4" fill="#059669"/>
+
+  <!-- Right Sidebar Subtle Border -->
+  <line x1="180" y1="0" x2="180" y2="720" stroke="#1E293B" stroke-width="1"/>
+
+  <!-- Brand Badge "BR" -->
+  <rect x="16" y="22" width="36" height="36" rx="8" fill="url(#emeraldGrad)"/>
+  <text x="34" y="46" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" letter-spacing="0.5">BR</text>
+
+  <!-- Brand Title & Subtitle -->
+  <text x="61" y="38" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" letter-spacing="0.4">BRASILEIRÃO</text>
+  <text x="61" y="53" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#94A3B8" letter-spacing="0.6">SÉRIE A • 2024</text>
+
+  <!-- Header Divider -->
+  <line x1="16" y1="74" x2="164" y2="74" stroke="#1E293B" stroke-width="1"/>
+
+  <!-- Navigation Section Label -->
+  <text x="18" y="99" font-family="Segoe UI, Arial, sans-serif" font-size="8.5" font-weight="700" fill="#64748B" letter-spacing="1.2">NAVEGAÇÃO</text>
+
+  <!-- Decorative Accent Pill at Bottom of Nav Area -->
+  <rect x="16" y="616" width="148" height="28" rx="6" fill="#1E293B" fill-opacity="0.7"/>
+  <circle cx="29" cy="630" r="3.5" fill="#10B981"/>
+  <text x="39" y="633.5" font-family="Segoe UI, Arial, sans-serif" font-size="8.5" font-weight="600" fill="#CBD5E1">API-Football • Live Star</text>
+
+  <!-- Footer Divider -->
+  <line x1="16" y1="658" x2="164" y2="658" stroke="#1E293B" stroke-width="1"/>
+
+  <!-- Footer Metadata -->
+  <text x="18" y="678" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#94A3B8">Fonte: API-Football</text>
+  <text x="18" y="695" font-family="Segoe UI, Arial, sans-serif" font-size="8.5" font-weight="400" fill="#64748B">Canvas: 1280 × 720 px</text>
+</svg>

@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
   "name": "10da87829dcccebc6ced",
   "position": {
-    "x": 39.676549865229106,
-    "y": 300.16172506738542,
-    "z": 1000,
-    "height": 353.63881401617249,
-    "width": 712.45283018867917,
-    "tabOrder": 1000
+    "x": 200,
+    "y": 200,
+    "z": 400,
+    "height": 252,
+    "width": 522,
+    "tabOrder": 400
   },
   "visual": {
     "visualType": "scatterChart",
@@ -67,10 +67,82 @@
               "nativeQueryRef": "Gols"
             }
           ]
+        },
+        "Size": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Minutos Jogados"
+                }
+              },
+              "queryRef": "_Medidas.Minutos Jogados",
+              "nativeQueryRef": "Minutos Jogados"
+            }
+          ]
         }
       }
     },
-    "drillFilterOtherVisuals": true
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Eficiência: Finalizações Totais vs. Gols (Tam: Minutos)'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Segoe UI'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10.5D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0F172A'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
   },
   "filterConfig": {
     "filters": [

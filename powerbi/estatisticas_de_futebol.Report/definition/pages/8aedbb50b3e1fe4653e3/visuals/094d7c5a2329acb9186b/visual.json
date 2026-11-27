@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
   "name": "094d7c5a2329acb9186b",
   "position": {
-    "x": 40.145454545454548,
-    "y": 663.27272727272737,
-    "z": 3000,
-    "height": 354.32727272727277,
-    "width": 1818.7636363636366,
-    "tabOrder": 3000
+    "x": 200,
+    "y": 468,
+    "z": 600,
+    "height": 232,
+    "width": 1060,
+    "tabOrder": 600
   },
   "visual": {
     "visualType": "tableEx",
@@ -15,6 +15,20 @@
       "queryState": {
         "Values": {
           "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dJogadores"
+                    }
+                  },
+                  "Property": "foto_url"
+                }
+              },
+              "queryRef": "dJogadores.foto_url",
+              "nativeQueryRef": "foto_url"
+            },
             {
               "field": {
                 "Column": {
@@ -169,6 +183,60 @@
         }
       }
     },
-    "drillFilterOtherVisuals": true
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Matriz Analítica de Scouting'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Segoe UI'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10.5D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0F172A'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
   }
 }

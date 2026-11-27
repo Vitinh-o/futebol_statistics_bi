@@ -22,6 +22,7 @@ ref table dRodadas
 ref table fEstatisticasJogador
 ref table dCalendario
 ref table _Medidas
+ref table dMetricas_H2H
 
 ref cultureInfo en-US
 

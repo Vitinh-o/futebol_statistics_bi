@@ -568,8 +568,356 @@ table _Medidas
 		displayFolder: 02. Jogadores
 		lineageTag: 0c544ab7-a887-4e65-80d5-06e3299e16c2
 
+	measure 'Aproveitamento Líder %' =
+			VAR TabelaClubes =
+			    ADDCOLUMNS(
+			        ALLSELECTED(dClubes),
+			        "@Score",
+			            [Pontos Totais] * 1000000
+			                + [Vitórias] * 10000
+			                + ([Saldo de Gols] + 500) * 100
+			                + [Gols Pró]
+			    )
+			VAR TopClube =
+			    TOPN(1, TabelaClubes, [@Score], DESC)
+			RETURN
+			    CALCULATE([Aproveitamento %], TopClube)
+		formatString: 0.0%
+		displayFolder: 01. Campeonato
+		lineageTag: dc8d66f2-ef6a-433a-b5ae-fa657b49b83c
+
+	measure 'Média Gols por Partida' =
+			VAR PartidasUnicas =
+			    CALCULATE(
+			        DISTINCTCOUNT(fPartidas[id_partida]),
+			        fPartidas[status_jogo] = "FT"
+			    )
+			RETURN
+			    DIVIDE([Gols Pró], PartidasUnicas, 0)
+		formatString: 0.00
+		displayFolder: 01. Campeonato
+		lineageTag: 27df6921-a0b1-4e06-95c2-179b8aeef26b
+
+	measure 'Finalizações no Gol' = SUM(fEstatisticasJogador[finalizacoes_no_gol])
+		formatString: #,0
+		displayFolder: 02. Jogadores
+		lineageTag: 29cc39ce-1e88-4918-8118-c63f696ff7c4
+
+	measure 'Finalizações no Gol por 90min' = DIVIDE([Finalizações no Gol] * 90, [Minutos Jogados], 0)
+		formatString: 0.00
+		displayFolder: 02. Jogadores
+		lineageTag: 17405a7d-4afe-4d83-8a57-7d23c3be9f47
+
+	measure 'Passes Chave por 90min' = DIVIDE([Passes Chave] * 90, [Minutos Jogados], 0)
+		formatString: 0.00
+		displayFolder: 02. Jogadores
+		lineageTag: be5f6749-9ea0-48bb-9fb7-51ae92f8714d
+
+	measure 'Finalizações no Gol por 90min (A)' =
+			CALCULATE(
+			    [Finalizações no Gol por 90min],
+			    TREATAS(VALUES(dJogador_A[id_jogador]), fEstatisticasJogador[id_jogador])
+			)
+		formatString: 0.00
+		displayFolder: 03. Head-to-Head
+		lineageTag: 22bc92fd-b51f-4772-a2ec-7f4e47a4f19b
+
+	measure 'Finalizações no Gol por 90min (B)' =
+			CALCULATE(
+			    [Finalizações no Gol por 90min],
+			    TREATAS(VALUES(dJogador_B[id_jogador]), fEstatisticasJogador[id_jogador])
+			)
+		formatString: 0.00
+		displayFolder: 03. Head-to-Head
+		lineageTag: 0baff2ce-24c0-4e03-911b-17c7e27e0fb5
+
+	measure 'Passes Chave por 90min (A)' =
+			CALCULATE(
+			    [Passes Chave por 90min],
+			    TREATAS(VALUES(dJogador_A[id_jogador]), fEstatisticasJogador[id_jogador])
+			)
+		formatString: 0.00
+		displayFolder: 03. Head-to-Head
+		lineageTag: 09bd2cb0-239b-4ae2-ae25-9e8720791ddd
+
+	measure 'Passes Chave por 90min (B)' =
+			CALCULATE(
+			    [Passes Chave por 90min],
+			    TREATAS(VALUES(dJogador_B[id_jogador]), fEstatisticasJogador[id_jogador])
+			)
+		formatString: 0.00
+		displayFolder: 03. Head-to-Head
+		lineageTag: a85e210f-3f91-41dd-84d0-6d46bfeae861
+
+	measure 'G+A por 90min (A)' =
+			CALCULATE(
+			    [G+A por 90min],
+			    TREATAS(VALUES(dJogador_A[id_jogador]), fEstatisticasJogador[id_jogador])
+			)
+		formatString: 0.00
+		displayFolder: 03. Head-to-Head
+		lineageTag: f9a8c56b-a5c3-4a27-8ef4-88500885248d
+
+	measure 'G+A por 90min (B)' =
+			CALCULATE(
+			    [G+A por 90min],
+			    TREATAS(VALUES(dJogador_B[id_jogador]), fEstatisticasJogador[id_jogador])
+			)
+		formatString: 0.00
+		displayFolder: 03. Head-to-Head
+		lineageTag: 5423e530-6f99-4873-8b58-074a9d7694a2
+
+	measure 'Gols (A)' =
+			CALCULATE(
+			    [Gols],
+			    TREATAS(VALUES(dJogador_A[id_jogador]), fEstatisticasJogador[id_jogador])
+			)
+		formatString: #,0
+		displayFolder: 03. Head-to-Head
+		lineageTag: 08f6918b-8372-4069-947a-e7b8f5ace602
+
+	measure 'Gols (B)' =
+			CALCULATE(
+			    [Gols],
+			    TREATAS(VALUES(dJogador_B[id_jogador]), fEstatisticasJogador[id_jogador])
+			)
+		formatString: #,0
+		displayFolder: 03. Head-to-Head
+		lineageTag: 12bb3c59-3432-4fb2-a3cf-19bc9c54cde7
+
+	measure 'Assistências (A)' =
+			CALCULATE(
+			    [Assistências],
+			    TREATAS(VALUES(dJogador_A[id_jogador]), fEstatisticasJogador[id_jogador])
+			)
+		formatString: #,0
+		displayFolder: 03. Head-to-Head
+		lineageTag: 674921e6-a217-40eb-8e74-23922ddc772e
+
+	measure 'Assistências (B)' =
+			CALCULATE(
+			    [Assistências],
+			    TREATAS(VALUES(dJogador_B[id_jogador]), fEstatisticasJogador[id_jogador])
+			)
+		formatString: #,0
+		displayFolder: 03. Head-to-Head
+		lineageTag: deb642e7-730c-40a2-99fa-93a0d34d856d
+
+	measure 'Jogos (A)' =
+			CALCULATE(
+			    [Jogos Jogador],
+			    TREATAS(VALUES(dJogador_A[id_jogador]), fEstatisticasJogador[id_jogador])
+			)
+		formatString: #,0
+		displayFolder: 03. Head-to-Head
+		lineageTag: 341aaa53-d90f-439a-9f6f-80260fae75dd
+
+	measure 'Jogos (B)' =
+			CALCULATE(
+			    [Jogos Jogador],
+			    TREATAS(VALUES(dJogador_B[id_jogador]), fEstatisticasJogador[id_jogador])
+			)
+		formatString: #,0
+		displayFolder: 03. Head-to-Head
+		lineageTag: d4f0c072-c93f-41f2-a831-d6327c1139ee
+
+	measure 'Perfil Nome (A)' = SELECTEDVALUE(dJogador_A[nome_jogador], "Selecione Jogador A")
+		displayFolder: 03. Head-to-Head
+		lineageTag: 3e0020e3-b944-4466-badb-80b040314f40
+
+	measure 'Perfil Nome (B)' = SELECTEDVALUE(dJogador_B[nome_jogador], "Selecione Jogador B")
+		displayFolder: 03. Head-to-Head
+		lineageTag: 9895a4fa-7ff5-4c04-b2d3-36d06f2b5eb1
+
+	measure 'Perfil Resumo (A)' =
+			VAR Pos = SELECTEDVALUE(dJogador_A[posicao], "-")
+			VAR Idade = SELECTEDVALUE(dJogador_A[idade])
+			VAR Jogos = [Jogos (A)]
+			VAR Minutos = [Minutos Jogados (A)]
+			RETURN
+			IF(
+			    HASONEVALUE(dJogador_A[id_jogador]),
+			    Pos & " • " & FORMAT(Idade, "0") & " anos • " & FORMAT(Jogos, "#,0") & " J • " & FORMAT(Minutos, "#,0") & " min",
+			    "Escolha um atleta no filtro Jogador A"
+			)
+		displayFolder: 03. Head-to-Head
+		lineageTag: 9997b90c-bd3f-4d1c-98fd-e826098c561a
+
+	measure 'Perfil Resumo (B)' =
+			VAR Pos = SELECTEDVALUE(dJogador_B[posicao], "-")
+			VAR Idade = SELECTEDVALUE(dJogador_B[idade])
+			VAR Jogos = [Jogos (B)]
+			VAR Minutos = [Minutos Jogados (B)]
+			RETURN
+			IF(
+			    HASONEVALUE(dJogador_B[id_jogador]),
+			    Pos & " • " & FORMAT(Idade, "0") & " anos • " & FORMAT(Jogos, "#,0") & " J • " & FORMAT(Minutos, "#,0") & " min",
+			    "Escolha um atleta no filtro Jogador B"
+			)
+		displayFolder: 03. Head-to-Head
+		lineageTag: c4cb45bb-3ccf-4b8f-b442-832e061fe0b3
+
+	measure 'H2H Valor (A)' =
+			VAR Metrica = SELECTEDVALUE(dMetricas_H2H[Metrica])
+			RETURN
+			SWITCH(
+			    Metrica,
+			    "Nota Média", [Nota Média (A)],
+			    "Gols / 90min", [Gols por 90min (A)],
+			    "Assistências / 90min", [Assistências por 90min (A)],
+			    "G + A / 90min", [G+A por 90min (A)],
+			    "Finalizações no Gol / 90", [Finalizações no Gol por 90min (A)],
+			    "Passes Chave / 90min", [Passes Chave por 90min (A)],
+			    "Gols", [Gols (A)],
+			    "Assistências", [Assistências (A)],
+			    "G + A", [Participações em Gol (G+A) (A)],
+			    "Participações em Gol (G+A)", [Participações em Gol (G+A) (A)],
+			    "Passes Chave", [Passes Chave (A)],
+			    "Desarmes", [Desarmes (A)],
+			    "Minutos Jogados", [Minutos Jogados (A)],
+			    "Precisão de Passe %", [Precisão de Passe % (A)]
+			)
+		formatString: 0.00
+		displayFolder: 03. Head-to-Head
+		lineageTag: 799dd5a8-b789-4453-8fed-36609f223aec
+
+	measure 'H2H Valor (B)' =
+			VAR Metrica = SELECTEDVALUE(dMetricas_H2H[Metrica])
+			RETURN
+			SWITCH(
+			    Metrica,
+			    "Nota Média", [Nota Média (B)],
+			    "Gols / 90min", [Gols por 90min (B)],
+			    "Assistências / 90min", [Assistências por 90min (B)],
+			    "G + A / 90min", [G+A por 90min (B)],
+			    "Finalizações no Gol / 90", [Finalizações no Gol por 90min (B)],
+			    "Passes Chave / 90min", [Passes Chave por 90min (B)],
+			    "Gols", [Gols (B)],
+			    "Assistências", [Assistências (B)],
+			    "G + A", [Participações em Gol (G+A) (B)],
+			    "Participações em Gol (G+A)", [Participações em Gol (G+A) (B)],
+			    "Passes Chave", [Passes Chave (B)],
+			    "Desarmes", [Desarmes (B)],
+			    "Minutos Jogados", [Minutos Jogados (B)],
+			    "Precisão de Passe %", [Precisão de Passe % (B)]
+			)
+		formatString: 0.00
+		displayFolder: 03. Head-to-Head
+		lineageTag: 5ba905df-9354-4195-b550-4f826cf29f1c
+
+	measure 'H2H Valor Formatado (A)' =
+			VAR Metrica = SELECTEDVALUE(dMetricas_H2H[Metrica])
+			VAR Val = [H2H Valor (A)]
+			RETURN
+			IF(
+			    ISBLANK(Val),
+			    "-",
+			    SWITCH(
+			        Metrica,
+			        "Nota Média", FORMAT(Val, "0.00"),
+			        "Gols / 90min", FORMAT(Val, "0.00"),
+			        "Assistências / 90min", FORMAT(Val, "0.00"),
+			        "G + A / 90min", FORMAT(Val, "0.00"),
+			        "Finalizações no Gol / 90", FORMAT(Val, "0.00"),
+			        "Passes Chave / 90min", FORMAT(Val, "0.00"),
+			        "Precisão de Passe %", FORMAT(Val, "0.0%"),
+			        FORMAT(Val, "#,0")
+			    )
+			)
+		displayFolder: 03. Head-to-Head
+		lineageTag: 6a5a6d02-47e6-4ec6-be0d-84e977ec2e4e
+
+	measure 'H2H Valor Formatado (B)' =
+			VAR Metrica = SELECTEDVALUE(dMetricas_H2H[Metrica])
+			VAR Val = [H2H Valor (B)]
+			RETURN
+			IF(
+			    ISBLANK(Val),
+			    "-",
+			    SWITCH(
+			        Metrica,
+			        "Nota Média", FORMAT(Val, "0.00"),
+			        "Gols / 90min", FORMAT(Val, "0.00"),
+			        "Assistências / 90min", FORMAT(Val, "0.00"),
+			        "G + A / 90min", FORMAT(Val, "0.00"),
+			        "Finalizações no Gol / 90", FORMAT(Val, "0.00"),
+			        "Passes Chave / 90min", FORMAT(Val, "0.00"),
+			        "Precisão de Passe %", FORMAT(Val, "0.0%"),
+			        FORMAT(Val, "#,0")
+			    )
+			)
+		displayFolder: 03. Head-to-Head
+		lineageTag: 63ad245c-f6b6-4a3c-bf34-fac0f27ae9f2
+
+	measure 'H2H Diferença Formatada (A - B)' =
+			VAR Metrica = SELECTEDVALUE(dMetricas_H2H[Metrica])
+			VAR ValA = [H2H Valor (A)]
+			VAR ValB = [H2H Valor (B)]
+			VAR Diff = ValA - ValB
+			RETURN
+			IF(
+			    ISBLANK(ValA) || ISBLANK(ValB),
+			    "-",
+			    SWITCH(
+			        Metrica,
+			        "Nota Média", FORMAT(Diff, "+0.00;-0.00;0.00"),
+			        "Gols / 90min", FORMAT(Diff, "+0.00;-0.00;0.00"),
+			        "Assistências / 90min", FORMAT(Diff, "+0.00;-0.00;0.00"),
+			        "G + A / 90min", FORMAT(Diff, "+0.00;-0.00;0.00"),
+			        "Finalizações no Gol / 90", FORMAT(Diff, "+0.00;-0.00;0.00"),
+			        "Passes Chave / 90min", FORMAT(Diff, "+0.00;-0.00;0.00"),
+			        "Precisão de Passe %", FORMAT(Diff, "+0.0%;-0.0%;0.0%"),
+			        FORMAT(Diff, "+#,0;-#,0;0")
+			    )
+			)
+		displayFolder: 03. Head-to-Head
+		lineageTag: cebf3684-f5f6-457f-a649-f20d2d851ff7
+
+	measure 'H2H Vantagem' =
+			VAR ValA = [H2H Valor (A)]
+			VAR ValB = [H2H Valor (B)]
+			VAR NomeA = SELECTEDVALUE(dJogador_A[nome_jogador], "Jogador A")
+			VAR NomeB = SELECTEDVALUE(dJogador_B[nome_jogador], "Jogador B")
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    ISBLANK(ValA) || ISBLANK(ValB), "-",
+			    ValA > ValB, NomeA & " (A)",
+			    ValB > ValA, NomeB & " (B)",
+			    "Empate"
+			)
+		displayFolder: 03. Head-to-Head
+		lineageTag: d5b5e42e-f2e3-4fac-ae26-3358e481c2a8
+
+	measure 'H2H Cor Vantagem' =
+			VAR ValA = [H2H Valor (A)]
+			VAR ValB = [H2H Valor (B)]
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    ISBLANK(ValA) || ISBLANK(ValB), "#64748B",
+			    ValA > ValB, "#059669",
+			    ValB > ValA, "#2563EB",
+			    "#64748B"
+			)
+		displayFolder: 03. Head-to-Head
+		lineageTag: 54e54a70-961e-4171-8c9b-e9d8021c2c74
+
+	measure 'Banner Clube' = SELECTEDVALUE(dClubes[nome_clube], "Todos os Clubes")
+		displayFolder: 04. Raio-X Clube
+		lineageTag: 74eca97b-a598-45ca-ae16-9082d5c67499
+
+	measure 'Banner Estádio' = SELECTEDVALUE(dClubes[estadio], "Brasileirão Série A 2024")
+		displayFolder: 04. Raio-X Clube
+		lineageTag: e0de07ff-3ea9-4ffc-b8ca-5317bd5affff
+
+	measure 'Banner Cidade' = SELECTEDVALUE(dClubes[cidade], "Selecione um clube no filtro")
+		displayFolder: 04. Raio-X Clube
+		lineageTag: 4ca7d131-2003-43b3-ae8f-650e071157f9
+
 	column __Dummy
 		isHidden
+		lineageTag: a02af895-7d93-4a59-80a7-6787f93282e1
 		isNameInferred
 		sourceColumn: [__Dummy]
 

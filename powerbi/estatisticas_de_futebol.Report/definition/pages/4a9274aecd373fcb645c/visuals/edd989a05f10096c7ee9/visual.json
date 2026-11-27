@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
   "name": "edd989a05f10096c7ee9",
   "position": {
-    "x": 726.10909090909092,
-    "y": 338.61818181818182,
-    "z": 4,
-    "height": 673.74545454545455,
-    "width": 1132.8000000000002,
-    "tabOrder": 4
+    "x": 686,
+    "y": 200,
+    "z": 600,
+    "height": 500,
+    "width": 574,
+    "tabOrder": 600
   },
   "visual": {
     "visualType": "tableEx",
@@ -15,6 +15,20 @@
       "queryState": {
         "Values": {
           "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dJogadores"
+                    }
+                  },
+                  "Property": "foto_url"
+                }
+              },
+              "queryRef": "dJogadores.foto_url",
+              "nativeQueryRef": "foto_url"
+            },
             {
               "field": {
                 "Column": {
@@ -157,8 +171,79 @@
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Medidas"
+                  }
+                },
+                "Property": "Minutos Jogados"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
       }
     },
-    "drillFilterOtherVisuals": true
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Elenco do Clube (Ordenado por Minutos Jogados)'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Segoe UI'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10.5D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0F172A'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
   }
 }
