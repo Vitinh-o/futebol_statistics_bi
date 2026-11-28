@@ -4,10 +4,10 @@
   "position": {
     "x": 200,
     "y": 200,
-    "z": 400,
+    "z": 4000,
     "height": 500,
     "width": 580,
-    "tabOrder": 400
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "tableEx",
@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "_Medidas.Posição Classificação",
-              "nativeQueryRef": "Posição Classificação"
+              "nativeQueryRef": "Posição",
+              "displayName": "Posição"
             },
             {
               "field": {
@@ -41,7 +42,8 @@
                 }
               },
               "queryRef": "dClubes.escudo_url",
-              "nativeQueryRef": "escudo_url"
+              "nativeQueryRef": "Escudo",
+              "displayName": "Escudo"
             },
             {
               "field": {
@@ -55,7 +57,8 @@
                 }
               },
               "queryRef": "dClubes.nome_clube",
-              "nativeQueryRef": "nome_clube"
+              "nativeQueryRef": "Clube",
+              "displayName": "Clube"
             },
             {
               "field": {
@@ -211,7 +214,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "62.200004905166466D"
+                  "Value": "50.14198250972469D"
                 }
               }
             }
@@ -219,15 +222,183 @@
           "selector": {
             "metadata": "_Medidas.Posição Classificação"
           }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "83.98425196850394D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "dClubes.escudo_url"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "67.67716535433071D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "dClubes.nome_clube"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "45.74803149606299D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Medidas.Pontos Totais"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "67.75590551181102D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Medidas.Jogos Disputados"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "50D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Medidas.Vitórias"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "53D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Medidas.Empates"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "54D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Medidas.Derrotas"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "53D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Medidas.Gols Pró"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "70D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Medidas.Gols Contra"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "79D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Medidas.Saldo de Gols"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "113.06299212598425D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Medidas.Aproveitamento %"
+          }
         }
       ],
       "columnHeaders": [
         {
-          "properties": {}
+          "properties": {
+            "columnAdjustment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'fixedWidth'"
+                }
+              }
+            },
+            "defaultColumnWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "90D"
+                }
+              }
+            }
+          }
         }
       ]
     },
-    "drillFilterOtherVisuals": true,
     "visualContainerObjects": {
       "title": [
         {
@@ -281,6 +452,7 @@
           }
         }
       ]
-    }
+    },
+    "drillFilterOtherVisuals": true
   }
 }

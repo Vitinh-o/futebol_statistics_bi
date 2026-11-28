@@ -4,10 +4,10 @@
   "position": {
     "x": 200,
     "y": 92,
-    "z": 300,
+    "z": 4000,
     "height": 92,
     "width": 1060,
-    "tabOrder": 300
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "_Medidas.Artilheiro (Card)",
-              "nativeQueryRef": "Artilheiro (Card)"
+              "nativeQueryRef": "Artilheiro",
+              "displayName": "Artilheiro"
             },
             {
               "field": {
@@ -41,7 +42,8 @@
                 }
               },
               "queryRef": "_Medidas.Líder de Assistências (Card)",
-              "nativeQueryRef": "Líder de Assistências (Card)"
+              "nativeQueryRef": "Líder de Assistências",
+              "displayName": "Líder de Assistências"
             },
             {
               "field": {
@@ -55,7 +57,8 @@
                 }
               },
               "queryRef": "_Medidas.Líder de G+A (Card)",
-              "nativeQueryRef": "Líder de G+A (Card)"
+              "nativeQueryRef": "Líder de G+A ",
+              "displayName": "Líder de G+A "
             },
             {
               "field": {
@@ -69,7 +72,8 @@
                 }
               },
               "queryRef": "_Medidas.Líder de G+A por 90min (Card)",
-              "nativeQueryRef": "Líder de G+A por 90min (Card)"
+              "nativeQueryRef": "Líder de G+A por 90min",
+              "displayName": "Líder de G+A por 90min"
             },
             {
               "field": {
@@ -83,13 +87,13 @@
                 }
               },
               "queryRef": "_Medidas.Maior Nota Média (Card)",
-              "nativeQueryRef": "Maior Nota Média (Card)"
+              "nativeQueryRef": "Maior Nota Média",
+              "displayName": "Maior Nota Média"
             }
           ]
         }
       }
     },
-    "drillFilterOtherVisuals": true,
     "objects": {
       "layout": [
         {
@@ -110,7 +114,24 @@
             }
           }
         }
+      ],
+      "value": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
       ]
-    }
+    },
+    "drillFilterOtherVisuals": true
   }
 }

@@ -4,10 +4,10 @@
   "position": {
     "x": 200,
     "y": 200,
-    "z": 400,
+    "z": 5000,
     "height": 252,
     "width": 522,
-    "tabOrder": 400
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "scatterChart",
@@ -27,7 +27,26 @@
                 }
               },
               "queryRef": "dJogadores.nome_jogador",
-              "nativeQueryRef": "nome_jogador"
+              "nativeQueryRef": "nome do jogador",
+              "displayName": "nome do jogador"
+            }
+          ]
+        },
+        "Size": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Minutos Jogados"
+                }
+              },
+              "queryRef": "_Medidas.Minutos Jogados",
+              "nativeQueryRef": "Minutos Jogados"
             }
           ]
         },
@@ -67,28 +86,9 @@
               "nativeQueryRef": "Gols"
             }
           ]
-        },
-        "Size": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "_Medidas"
-                    }
-                  },
-                  "Property": "Minutos Jogados"
-                }
-              },
-              "queryRef": "_Medidas.Minutos Jogados",
-              "nativeQueryRef": "Minutos Jogados"
-            }
-          ]
         }
       }
     },
-    "drillFilterOtherVisuals": true,
     "visualContainerObjects": {
       "title": [
         {
@@ -142,7 +142,8 @@
           }
         }
       ]
-    }
+    },
+    "drillFilterOtherVisuals": true
   },
   "filterConfig": {
     "filters": [
@@ -246,6 +247,48 @@
             }
           ]
         }
+      },
+      {
+        "name": "3998f0b4fe6bd6b27e06",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Finalizações Totais"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "5d04b443704816b12655",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Gols"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "6d14fc4680e92ff83fcc",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Minutos Jogados"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

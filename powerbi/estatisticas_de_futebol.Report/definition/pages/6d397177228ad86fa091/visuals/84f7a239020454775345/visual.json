@@ -4,10 +4,10 @@
   "position": {
     "x": 200,
     "y": 464,
-    "z": 600,
+    "z": 8000,
     "height": 236,
     "width": 1060,
-    "tabOrder": 600
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "tableEx",
@@ -41,7 +41,8 @@
                 }
               },
               "queryRef": "_Medidas.H2H Valor Formatado (A)",
-              "nativeQueryRef": "H2H Valor Formatado (A)"
+              "nativeQueryRef": "H2H (A)",
+              "displayName": "H2H (A)"
             },
             {
               "field": {
@@ -55,7 +56,8 @@
                 }
               },
               "queryRef": "_Medidas.H2H Diferença Formatada (A - B)",
-              "nativeQueryRef": "H2H Diferença Formatada (A - B)"
+              "nativeQueryRef": "H2H Diferença  (A - B)",
+              "displayName": "H2H Diferença  (A - B)"
             },
             {
               "field": {
@@ -69,7 +71,8 @@
                 }
               },
               "queryRef": "_Medidas.H2H Valor Formatado (B)",
-              "nativeQueryRef": "H2H Valor Formatado (B)"
+              "nativeQueryRef": "H2H  (B)",
+              "displayName": "H2H  (B)"
             },
             {
               "field": {
@@ -104,11 +107,82 @@
           "selector": {
             "metadata": "dMetricas_H2H.Metrica"
           }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "143.76623198010287D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Medidas.H2H Valor Formatado (A)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "200.62992125984252D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Medidas.H2H Diferença Formatada (A - B)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "166.6220472440945D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Medidas.H2H Vantagem"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "130.5143848282508D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Medidas.H2H Valor Formatado (B)"
+          }
         }
       ],
       "columnHeaders": [
         {
-          "properties": {}
+          "properties": {
+            "columnAdjustment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'fixedWidth'"
+                }
+              }
+            },
+            "defaultColumnWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "90D"
+                }
+              }
+            }
+          }
         }
       ]
     },

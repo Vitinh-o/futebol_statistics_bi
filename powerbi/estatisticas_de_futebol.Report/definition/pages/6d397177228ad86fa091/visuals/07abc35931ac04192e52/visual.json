@@ -4,14 +4,13 @@
   "position": {
     "x": 738,
     "y": 200,
-    "z": 500,
+    "z": 7000,
     "height": 248,
     "width": 522,
-    "tabOrder": 500
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "clusteredColumnChart",
-    "drillFilterOtherVisuals": true,
     "query": {
       "queryState": {
         "Category": {
@@ -120,7 +119,8 @@
           }
         }
       ]
-    }
+    },
+    "drillFilterOtherVisuals": true
   },
   "filterConfig": {
     "filters": [

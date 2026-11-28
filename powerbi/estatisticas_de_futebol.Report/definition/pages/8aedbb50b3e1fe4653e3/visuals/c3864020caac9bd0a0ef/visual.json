@@ -4,10 +4,10 @@
   "position": {
     "x": 738,
     "y": 200,
-    "z": 500,
+    "z": 6000,
     "height": 252,
     "width": 522,
-    "tabOrder": 500
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "barChart",
@@ -27,8 +27,9 @@
                 }
               },
               "queryRef": "dJogadores.nome_jogador",
-              "nativeQueryRef": "nome_jogador",
-              "active": true
+              "nativeQueryRef": "Nome do jogador",
+              "active": true,
+              "displayName": "Nome do jogador"
             }
           ]
         },
@@ -84,7 +85,6 @@
         "isDefaultSort": true
       }
     },
-    "drillFilterOtherVisuals": true,
     "visualContainerObjects": {
       "title": [
         {
@@ -138,7 +138,8 @@
           }
         }
       ]
-    }
+    },
+    "drillFilterOtherVisuals": true
   },
   "filterConfig": {
     "filters": [
@@ -241,7 +242,50 @@
               }
             }
           ]
-        }
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "81047f14062382d79e44",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dJogadores"
+              }
+            },
+            "Property": "nome_jogador"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "03b6d11b99811ebf6adc",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Gols"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "7ba6d4429895cd9a24e9",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Assistências"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

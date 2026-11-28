@@ -4,10 +4,10 @@
   "position": {
     "x": 686,
     "y": 200,
-    "z": 600,
+    "z": 7000,
     "height": 500,
     "width": 574,
-    "tabOrder": 600
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "tableEx",
@@ -190,7 +190,6 @@
         ]
       }
     },
-    "drillFilterOtherVisuals": true,
     "visualContainerObjects": {
       "title": [
         {
@@ -244,6 +243,7 @@
           }
         }
       ]
-    }
+    },
+    "drillFilterOtherVisuals": true
   }
 }

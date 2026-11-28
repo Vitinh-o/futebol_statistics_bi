@@ -4,10 +4,10 @@
   "position": {
     "x": 704,
     "y": 114,
-    "z": 305,
+    "z": 5000,
     "height": 48,
     "width": 52,
-    "tabOrder": 305
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "textbox",
@@ -17,7 +17,6 @@
           "properties": {
             "paragraphs": [
               {
-                "horizontalTextAlignment": "center",
                 "textRuns": [
                   {
                     "value": "VS",
@@ -28,7 +27,8 @@
                       "color": "#FFFFFF"
                     }
                   }
-                ]
+                ],
+                "horizontalTextAlignment": "center"
               }
             ]
           }

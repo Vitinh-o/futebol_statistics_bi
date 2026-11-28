@@ -4,10 +4,10 @@
   "position": {
     "x": 796,
     "y": 200,
-    "z": 500,
+    "z": 5000,
     "height": 242,
     "width": 464,
-    "tabOrder": 500
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "lineChart",
@@ -42,11 +42,11 @@
                       "Entity": "dClubes"
                     }
                   },
-                  "Property": "sigla"
+                  "Property": "nome_clube"
                 }
               },
-              "queryRef": "dClubes.sigla",
-              "nativeQueryRef": "sigla"
+              "queryRef": "dClubes.nome_clube",
+              "nativeQueryRef": "nome_clube"
             }
           ]
         },
@@ -88,7 +88,6 @@
         "isDefaultSort": true
       }
     },
-    "drillFilterOtherVisuals": true,
     "visualContainerObjects": {
       "title": [
         {
@@ -142,12 +141,41 @@
           }
         }
       ]
-    }
+    },
+    "drillFilterOtherVisuals": true
   },
   "filterConfig": {
     "filters": [
       {
-        "name": "f163f0dfe160dd08e951",
+        "name": "e96ef7976de9b42c0b30",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dRodadas"
+              }
+            },
+            "Property": "rodada_num"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "ab89f55695cf6a733d72",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Pontos Acumulados"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "8be1a1e85bd9e35d8d3c",
         "field": {
           "Column": {
             "Expression": {
@@ -155,7 +183,21 @@
                 "Entity": "dClubes"
               }
             },
-            "Property": "sigla"
+            "Property": "nome_clube"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "d86d8f07e9ab30aebd09",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dClubes"
+              }
+            },
+            "Property": "nome_clube"
           }
         },
         "type": "TopN",
@@ -170,7 +212,7 @@
                     "Version": 2,
                     "From": [
                       {
-                        "Name": "d1",
+                        "Name": "d",
                         "Entity": "dClubes",
                         "Type": 0
                       },
@@ -185,10 +227,10 @@
                         "Column": {
                           "Expression": {
                             "SourceRef": {
-                              "Source": "d1"
+                              "Source": "d"
                             }
                           },
-                          "Property": "sigla"
+                          "Property": "nome_clube"
                         },
                         "Name": "field"
                       }
@@ -215,7 +257,7 @@
               "Type": 2
             },
             {
-              "Name": "d1",
+              "Name": "d",
               "Entity": "dClubes",
               "Type": 0
             }
@@ -229,10 +271,10 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Source": "d1"
+                            "Source": "d"
                           }
                         },
-                        "Property": "sigla"
+                        "Property": "nome_clube"
                       }
                     }
                   ],
@@ -245,7 +287,8 @@
               }
             }
           ]
-        }
+        },
+        "howCreated": "User"
       }
     ]
   }
