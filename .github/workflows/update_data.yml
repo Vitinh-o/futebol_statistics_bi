@@ -1,0 +1,56 @@
+name: Atualizar Dados Brasileirão (API-Football)
+
+on:
+  schedule:
+    # Executa 1x por ano em 1º de fevereiro às 09:00 UTC (06:00 BRT)
+    - cron: "0 9 1 2 *"
+  workflow_dispatch:
+    inputs:
+      season:
+        description: "Temporada específica (opcional — padrão: janela free de 2 anos atrás)"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-brasileirao-data
+  cancel-in-progress: false
+
+jobs:
+  extract-and-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Instalar dependências
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Executar pipeline ETL (API-Football -> /data/*.csv)
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+          SEASON: ${{ inputs.season }}
+        run: python src/extract.py
+
+      - name: Commit e push dos CSVs atualizados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/*.csv
+          if git diff --staged --quiet; then
+            echo "Nenhuma alteração nos arquivos CSV. Commit ignorado."
+          else
+            git commit -m "chore(data): atualização automática dos CSVs do Brasileirão"
+            git push
+          fi
