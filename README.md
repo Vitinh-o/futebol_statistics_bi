@@ -6,10 +6,12 @@
 
 ## 🎯 1. Visão Geral do Projeto
 
+> ⚠️ **Nota de Portfólio:** Este é um **projeto de portfólio** desenvolvido para demonstrar uma solução completa (*end-to-end*) de Engenharia de Dados e Business Intelligence. Por utilizar a **versão gratuita da API-Football**, a extração é limitada e busca **sempre a temporada de dois anos atrás** do Brasileirão Série A (por exemplo, em 2026 os dados extraídos correspondem à temporada de 2024), com atualização automática anual programada para ocorrer a partir de fevereiro.
+
 Dashboard analítico interativo do **Campeonato Brasileiro Série A**, construído como projeto de portfólio e laboratório de engenharia de dados/BI assistida por Inteligência Artificial.
 
-* **Fonte de Dados:** [API-Football](https://www.api-football.com/) (`league_id = 71`).
-* **Orquestração & ETL:** Python + GitHub Actions (execução agendada na nuvem gratuita, gerando CSVs limpos na pasta `/data`).
+* **Fonte de Dados:** [API-Football](https://www.api-football.com/) (`league_id = 71`, plano gratuito com defasagem de 2 anos).
+* **Orquestração & ETL:** Python + GitHub Actions (execução anual agendada para fevereiro na nuvem gratuita + gatilho manual, gerando CSVs limpos na pasta `/data`).
 * **Ingestão & Modelagem:** Power Query (M) consumindo os CSVs via URL bruta (`raw.githubusercontent.com`) em um modelo **Star Schema**.
 * **Visualização:** Power BI Desktop salvo em formato **PBIP** (*Power BI Project*) com automação de layout e temas.
 
@@ -18,9 +20,9 @@ Dashboard analítico interativo do **Campeonato Brasileiro Série A**, construí
 ## 🏗️ 2. Arquitetura e Fluxo de Dados
 
 ```text
-[API-Football (REST JSON)]
+[API-Football (REST JSON - Plano Gratuito, 2 anos atrás)]
         │
-        ▼  (GitHub Actions - Cron 2x/semana + Manual Dispatch)
+        ▼  (GitHub Actions - Cron anual em fevereiro + Manual Dispatch)
 [Script Python ETL (src/extract.py)]
         │  - Respeita rate limit da API gratuita
         │  - Normaliza grão de partidas e jogadores
@@ -219,20 +221,27 @@ brasileirao-bi-analytics/
 │   ├── partidas.csv             # Fato de partidas (2 linhas/jogo)
 │   └── estatisticas_jogadores.csv # Fato de stats individuais
 ├── powerbi/
-│   ├── Brasileirao_Analytics.pbip
-│   ├── Brasileirao_Analytics.Report/
-│   └── Brasileirao_Analytics.SemanticModel/
+│   ├── estatisticas_de_futebol.pbip
+│   ├── estatisticas_de_futebol.Report/
+│   └── estatisticas_de_futebol.SemanticModel/
+├── scripts/
+│   └── apply_design.py          # Automação de layout e tema PBIR
 ├── src/
 │   └── extract.py               # Script de consumo da API-Football
+├── tests/
+│   └── test_extract.py          # Testes unitários do pipeline ETL
 ├── requirements.txt             # requests, pandas
 └── README.md                    # Esta documentação
 ```
 
 ---
 
-## 🚀 7. Status e Roadmap de Implementação
+## 🚀 7. Status e Conclusão do Projeto
 
 - [x] Definição de arquitetura, contrato de dados (Star Schema) e blueprint de 4 páginas.
-- [ ] **Fase 1:** Implementar `src/extract.py` e `.github/workflows/update_data.yml` + validar chave da API-Football.
-- [ ] **Fase 2:** Configurar ingestão via Power Query, relacionamentos Star Schema e medidas DAX no `.SemanticModel`.
-- [ ] **Fase 3:** Construir tema JSON e gerar layout das 4 páginas no `.Report`.
+- [x] **Fase 1:** Implementado `src/extract.py`, testes unitários em `tests/test_extract.py` e automação anual em `.github/workflows/update_data.yml`.
+- [x] **Fase 2:** Configurada ingestão via Power Query (`pBaseUrl`), relacionamentos Star Schema e mais de 60 medidas DAX no `.SemanticModel`.
+- [x] **Fase 3:** Construído tema JSON customizado, fundo SVG (`1280x720`), menu de navegação e layout completo das 4 páginas no `.Report`.
+
+### ✅ Conclusão
+O projeto foi concluído de ponta a ponta como vitrine de portfólio, integrando extração automatizada em Python (respeitando os limites da API gratuita com janela de 2 anos atrás), versionamento de dados em CSV no GitHub, modelagem dimensional Star Schema em Power BI (`.pbip`) e design PBIR automatizado. Todas as etapas estão funcionais, testadas e prontas para demonstração.
